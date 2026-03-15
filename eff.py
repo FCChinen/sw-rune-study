@@ -47,13 +47,14 @@ def calc_eff(data: list):
         elif "defm" == stat:
             stat_val = (float_val+30)/10
         eff += stat_val
-        print(f"{stat}: {int(float_val)} {stat_val}")
+        # print(f"{stat}: {int(float_val)} {stat_val}")
     if grindCount == 4:
         eff -= 10.0
-        print("-10")
+        # print("-10")
     if critCount == 2:
         eff += 10.0
-        print("bonus crit: +10")
+        # print("bonus crit: +10")
     return eff
 
-print(f"Eff: {calc_eff(get_data())}")
+if __name__ == "__main__":
+    print(f"Eff: {calc_eff(get_data())}")
