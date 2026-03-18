@@ -14,7 +14,6 @@ def calc_eff(data: list):
         stat_val = 0
         if "spd" == stat:
             stat_val = (float_val+5.0)*1.66
-            
             grindCount+=1
         elif "spdi" == stat:
             stat_val = float_val*1.66

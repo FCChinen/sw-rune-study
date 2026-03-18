@@ -1,0 +1,4 @@
+atkm 19
+spd 16
+atk 7
+defm 17
