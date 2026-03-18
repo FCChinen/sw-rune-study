@@ -1,4 +1,4 @@
-atkm 19
-spd 16
-atk 7
-defm 17
+res 4
+hpm 1067
+spd 21
+atk 5

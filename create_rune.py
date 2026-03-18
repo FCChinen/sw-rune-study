@@ -1,4 +1,5 @@
 import json
+import os
 
 def importing_all_runes() -> list:
     with open("final_runes.json", "r") as f:
@@ -34,10 +35,16 @@ def return_rune() -> dict:
         for key in rune.keys():
             if stat == key:
                 rune[stat] = val
+    if rune["eff"] == 0:
+        Exception("Eff cannot be zero")
     return rune
 
 def main():
     all_runes = importing_all_runes()
+    rune = return_rune()
+    if rune in all_runes:
+        print("rune already exists")
+        os._exit(1)
     all_runes.append(return_rune())
     writing_rune(all_runes)
 

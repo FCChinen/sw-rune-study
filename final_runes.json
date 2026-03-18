@@ -1,15 +1,44 @@
 [
     {
-        "spd": 16,
-        "atk": 7,
+        "spd": 6,
+        "atk": 0,
         "def": 0,
-        "hp": 0,
-        "defm": 17,
-        "atkm": 19,
+        "hp": 7,
+        "defm": 0,
+        "atkm": 40,
         "hpm": 0,
         "acc": 0,
         "res": 0,
         "cdmg": 0,
-        "crate": 0
-    }
-]
+        "crate": 0,
+        "eff": 98
+    },
+    {
+        "spd": 10,
+        "atk": 0,
+        "def": 0,
+        "hp": 0,
+        "defm": 0,
+        "atkm": 29,
+        "hpm": 232,
+        "acc": 0,
+        "res": 0,
+        "cdmg": 0,
+        "crate": 0,
+        "eff": 84
+    },
+    {
+        "spd": 14,
+        "atk": 0,
+        "def": 13,
+        "hp": 0,
+        "defm": 0,
+        "atkm": 0,
+        "hpm": 0,
+        "acc": 9,
+        "res": 0,
+        "cdmg": 0,
+        "crate": 0,
+        "eff": 85
+    },
+    {
