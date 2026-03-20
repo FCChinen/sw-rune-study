@@ -15,7 +15,7 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
     idx_list = [1,2,3,4]
     custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI" \
                     "DEF%", "DEF%I", "HP%", "HP%I", "ATK flat", "ATK flatI", "DEF flat", "DEF flatI",\
-                    "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set" \
+                    "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
                     "Eff", "BEff", "Score", "AdjustedScore"]
     rune = dict()
     for idx in idx_list:
@@ -97,7 +97,7 @@ def calc_adjusted_score(data: list):
 
     return round(eff)
 
-def check_eff(row: dict, stat_list: list = []) -> int:
+def has_stats(row: dict, stat_list: list = []) -> int:
     if not(stat_list):
         # Get all stats
         stat_list = ["CRate", "CDmg", "ATK", "SPD", \

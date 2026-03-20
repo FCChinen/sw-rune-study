@@ -44,14 +44,14 @@ def output_data(name: str, data: list):
 
 # The raw analysis is made to create the needed information of
 # the runes by: stats and by slot
-# (Needs to get runes-data.csv from SWOP Runes export)
+# (Needs to get runes-data.csv from SWOP Runes export:!)
 # The output is the rune with their respective:
 # - Raw stats
 # - Boozero eff as BEff
 # - Score(The official gaming score, it may vary by 1 point)
 # - Adjusted Score(The official score adjusted to be a function
 # that grews like Boozero eff)
-def raw_analysis(stat_list: list, slots: list):
+def raw_analysis(stat_list: list, slots: list, match_qty: int):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
         i_75 = []
@@ -73,10 +73,11 @@ def raw_analysis(stat_list: list, slots: list):
                 continue
             if row["slot"] in slots:
                 qty = has_stats(row, stat_list)
-                if qty > 0:
+                if qty == match_qty:
                     total_amount += 1
                     # just changing format to reuse the boozero eff function 
                     b_stats = get_boozero_stats(row)
+                    #Excluding runes with spd
                     # getting the boozero efficiency
                     boozero_eff = calc_eff(b_stats)
                     # calculating the score, it may vary 1 point from the official
@@ -127,10 +128,11 @@ def main():
     # stat_list = ["SPD", "ACC"'] # Control
     # stat_list = ["HP%", "CRate", "CDmg"] # HP-based bruiser
     # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
-    # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
-    stat_list = []
+    stat_list = ["CDmg", "CRate", "ATK%"] # DPS
+    # stat_list = []
     slots = ["1"]
-    raw_analysis(stat_list, slots)
+    match_qty = 3
+    raw_analysis(stat_list, slots, match_qty)
 
 if __name__ == "__main__":
     main()
