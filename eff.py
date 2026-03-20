@@ -17,14 +17,14 @@ def calc_eff(data: list):
             grindCount+=1
         elif "spdi" == stat:
             stat_val = float_val*1.66
-        elif "cd" == stat:
+        elif "cd" == stat or "cdi" == stat:
             stat_val = float_val+float_val/7
             critCount += 1
-        elif "res" == stat:
+        elif "res" == stat or "resi" == stat:
             stat_val = float_val
-        elif "acc" == stat:
+        elif "acc" == stat or "acci"== stat:
             stat_val = float_val
-        elif "cr" == stat:
+        elif "cr" == stat or "cri" == stat:
             stat_val = float_val*1.33
             critCount += 1
         elif "hp" == stat or "atk" == stat or "def" == stat:
@@ -32,7 +32,6 @@ def calc_eff(data: list):
             grindCount+=1
         elif "hpi" == stat or "atki" == stat or "defi" == stat:
             stat_val = float_val
-            grindCount+=1
         elif "hpm" == stat:
             stat_val = (float_val+550)/100
         elif "hpmi" == stat:
@@ -45,7 +44,10 @@ def calc_eff(data: list):
             stat_val = (float_val)/10
         elif "defm" == stat:
             stat_val = (float_val+30)/10
+        else:
+            print(f"stat {stat} not found")
         eff += stat_val
+        
         # print(f"{stat}: {int(float_val)} {stat_val}")
     if grindCount == 4:
         eff -= 10.0

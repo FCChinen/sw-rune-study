@@ -1,77 +1,406 @@
 [
     {
-        "CRate": "12",
-        "CDmg": "13",
-        "ATK%": "25",
-        "SPD": "10",
-        "HP%": 6,
-        "Eff": 100.71714285714285,
-        "BEff": 106.71714285714285
-    },
-    {
-        "CRate": "16",
-        "CDmg": "12",
-        "ATK%": "22",
-        "SPD": "6",
-        "HP%": 8,
-        "Eff": 95.25428571428571,
-        "BEff": 103.25428571428571
-    },
-    {
-        "CRate": "5",
-        "CDmg": "11",
-        "ATK%": "18",
-        "SPD": "21",
-        "Eff": 100.38142857142856,
-        "BEff": 100.38142857142856
-    },
-    {
-        "CRate": "5",
-        "CDmg": "14",
-        "ATK%": "13",
-        "SPD": "22",
-        "Eff": 100.47,
-        "BEff": 100.47
-    },
-    {
-        "CRate": "22",
-        "CDmg": "8",
-        "ATK%": "14",
-        "SPD": "14",
-        "Eff": 103.94285714285715,
-        "BEff": 103.94285714285715
-    },
-    {
-        "CRate": "18",
-        "CDmg": "6",
-        "ATK%": "12",
-        "SPD": "17",
+        "CRate": 9,
+        "CDmgI": 6,
+        "ATK%": 5,
+        "SPD": 16,
         "HP%": 7,
-        "Eff": 99.31714285714284,
-        "BEff": 106.31714285714284
+        "BEff": 95.68714285714286,
+        "Score": 131,
+        "AdjustedScore": 198
     },
     {
-        "CRate": "6",
-        "CDmg": "8",
-        "ATK%": "34",
-        "SPD": "13",
-        "Eff": 101.00285714285714,
-        "BEff": 101.00285714285714
+        "CRate": 6,
+        "CDmgI": 4,
+        "ATK%": 22,
+        "SPD": 10,
+        "HP%": 6,
+        "BEff": 95.45142857142856,
+        "Score": 135,
+        "AdjustedScore": 202
     },
     {
-        "CRate": "7",
-        "CDmg": "13",
-        "ATK%": "14",
-        "SPD": "20",
-        "Eff": 99.66714285714286,
-        "BEff": 99.66714285714286
+        "CRateI": 4,
+        "CDmg": 6,
+        "ATK%": 13,
+        "SPD": 17,
+        "HP%": 8,
+        "BEff": 99.69714285714286,
+        "Score": 140,
+        "AdjustedScore": 207
     },
     {
-        "CRate": "5",
-        "CDmg": "20",
-        "ATK%": "26",
-        "SPD": "10",
-        "Eff": 100.40714285714287,
-        "BEff": 100.40714285714287
+        "CRate": 15,
+        "CDmgI": 6,
+        "ATK%": 8,
+        "SPD": 11,
+        "HP%": 7,
+        "BEff": 98.36714285714287,
+        "Score": 141,
+        "AdjustedScore": 208
+    },
+    {
+        "CRate": 5,
+        "CDmgI": 4,
+        "ATK%": 8,
+        "SPD": 19,
+        "HP%": 14,
+        "BEff": 103.06142857142858,
+        "Score": 147,
+        "AdjustedScore": 214
+    },
+    {
+        "CRate": 4,
+        "CDmgI": 6,
+        "ATK%": 8,
+        "SPD": 11,
+        "HP%": 24,
+        "BEff": 100.73714285714286,
+        "Score": 147,
+        "AdjustedScore": 214
+    },
+    {
+        "CRate": 10,
+        "CDmgI": 5,
+        "ATK%": 6,
+        "SPD": 21,
+        "HP%": 6,
+        "BEff": 104.1742857142857,
+        "Score": 148,
+        "AdjustedScore": 215
+    },
+    {
+        "ATK%": 13,
+        "SPD": 10,
+        "HP%": 22,
+        "HP flat": 836,
+        "RESI": 5,
+        "BEff": 98.76,
+        "Score": 151,
+        "AdjustedScore": 218
+    },
+    {
+        "CRate": 10,
+        "CDmg": 6,
+        "ATK%": 6,
+        "SPD": 22,
+        "ACCI": 5,
+        "BEff": 95.97714285714285,
+        "Score": 152,
+        "AdjustedScore": 214
+    },
+    {
+        "CDmgI": 7,
+        "ATK%": 7,
+        "SPD": 22,
+        "HP%": 13,
+        "ACC": 4,
+        "BEff": 96.82,
+        "Score": 154,
+        "AdjustedScore": 221
+    },
+    {
+        "CRate": 7,
+        "CDmg": 10,
+        "SPD": 14,
+        "HP%": 20,
+        "HP flatI": 296,
+        "BEff": 95.23857142857142,
+        "Score": 155,
+        "AdjustedScore": 217
+    },
+    {
+        "CRate": 7,
+        "CDmgI": 7,
+        "ATK%": 30,
+        "SPD": 6,
+        "HP%": 7,
+        "BEff": 102.57,
+        "Score": 156,
+        "AdjustedScore": 223
+    },
+    {
+        "CRate": 10,
+        "CDmg": 12,
+        "ATK%": 7,
+        "SPD": 16,
+        "RESI": 7,
+        "BEff": 95.87428571428572,
+        "Score": 156,
+        "AdjustedScore": 218
+    },
+    {
+        "CRate": 5,
+        "ATK%": 5,
+        "SPD": 17,
+        "HP%": 21,
+        "RESI": 7,
+        "BEff": 96.16999999999999,
+        "Score": 157,
+        "AdjustedScore": 224
+    },
+    {
+        "CRateI": 4,
+        "CDmg": 4,
+        "ATK%": 31,
+        "SPD": 12,
+        "ACC": 6,
+        "BEff": 95.11142857142858,
+        "Score": 158,
+        "AdjustedScore": 220
+    },
+    {
+        "CRate": 15,
+        "CDmg": 8,
+        "ATK%": 13,
+        "SPD": 12,
+        "ACCI": 5,
+        "BEff": 95.31285714285714,
+        "Score": 158,
+        "AdjustedScore": 220
+    },
+    {
+        "CRate": 5,
+        "CDmgI": 6,
+        "ATK%": 13,
+        "SPD": 18,
+        "ACC": 13,
+        "BEff": 97.68714285714286,
+        "Score": 160,
+        "AdjustedScore": 222
+    },
+    {
+        "CDmg": 13,
+        "ATK%": 15,
+        "SPD": 16,
+        "HP%": 7,
+        "RESI": 6,
+        "BEff": 97.71714285714286,
+        "Score": 161,
+        "AdjustedScore": 228
+    },
+    {
+        "CDmg": 6,
+        "ATK%": 7,
+        "SPD": 26,
+        "HP%": 13,
+        "HP flatI": 329,
+        "BEff": 101.60714285714288,
+        "Score": 162,
+        "AdjustedScore": 229
+    },
+    {
+        "CRateI": 5,
+        "CDmg": 6,
+        "SPD": 7,
+        "HP%": 26,
+        "RES": 16,
+        "BEff": 95.42714285714285,
+        "Score": 162,
+        "AdjustedScore": 224
+    },
+    {
+        "CRate": 26,
+        "CDmg": 6,
+        "ATK%": 11,
+        "HP%": 8,
+        "ACCI": 5,
+        "BEff": 95.43714285714286,
+        "Score": 163,
+        "AdjustedScore": 233
+    },
+    {
+        "CRate": 5,
+        "CDmg": 11,
+        "ATK%": 18,
+        "SPD": 21,
+        "BEff": 100.38142857142856,
+        "Score": 164,
+        "AdjustedScore": 226
+    },
+    {
+        "CDmg": 12,
+        "ATK%": 20,
+        "SPD": 4,
+        "HP%": 27,
+        "BEff": 95.65428571428572,
+        "Score": 165,
+        "AdjustedScore": 232
+    },
+    {
+        "CRate": 10,
+        "ATK%": 8,
+        "SPD": 28,
+        "HP%I": 6,
+        "HP flat": 204,
+        "BEff": 99.62,
+        "Score": 167,
+        "AdjustedScore": 229
+    },
+    {
+        "CRate": 22,
+        "CDmg": 7,
+        "ATK%": 13,
+        "SPD": 8,
+        "RESI": 6,
+        "BEff": 97.84,
+        "Score": 167,
+        "AdjustedScore": 229
+    },
+    {
+        "CRateI": 4,
+        "ATK%": 6,
+        "SPD": 13,
+        "HP%": 32,
+        "ACC": 6,
+        "BEff": 99.19999999999999,
+        "Score": 167,
+        "AdjustedScore": 234
+    },
+    {
+        "CDmg": 8,
+        "ATK%": 17,
+        "SPD": 14,
+        "HP%": 22,
+        "BEff": 99.68285714285715,
+        "Score": 168,
+        "AdjustedScore": 234
+    },
+    {
+        "CRate": 15,
+        "CDmg": 8,
+        "ATK%": 27,
+        "SPD": 4,
+        "ACCI": 7,
+        "BEff": 98.03285714285714,
+        "Score": 170,
+        "AdjustedScore": 232
+    },
+    {
+        "CDmg": 12,
+        "ATK%": 14,
+        "SPD": 19,
+        "HP%": 12,
+        "ACCI": 4,
+        "BEff": 103.55428571428571,
+        "Score": 173,
+        "AdjustedScore": 240
+    },
+    {
+        "CRate": 10,
+        "CDmgI": 6,
+        "ATK%": 14,
+        "SPD": 6,
+        "ACC": 27,
+        "BEff": 99.41714285714286,
+        "Score": 173,
+        "AdjustedScore": 235
+    },
+    {
+        "CRate": 12,
+        "CDmg": 9,
+        "ATK%": 27,
+        "HP%": 18,
+        "BEff": 101.24571428571429,
+        "Score": 177,
+        "AdjustedScore": 247
+    },
+    {
+        "CRate": 5,
+        "ATK%": 16,
+        "SPD": 19,
+        "HP%": 15,
+        "ACCI": 8,
+        "BEff": 105.49,
+        "Score": 179,
+        "AdjustedScore": 246
+    },
+    {
+        "CDmgI": 7,
+        "ATK%": 31,
+        "SPD": 12,
+        "HP flat": 695,
+        "RES": 11,
+        "BEff": 100.67,
+        "Score": 179,
+        "AdjustedScore": 241
+    },
+    {
+        "CDmg": 13,
+        "ATK%": 28,
+        "SPD": 10,
+        "HP%": 16,
+        "BEff": 103.75714285714287,
+        "Score": 180,
+        "AdjustedScore": 247
+    },
+    {
+        "CRate": 12,
+        "CDmg": 4,
+        "ATK%": 26,
+        "HP%": 22,
+        "ACCI": 4,
+        "BEff": 102.53142857142856,
+        "Score": 181,
+        "AdjustedScore": 251
+    },
+    {
+        "CRate": 16,
+        "CDmg": 12,
+        "ATK%": 22,
+        "SPD": 6,
+        "HP%I": 8,
+        "BEff": 103.25428571428571,
+        "Score": 182,
+        "AdjustedScore": 244
+    },
+    {
+        "CRate": 10,
+        "ATK%": 18,
+        "SPD": 13,
+        "HP%": 20,
+        "ACCI": 4,
+        "BEff": 105.17999999999999,
+        "Score": 182,
+        "AdjustedScore": 249
+    },
+    {
+        "CRateI": 4,
+        "ATK%": 30,
+        "SPD": 10,
+        "HP%": 17,
+        "ACC": 8,
+        "BEff": 105.22,
+        "Score": 185,
+        "AdjustedScore": 252
+    },
+    {
+        "CRate": 12,
+        "CDmg": 13,
+        "ATK%": 25,
+        "SPD": 10,
+        "HP%I": 6,
+        "BEff": 106.71714285714285,
+        "Score": 188,
+        "AdjustedScore": 250
+    },
+    {
+        "ATK%": 15,
+        "SPD": 6,
+        "HP%": 29,
+        "ACC": 23,
+        "BEff": 105.25999999999999,
+        "Score": 188,
+        "AdjustedScore": 255
+    },
+    {
+        "CRateI": 4,
+        "ATK%": 34,
+        "SPD": 10,
+        "HP%": 12,
+        "RES": 13,
+        "BEff": 109.22,
+        "Score": 195,
+        "AdjustedScore": 262
     }
 ]

@@ -1,7 +1,5 @@
 import csv
 import json
-import collections
-import math
 from utils import *
 from eff import calc_eff
 
@@ -44,7 +42,16 @@ def output_data(name: str, data: list):
     with open(f"{name}.txt", "w") as f:
         f.write(json.dumps(data, indent=4))
 
-def analyze_2():
+# The raw analysis is made to create the needed information of
+# the runes by: stats and by slot
+# (Needs to get runes-data.csv from SWOP Runes export)
+# The output is the rune with their respective:
+# - Raw stats
+# - Boozero eff as BEff
+# - Score(The official gaming score, it may vary by 1 point)
+# - Adjusted Score(The official score adjusted to be a function
+# that grews like Boozero eff)
+def raw_analysis(stat_list: list, slots: list):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
         i_75 = []
@@ -52,76 +59,78 @@ def analyze_2():
         i_84_95 = []
         i_95 = []
         count = [0, 0, 0, 0]
+        lowest_84_95 = 1000
+        lowest_75_84 = 1000
+        highest_84_95 = 0
+        highest_75_84 = 0
+        total_amount = 0
         for row in reader:
-            if row["slot"] == "1":
-                stat_list = ["CDmg", "CRate", "ATK%"]
-                eff, qty= check_eff(row, stat_list)
-                if qty == 3:
-                    b_stats= get_boozero_stats(row)
+            if "Slime" in row["monster_n"] or\
+                "Forest"in row["monster_n"] or\
+                "Inventory"in row["monster_n"]:
+                row["monster_n"] = ""
+            if row["monster_n"] != "":
+                continue
+            if row["slot"] in slots:
+                qty = has_stats(row, stat_list)
+                if qty > 0:
+                    total_amount += 1
+                    # just changing format to reuse the boozero eff function 
+                    b_stats = get_boozero_stats(row)
+                    # getting the boozero efficiency
                     boozero_eff = calc_eff(b_stats)
+                    # calculating the score, it may vary 1 point from the official
+                    score = calc_score(b_stats)
+                    # Is adjusted score to grow as boozero efficiency
+                    adjusted_score = calc_adjusted_score(b_stats)
                     b_stats = filter_stats(b_stats)
                     b_eff = calc_eff(b_stats)
-                    if b_eff < 75.0:
-                        i_75.append(get_rune(row, b_eff, boozero_eff))
+                    if boozero_eff < 75.0:
+                        i_75.append(get_rune(row, b_eff, boozero_eff\
+                                             , score, adjusted_score))
                         count[0] += 1
-                    elif 75.0 <= b_eff < 85.0:
-                        i_75_84.append(get_rune(row, b_eff, boozero_eff))
+                    elif 75.0 <= boozero_eff < 85.0:
+                        i_75_84.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
+                        if adjusted_score > highest_75_84:
+                            highest_75_84 = adjusted_score
+                        elif adjusted_score < lowest_75_84:
+                            lowest_75_84 = adjusted_score
                         count[1] += 1
-                    elif 85.0 <= b_eff < 95.0:
-                        i_84_95.append(get_rune(row, b_eff, boozero_eff))
+                    elif 85.0 <= boozero_eff < 95.0:
+                        i_84_95.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
+                        if adjusted_score < lowest_84_95:
+                            lowest_84_95 = adjusted_score 
+                        elif adjusted_score > highest_84_95:
+                            highest_84_95 = adjusted_score
                         count[2] += 1
-                    elif 95.0 <= b_eff:
-                        i_95.append(get_rune(row, b_eff, boozero_eff))
+                    elif 95.0 <= boozero_eff :
+                        i_95.append(get_rune(row, b_eff, boozero_eff\
+                                             , score, adjusted_score))
                         count[3] += 1
         print(f"less 75:{count[0]}\n75-84:{count[1]}\n85-95:{count[2]}\n95+:{count[3]}")
+        print(f"lowest 84: {lowest_75_84}\n highest 84: {highest_75_84}\n")
+        print(f"lowest 95: {lowest_84_95}\n highest 95: {highest_84_95}\n")
+        print(f"total amount: {total_amount}")
+        i_75 = sorted(i_75, key=lambda x: x["Score"])
+        i_75_84 = sorted(i_75_84, key=lambda x: x["Score"])
+        i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
+        i_95 = sorted(i_95, key=lambda x: x["Score"])
         output_data("75", i_75)
         output_data("75_84", i_75_84)
         output_data("84_95", i_84_95)
         output_data("95", i_95)
 
-def analyze_1():
-    count = 0
-    count_3 = 0
-    count_dict = {}
-    final_dict = {}
-    interval_75_less= 0
-    interval_75_84 = 0
-    interval_84_95 = 0
-    interval_95_plus = 0
-    with open("runes-data.csv", "r") as f:
-        reader = csv.DictReader(f, delimiter = ";")
-        for row in reader:
-            slot = ["1", "3", "5"]
-            if row["slot"] in slot:
-                eff, qty = check_eff(row)
-                count_dict[math.floor(eff)] = count_dict.get(math.floor(eff), 0) + 1
-                count_dict = collections.OrderedDict(sorted(count_dict.items()))
-                count_3 += 1
-                b_stats= get_boozero_stats(row)
-                b_eff = calc_eff(b_stats)
-                fb_eff = math.floor(b_eff)
-                if fb_eff < 75:
-                    interval_75_less += 1
-                elif 75 <= fb_eff < 85:
-                    interval_75_84 += 1
-                elif 85 <= fb_eff < 95:
-                    interval_84_95 += 1
-                else:
-                    interval_95_plus += 1
-                final_dict[math.floor(b_eff)] = final_dict.get(math.floor(b_eff), 0) + 1
-                # final_dict = collections.OrderedDict(sorted(final_dict.items()))
-                count += 1
-    print("Total :" + str(count_3))
-    print(str(count_dict))
-    print(str(final_dict))
-    print(f"<75: {interval_75_less}")
-    print(f"75 85: {interval_75_84}")
-    print(f"85 95: {interval_84_95}")
-    print(f">95: {interval_95_plus}")
-
-
 def main():
-    analyze_1()
+    # stat_list = ["SPD", "HP%", "DEF%"] # Tank/Sup
+    # stat_list = ["SPD", "ACC"'] # Control
+    # stat_list = ["HP%", "CRate", "CDmg"] # HP-based bruiser
+    # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
+    # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
+    stat_list = []
+    slots = ["1"]
+    raw_analysis(stat_list, slots)
 
 if __name__ == "__main__":
     main()
