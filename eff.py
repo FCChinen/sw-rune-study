@@ -1,4 +1,3 @@
-import json
 
 def get_data():
     with open('rune.txt', 'r') as f:
@@ -32,6 +31,7 @@ def calc_eff(data: list):
             grindCount+=1
         elif "hpi" == stat or "atki" == stat or "defi" == stat:
             stat_val = float_val
+            grindCount+=1
         elif "hpm" == stat:
             stat_val = (float_val+550)/100
         elif "hpmi" == stat:

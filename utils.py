@@ -94,7 +94,6 @@ def calc_adjusted_score(data: list):
         eff -= Decimal("25.0")
     if grindCount == 2:
         eff += Decimal("20.0")
-
     return round(eff)
 
 def has_stats(row: dict, stat_list: list = []) -> int:

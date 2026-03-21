@@ -1,4 +1,4 @@
-res 4
-hpm 1067
-spd 21
-atk 5
+cd 6
+cr 11
+atk 6
+spd 15

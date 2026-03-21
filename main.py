@@ -22,14 +22,18 @@ def get_boozero_stats(row: dict) -> list:
     for idx in idx_list:
         if not(row.get("s"+str(idx)+"_t", "")):
             continue
-        final_output.append(mapping_dict[row.get("s"+str(idx)+"_t", "")] + " " + \
-            row.get("s"+str(idx)+"_v", 0))
+        value = int(row.get("s"+str(idx)+"_v", 0))
+        minus = json.loads(row.get("s"+str(idx)+"_data", "{}"))
+        minus = minus.get("gvalue", "0")
+        value -= int(minus)
+        final_output.append(mapping_dict[row.get("s"+str(idx)+"_t", "")]\
+            + " " + str(value))
     if row["i_t"]:
         final_output.append(mapping_dict[row.get("i_t", "")] + "i " + \
             row.get("i_v", 0))
     return final_output
 
-def filter_stats(full_stats: list, filter: list = ["cr", "cd", "atk", "spd"]) -> list:
+def filter_stats(full_stats: list, filter: list = []) -> list:
     filtered_stats = []
     for stat in full_stats:
         for f in filter:
@@ -63,6 +67,7 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
         lowest_75_84 = 1000
         highest_84_95 = 0
         highest_75_84 = 0
+        filtered_best = []
         total_amount = 0
         for row in reader:
             if "Slime" in row["monster_n"] or\
@@ -73,7 +78,7 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
                 continue
             if row["slot"] in slots:
                 qty = has_stats(row, stat_list)
-                if qty == match_qty:
+                if qty >= match_qty:
                     total_amount += 1
                     # just changing format to reuse the boozero eff function 
                     b_stats = get_boozero_stats(row)
@@ -84,13 +89,17 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
                     score = calc_score(b_stats)
                     # Is adjusted score to grow as boozero efficiency
                     adjusted_score = calc_adjusted_score(b_stats)
-                    b_stats = filter_stats(b_stats)
-                    b_eff = calc_eff(b_stats)
+                    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi']
+                    filtered_stats = filter_stats(b_stats, f_stats)
+                    # Adjusted score adjusted to only filtered stats
+                    b_eff = calc_adjusted_score(filtered_stats)
                     if boozero_eff < 75.0:
                         i_75.append(get_rune(row, b_eff, boozero_eff\
                                              , score, adjusted_score))
                         count[0] += 1
                     elif 75.0 <= boozero_eff < 85.0:
+                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
                         i_75_84.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                         if adjusted_score > highest_75_84:
@@ -99,6 +108,8 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
                             lowest_75_84 = adjusted_score
                         count[1] += 1
                     elif 85.0 <= boozero_eff < 95.0:
+                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
                         i_84_95.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                         if adjusted_score < lowest_84_95:
@@ -107,6 +118,8 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
                             highest_84_95 = adjusted_score
                         count[2] += 1
                     elif 95.0 <= boozero_eff :
+                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
                         i_95.append(get_rune(row, b_eff, boozero_eff\
                                              , score, adjusted_score))
                         count[3] += 1
@@ -118,11 +131,12 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
         i_75_84 = sorted(i_75_84, key=lambda x: x["Score"])
         i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
         i_95 = sorted(i_95, key=lambda x: x["Score"])
+        filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
         output_data("75", i_75)
         output_data("75_84", i_75_84)
         output_data("84_95", i_84_95)
         output_data("95", i_95)
-
+        output_data("FastDPS", filtered_best)
 def main():
     # stat_list = ["SPD", "HP%", "DEF%"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
