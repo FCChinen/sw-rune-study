@@ -55,7 +55,7 @@ def output_data(name: str, data: list):
 # - Score(The official gaming score, it may vary by 1 point)
 # - Adjusted Score(The official score adjusted to be a function
 # that grews like Boozero eff)
-def raw_analysis(stat_list: list, slots: list, match_qty: int):
+def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
         i_75 = []
@@ -89,7 +89,6 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
                     score = calc_score(b_stats)
                     # Is adjusted score to grow as boozero efficiency
                     adjusted_score = calc_adjusted_score(b_stats)
-                    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi']
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
                     b_eff = calc_adjusted_score(filtered_stats)
@@ -127,26 +126,28 @@ def raw_analysis(stat_list: list, slots: list, match_qty: int):
         print(f"lowest 84: {lowest_75_84}\n highest 84: {highest_75_84}\n")
         print(f"lowest 95: {lowest_84_95}\n highest 95: {highest_84_95}\n")
         print(f"total amount: {total_amount}")
-        i_75 = sorted(i_75, key=lambda x: x["Score"])
-        i_75_84 = sorted(i_75_84, key=lambda x: x["Score"])
-        i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
-        i_95 = sorted(i_95, key=lambda x: x["Score"])
+        # i_75 = sorted(i_75, key=lambda x: x["Score"])
+        # i_75_84 = sorted(i_75_84, key=lambda x: x["Score"])
+        # i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
+        # i_95 = sorted(i_95, key=lambda x: x["Score"])
         filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
-        output_data("75", i_75)
-        output_data("75_84", i_75_84)
-        output_data("84_95", i_84_95)
-        output_data("95", i_95)
-        output_data("FastDPS", filtered_best)
+        # output_data("75", i_75)
+        # output_data("75_84", i_75_84)
+        # output_data("84_95", i_84_95)
+        # output_data("95", i_95)
+        output_data(f"FastDPS_Slot{slots[0]}", filtered_best)
 def main():
     # stat_list = ["SPD", "HP%", "DEF%"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
     # stat_list = ["HP%", "CRate", "CDmg"] # HP-based bruiser
     # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
-    stat_list = ["CDmg", "CRate", "ATK%"] # DPS
+    stat_list = ["CDmg", "CRate"] # DPS
+    # The stats are after the mapping so needs to be like this
+    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi']
     # stat_list = []
-    slots = ["1"]
-    match_qty = 3
-    raw_analysis(stat_list, slots, match_qty)
+    slots = ["3"]
+    match_qty = 2
+    raw_analysis(stat_list, f_stats, slots, match_qty)
 
 if __name__ == "__main__":
     main()

@@ -13,7 +13,7 @@ def checking_stats(row: dict, stat: str) -> int:
 def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
              score: int = 0, adjusted_score: int = 0) -> dict:
     idx_list = [1,2,3,4]
-    custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI" \
+    custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI", \
                     "DEF%", "DEF%I", "HP%", "HP%I", "ATK flat", "ATK flatI", "DEF flat", "DEF flatI",\
                     "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
                     "Eff", "BEff", "Score", "AdjustedScore"]
