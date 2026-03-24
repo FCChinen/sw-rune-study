@@ -138,27 +138,28 @@ def raw_analysis(stat_list: list, f_stats: list, \
         # output_data("95", i_95)
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 def main():
-    # stat_list = ["SPD", "HP%", "DEF%"] # Tank/Sup
+    stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
-    # stat_list = ["HP%", "CRate", "CDmg"] # HP-based bruiser
-    # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
+    # stat_list = ["SPD", "HP%", "CRate", "CDmg"] # HP-based bruiser
+    # stat_list = ["SPD", "DEF%", "CRate", "CDmg"] # Def-based bruiser
     # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
     # stat_list = ["CDmg", "CRate"] # DPS for slot 3
     # stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
-    stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3/5
+    # stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3/5
     # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
     # stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
     # stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
     # stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
     # The stats are after the mapping so needs to be like this
-    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
+    f_stats = ['spd', 'spdi', 'hp', 'hpi', 'def', 'defi', 'res'] # Tank/Support
+    # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["5"]
+    slots = ["1"]
     match_qty = 1
     # only needed for 2/4/6
     main_stat = "ATK%"
-    filename = "FastDPS"
+    filename = "TankSup"
     raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
 if __name__ == "__main__":
