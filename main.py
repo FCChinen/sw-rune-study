@@ -97,9 +97,6 @@ def raw_analysis(stat_list: list, f_stats: list, \
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
                     b_eff = calc_adjusted_score(filtered_stats)
-                    if row["set"] == "Despair":
-                        print(filtered_stats)
-                        print(b_eff)
                     filtered_best.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                     if boozero_eff < 75.0:
@@ -147,8 +144,9 @@ def main():
     # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
     # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
     # stat_list = ["CDmg", "CRate"] # DPS for slot 3
-    stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
-    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2
+    # stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
+    stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3
+    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or slow slot 1/3
     # stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
     # stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
     # stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
@@ -156,7 +154,7 @@ def main():
     f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["6"]
+    slots = ["1"]
     match_qty = 1
     # only needed for 2/4/6
     main_stat = "ATK%"

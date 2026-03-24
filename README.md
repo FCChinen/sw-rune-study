@@ -7,8 +7,8 @@ DPS: 25 Runes per Slot and 5 SPD for slot 2
 Slow-DPS: Calculating score for ATK% + CDmg + CRate
 
 Slot 1:
-Lowest Score: 104
-Highest Score: 125
+Lowest Score: 148
+Highest Score: 155
 
 Slot 3:
 Lowest Score: 98
@@ -33,8 +33,8 @@ Highest Score: 89
 Fast-DPS: SPD + ATK% + CDmg + CRate
 
 Slot 1:
-Lowest Score: 111
-Highest Score: 148
+Lowest Score: 191
+Highest Score: 210
 
 Slot 3:
 Highest Score: 150

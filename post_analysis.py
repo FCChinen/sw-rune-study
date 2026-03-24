@@ -1,6 +1,8 @@
 import json
 from decimal import Decimal
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, asdict, field, fields
+import glob
+import os
 
 @dataclass
 class Rune:
@@ -12,25 +14,38 @@ class Rune:
     SPDI: int | None 
     RES: int | None
     RESI: int| None  
-    ATK: int | None
-    ATKI: int | None
-    DEF: int | None
-    DEFI: int | None
-    HP: int | None
-    HPI: int | None
+    ATK: int | None = field(metadata={"json": "ATK%"})
+    ATKI: int | None = field(metadata={"json": "ATK%I"})
+    DEF: int | None = field(metadata={"json": "DEF%"})
+    DEFI: int | None = field(metadata={"json": "DEF%I"})
+    HP: int | None = field(metadata={"json": "HP%"})
+    HPI: int | None = field(metadata={"json": "HP%I"})
     ACC: int | None
     ACCI: int | None
-    ATKFlat: int | None
-    ATKFlatI: int | None
-    DEFFlat: int | None
-    DEFFlatI: int | None
-    HPFlat: int | None
-    HPFlatI: int | None
+    ATKFlat: int | None = field(metadata={"json": "ATK flat"})
+    ATKFlatI: int | None = field(metadata={"json": "ATK flatI"})
+    DEFFlat: int | None = field(metadata={"json": "DEF flat"})
+    DEFFlatI: int | None = field(metadata={"json": "DEF flatI"})
+    HPFlat: int | None = field(metadata={"json": "HP flat"})
+    HPFlatI: int | None = field(metadata={"json": "HP flatI"})
     Set: str
     Eff: Decimal = field(compare=False)
     BEff: Decimal = field(compare=False)
-    Score: int
-    AdjustedScore: int
+    Score: int = field(compare=False)
+    AdjustedScore: int = field(compare=False)
+
+def custom_asdict(obj):
+    result = {}
+    for f in fields(obj):
+        val = getattr(obj, f.name)
+        # Pega o nome customizado se existir, senão usa o nome da variável
+        key = f.metadata.get("json", f.name)
+        
+        if hasattr(val, "__dataclass_fields__"):
+            result[key] = custom_asdict(val)
+        else:
+            result[key] = val
+    return result
 
 def convert_rune(r: dict) -> Rune:
     return Rune(CRate = r.get("CRate"),\
@@ -61,9 +76,8 @@ def convert_rune(r: dict) -> Rune:
                 Score = r.get("Score", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
 
-name = "FastDPS_Slot6"
-compare = True 
-compare_name = "SlowDPS_Slot6"
+slot = "Slot1"
+name = f"FastDPS_{slot}"
 rune_qty = 20
 
 with open(f"./analysis/{name}.txt", "r") as f:
@@ -71,26 +85,36 @@ with open(f"./analysis/{name}.txt", "r") as f:
 
 converted_data = [convert_rune(d) for d in data]
 
-if compare:
-    with open(f"./kept_runes/{compare_name}.txt", "r") as f:
-        compare_data = json.loads(f.read())
-    converted_compare = [convert_rune(d) for d in compare_data]
+path_pattern = os.path.join("./kept_runes/", "*.txt")
+txt_files = glob.glob(path_pattern)
+txt_files = [t for t in txt_files if name not in t]
+if txt_files:
+    full_compare_list = []
+    for compare_name in txt_files:
+        if slot not in compare_name:
+            continue
+        print(compare_name)
+        with open(compare_name, "r") as f:
+            compare_data = json.loads(f.read())
+        c_converted_compare = [convert_rune(d) for d in compare_data]
+        for c in c_converted_compare:
+            full_compare_list.append(c)
 
-    idx = (-1)*(rune_qty + len(converted_compare))
+    idx = (-1)*(rune_qty + len(full_compare_list))
     new_data = converted_data[idx:]
     final_list = []
     for rune in new_data:
-        if rune not in converted_compare:
-            final_list.append({k: v for k, v in asdict(rune).items()\
+        if rune not in full_compare_list:
+            final_list.append({k: v for k, v in custom_asdict(rune).items()\
                 if v is not None})
         else:
             print(f"Rune is removed: {rune}")
     final_list = sorted(final_list, key=lambda x: x["Eff"])
 else:
-    final_list = data[-1*rune_qty:]
+        final_list = data[-1*rune_qty:]
 
 with open(f"./kept_runes/{name}.txt", "w") as f:
-    f.write(json.dumps(final_list, indent=4))
+    f.write(json.dumps(final_list, indent=4, ensure_ascii=False))
 
 print("highest: "+str(final_list[-1]["Eff"]))
 print("lowest: "+str(final_list[0]["Eff"]))

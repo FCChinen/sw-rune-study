@@ -1,9 +1,7 @@
-import json
+import glob
+import os
 
-with open("./kept_runes/FastDPS_Slot2.txt") as f:
-    data = json.loads(f.read())
+path_pattern = os.path.join("./analysis/", "*.txt")
+txt_files = glob.glob(path_pattern)
 
-print(data[-1]["Eff"])
-print(data[-2]["Eff"])
-print(data[0]["Eff"])
-print(data[1]["Eff"])
+print(txt_files)
