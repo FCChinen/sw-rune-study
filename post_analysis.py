@@ -40,7 +40,6 @@ def custom_asdict(obj):
         val = getattr(obj, f.name)
         # Pega o nome customizado se existir, senão usa o nome da variável
         key = f.metadata.get("json", f.name)
-        
         if hasattr(val, "__dataclass_fields__"):
             result[key] = custom_asdict(val)
         else:
@@ -76,7 +75,7 @@ def convert_rune(r: dict) -> Rune:
                 Score = r.get("Score", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
 
-slot = "Slot1"
+slot = "Slot5"
 name = f"FastDPS_{slot}"
 rune_qty = 20
 
@@ -110,8 +109,9 @@ if txt_files:
         else:
             print(f"Rune is removed: {rune}")
     final_list = sorted(final_list, key=lambda x: x["Eff"])
+    final_list = final_list[-1*rune_qty:]
 else:
-        final_list = data[-1*rune_qty:]
+    final_list = data[-1*rune_qty:]
 
 with open(f"./kept_runes/{name}.txt", "w") as f:
     f.write(json.dumps(final_list, indent=4, ensure_ascii=False))

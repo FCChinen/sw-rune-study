@@ -11,12 +11,12 @@ Lowest Score: 148
 Highest Score: 155
 
 Slot 3:
-Lowest Score: 98
-Highest Score: 103
+Lowest Score: 95
+Highest Score: 107 
 
 Slot 5:
-Lowest Score: 147
-Highest Score: 164
+Lowest Score: 141
+Highest Score: 150
 
 Slot 2(ATK%):
 Lowest Score: 73
@@ -37,8 +37,12 @@ Lowest Score: 191
 Highest Score: 210
 
 Slot 3:
-Highest Score: 150
-Lowest Score: 132
+Highest Score: 130
+Lowest Score: 147
+
+Slot 5:
+Highest Score: 204
+Lowest Score: 181
 
 Slot 2(ATK%):
 Lowest Score: 85

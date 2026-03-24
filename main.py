@@ -145,8 +145,8 @@ def main():
     # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
     # stat_list = ["CDmg", "CRate"] # DPS for slot 3
     # stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
-    stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3
-    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or slow slot 1/3
+    stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3/5
+    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
     # stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
     # stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
     # stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
@@ -154,7 +154,7 @@ def main():
     f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["1"]
+    slots = ["5"]
     match_qty = 1
     # only needed for 2/4/6
     main_stat = "ATK%"

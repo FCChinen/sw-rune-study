@@ -1,0 +1,58 @@
+[
+    {
+        "CRate": 11,
+        "CDmg": 8,
+        "ATK%": 23,
+        "ACC": 8,
+        "Set": "Fatal",
+        "Eff": 141,
+        "BEff": 74.77285714285713,
+        "Score": 136,
+        "AdjustedScore": 161
+    },
+    {
+        "CRate": 17,
+        "CDmg": 12,
+        "SPD": 6,
+        "ATK%": 11,
+        "Set": "Energy",
+        "Eff": 142,
+        "BEff": 85.58428571428571,
+        "Score": 138,
+        "AdjustedScore": 200
+    },
+    {
+        "CRate": 16,
+        "CDmgI": 6,
+        "ATK%": 21,
+        "DEF%": 7,
+        "Set": "Fatal",
+        "Eff": 147,
+        "BEff": 90.93714285714286,
+        "Score": 143,
+        "AdjustedScore": 213
+    },
+    {
+        "CRate": 8,
+        "CDmg": 9,
+        "ATK%": 29,
+        "DEF%": 7,
+        "Set": "Vampire",
+        "Eff": 149,
+        "BEff": 86.92571428571429,
+        "Score": 142,
+        "AdjustedScore": 212
+    },
+    {
+        "CRate": 9,
+        "CDmg": 8,
+        "ATK%": 29,
+        "HP%": 8,
+        "ACCI": 6,
+        "Set": "Fatal",
+        "Eff": 150,
+        "BEff": 94.11285714285714,
+        "Score": 160,
+        "AdjustedScore": 230
+    }
+]
