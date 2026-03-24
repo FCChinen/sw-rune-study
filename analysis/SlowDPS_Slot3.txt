@@ -1540,17 +1540,6 @@
     },
     {
         "CRate": 20,
-        "CDmg": 12,
-        "SPD": 8,
-        "HP%": 7,
-        "Set": "Swift",
-        "Eff": 100,
-        "BEff": 88.89428571428572,
-        "Score": 144,
-        "AdjustedScore": 206
-    },
-    {
-        "CRate": 20,
         "CDmgI": 6,
         "HP%": 8,
         "HP flat": 284,

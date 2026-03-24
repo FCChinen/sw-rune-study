@@ -1,4 +1,3 @@
-
 def get_data():
     with open('rune.txt', 'r') as f:
         return f.readlines()

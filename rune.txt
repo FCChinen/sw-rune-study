@@ -1,4 +1,2 @@
-cd 6
-cr 11
-atk 6
-spd 15
+atkm 13
+atk 8

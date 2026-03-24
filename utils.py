@@ -107,4 +107,5 @@ def has_stats(row: dict, stat_list: list = []) -> int:
         val = checking_stats(row, stat)
         if val > 0:
             count += 1
+
     return count

@@ -1,0 +1,59 @@
+[
+    {
+        "CRate": 6,
+        "CDmg": 8,
+        "ATK%": 26,
+        "HP flat": 263,
+        "Set": "Blade",
+        "Eff": 132,
+        "BEff": 71.25285714285714,
+        "Score": 112,
+        "AdjustedScore": 137
+    },
+    {
+        "CRate": 5,
+        "CDmg": 21,
+        "ATK%": 13,
+        "HP%": 12,
+        "Set": "Swift",
+        "Eff": 133,
+        "BEff": 85.65,
+        "Score": 138,
+        "AdjustedScore": 208
+    },
+    {
+        "CRate": 17,
+        "CDmg": 8,
+        "ATK%": 13,
+        "DEF%": 14,
+        "Set": "Energy",
+        "Eff": 136,
+        "BEff": 88.75285714285714,
+        "Score": 146,
+        "AdjustedScore": 216
+    },
+    {
+        "CRate": 12,
+        "CDmg": 8,
+        "ATK%": 20,
+        "RES": 8,
+        "ACCI": 6,
+        "Set": "Revenge",
+        "Eff": 137,
+        "BEff": 79.10285714285715,
+        "Score": 147,
+        "AdjustedScore": 172
+    },
+    {
+        "CRate": 7,
+        "CDmg": 13,
+        "ATK%": 30,
+        "HP%": 6,
+        "HP flatI": 216,
+        "Set": "Will",
+        "Eff": 142,
+        "BEff": 85.32714285714286,
+        "Score": 136,
+        "AdjustedScore": 206
+    }
+]

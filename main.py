@@ -40,12 +40,12 @@ def filter_stats(full_stats: list, filter: list = []) -> list:
             if f not in stat:
                 continue
             filtered_stats.append(stat)
+            break
     return filtered_stats
 
 def output_data(name: str, data: list):
     with open(f"{name}.txt", "w") as f:
         f.write(json.dumps(data, indent=4))
-
 # The raw analysis is made to create the needed information of
 # the runes by: stats and by slot
 # (Needs to get runes-data.csv from SWOP Runes export:!)
@@ -55,7 +55,9 @@ def output_data(name: str, data: list):
 # - Score(The official gaming score, it may vary by 1 point)
 # - Adjusted Score(The official score adjusted to be a function
 # that grews like Boozero eff)
-def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
+def raw_analysis(stat_list: list, f_stats: list, \
+                 slots: list, match_qty: int, \
+                 main_stat: str = "", filename: str = ""):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
         i_75 = []
@@ -70,6 +72,9 @@ def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
         filtered_best = []
         total_amount = 0
         for row in reader:
+            if slots[0] in ["2", "4", "6"]:
+                if main_stat != row["m_t"]:
+                    continue
             if "Slime" in row["monster_n"] or\
                 "Forest"in row["monster_n"] or\
                 "Inventory"in row["monster_n"]:
@@ -92,13 +97,16 @@ def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
                     b_eff = calc_adjusted_score(filtered_stats)
+                    if row["set"] == "Despair":
+                        print(filtered_stats)
+                        print(b_eff)
+                    filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
                     if boozero_eff < 75.0:
                         i_75.append(get_rune(row, b_eff, boozero_eff\
                                              , score, adjusted_score))
                         count[0] += 1
                     elif 75.0 <= boozero_eff < 85.0:
-                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
                         i_75_84.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                         if adjusted_score > highest_75_84:
@@ -107,8 +115,6 @@ def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
                             lowest_75_84 = adjusted_score
                         count[1] += 1
                     elif 85.0 <= boozero_eff < 95.0:
-                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
                         i_84_95.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                         if adjusted_score < lowest_84_95:
@@ -117,8 +123,6 @@ def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
                             highest_84_95 = adjusted_score
                         count[2] += 1
                     elif 95.0 <= boozero_eff :
-                        filtered_best.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
                         i_95.append(get_rune(row, b_eff, boozero_eff\
                                              , score, adjusted_score))
                         count[3] += 1
@@ -135,19 +139,29 @@ def raw_analysis(stat_list: list, f_stats: list, slots: list, match_qty: int):
         # output_data("75_84", i_75_84)
         # output_data("84_95", i_84_95)
         # output_data("95", i_95)
-        output_data(f"FastDPS_Slot{slots[0]}", filtered_best)
+        output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 def main():
     # stat_list = ["SPD", "HP%", "DEF%"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
     # stat_list = ["HP%", "CRate", "CDmg"] # HP-based bruiser
     # stat_list = ["DEF%", "CRate", "CDmg"] # Def-based bruiser
-    stat_list = ["CDmg", "CRate"] # DPS
+    # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
+    # stat_list = ["CDmg", "CRate"] # DPS for slot 3
+    stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
+    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2
+    # stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
+    # stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
+    # stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
     # The stats are after the mapping so needs to be like this
-    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi']
+    f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
+    # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["3"]
-    match_qty = 2
-    raw_analysis(stat_list, f_stats, slots, match_qty)
+    slots = ["6"]
+    match_qty = 1
+    # only needed for 2/4/6
+    main_stat = "ATK%"
+    filename = "FastDPS"
+    raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
 if __name__ == "__main__":
     main()
