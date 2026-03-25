@@ -1,0 +1,218 @@
+[
+    {
+        "CRate": 5,
+        "RES": 7,
+        "ATK%": 18,
+        "HP%": 19,
+        "Set": "Swift",
+        "Eff": 90,
+        "BEff": 70.65,
+        "Score": 126,
+        "AdjustedScore": 196
+    },
+    {
+        "RES": 11,
+        "ATK%": 13,
+        "HP%": 16,
+        "Set": "Fight",
+        "Eff": 96,
+        "BEff": 67.5,
+        "Score": 104,
+        "AdjustedScore": 174
+    },
+    {
+        "CRate": 6,
+        "HP%": 26,
+        "ACC": 8,
+        "Set": "Energy",
+        "Eff": 97,
+        "BEff": 61.190000000000005,
+        "Score": 112,
+        "AdjustedScore": 137
+    },
+    {
+        "CRate": 13,
+        "RES": 6,
+        "ATK%": 10,
+        "HP%": 24,
+        "Set": "Destroy",
+        "Eff": 100,
+        "BEff": 77.28999999999999,
+        "Score": 143,
+        "AdjustedScore": 213
+    },
+    {
+        "CRate": 4,
+        "ATK%": 16,
+        "DEF%": 30,
+        "ACCI": 8,
+        "Set": "Blade",
+        "Eff": 100,
+        "BEff": 84.32,
+        "Score": 155,
+        "AdjustedScore": 225
+    },
+    {
+        "RES": 23,
+        "ATK%I": 5,
+        "HP%": 6,
+        "ACC": 16,
+        "Set": "Intangible",
+        "Eff": 102,
+        "BEff": 67.97,
+        "Score": 130,
+        "AdjustedScore": 155
+    },
+    {
+        "ATK%": 30,
+        "DEF%": 11,
+        "HP%": 5,
+        "ACCI": 7,
+        "Set": "Nemesis",
+        "Eff": 102,
+        "BEff": 78.0,
+        "Score": 112,
+        "AdjustedScore": 186
+    },
+    {
+        "CDmg": 4,
+        "ATK%I": 5,
+        "DEF%": 31,
+        "ACC": 5,
+        "Set": "Swift",
+        "Eff": 105,
+        "BEff": 59.77142857142857,
+        "Score": 116,
+        "AdjustedScore": 141
+    },
+    {
+        "CRate": 17,
+        "DEF%": 5,
+        "HP%": 8,
+        "Set": "Fatal",
+        "Eff": 106,
+        "BEff": 60.41,
+        "Score": 92,
+        "AdjustedScore": 162
+    },
+    {
+        "CRate": 9,
+        "ATK%": 23,
+        "DEF%": 14,
+        "HP%": 8,
+        "ACCI": 6,
+        "Set": "Swift",
+        "Eff": 108,
+        "BEff": 85.97,
+        "Score": 140,
+        "AdjustedScore": 215
+    },
+    {
+        "CDmg": 6,
+        "RES": 21,
+        "DEF%": 12,
+        "Set": "Accuracy",
+        "Eff": 110,
+        "BEff": 53.95714285714286,
+        "Score": 102,
+        "AdjustedScore": 126
+    },
+    {
+        "CRate": 10,
+        "CDmg": 7,
+        "RES": 15,
+        "DEF%": 12,
+        "HP%I": 8,
+        "Set": "Fatal",
+        "Eff": 112,
+        "BEff": 76.3,
+        "Score": 140,
+        "AdjustedScore": 165
+    },
+    {
+        "CRate": 11,
+        "CDmg": 15,
+        "DEF%": 10,
+        "HP%": 12,
+        "Set": "Despair",
+        "Eff": 112,
+        "BEff": 78.77285714285713,
+        "Score": 121,
+        "AdjustedScore": 191
+    },
+    {
+        "CRate": 15,
+        "ATK%": 14,
+        "DEF%": 11,
+        "HP%": 20,
+        "Set": "Despair",
+        "Eff": 115,
+        "BEff": 76.95,
+        "Score": 117,
+        "AdjustedScore": 192
+    },
+    {
+        "ATK%": 6,
+        "DEF%": 19,
+        "HP%": 13,
+        "ACC": 13,
+        "Set": "Despair",
+        "Eff": 120,
+        "BEff": 69.0,
+        "Score": 98,
+        "AdjustedScore": 172
+    },
+    {
+        "CRate": 6,
+        "CDmgI": 4,
+        "RES": 16,
+        "HP%": 27,
+        "Set": "Despair",
+        "Eff": 140,
+        "BEff": 84.56142857142858,
+        "Score": 146,
+        "AdjustedScore": 171
+    },
+    {
+        "CRate": 11,
+        "DEF%": 21,
+        "HP%": 6,
+        "Set": "Destroy",
+        "Eff": 141,
+        "BEff": 66.53,
+        "Score": 108,
+        "AdjustedScore": 178
+    },
+    {
+        "RES": 8,
+        "ATK%": 25,
+        "DEF%": 8,
+        "HP%": 13,
+        "Set": "Fatal",
+        "Eff": 142,
+        "BEff": 84.0,
+        "Score": 135,
+        "AdjustedScore": 210
+    },
+    {
+        "CRate": 6,
+        "ATK%": 11,
+        "DEF%": 14,
+        "HP%": 21,
+        "Set": "Blade",
+        "Eff": 158,
+        "BEff": 83.98,
+        "Score": 135,
+        "AdjustedScore": 210
+    },
+    {
+        "ATK%": 5,
+        "DEF%": 31,
+        "HP%": 6,
+        "Set": "Fatal",
+        "Eff": 166,
+        "BEff": 76.8,
+        "Score": 109,
+        "AdjustedScore": 184
+    }
+]

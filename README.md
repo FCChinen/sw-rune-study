@@ -56,6 +56,23 @@ Slot 6:
 Lowest Score: 75
 Highest Score: 151
 
+Tank/Sup: 40 runes for each slot
+2: 20 SPD 15 HP 5 DEF
+4: 30 HP 10 DEF
+6: 30 HP 10 DEF Maybe RES?
+
+Slot 1:
+Lowest Score: 151
+Highest Score: 184
+
+Slot 3:
+Lowest Score: 182
+Highest Score: 221
+
+Slot 5:
+Lowest Score: 173
+Highest Score: 211
+
 
 # How to use
 First of all, get the data from swop and export the runes on the runes tab and get the file runes-data.csv and move to the root of the project.

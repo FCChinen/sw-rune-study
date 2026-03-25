@@ -155,10 +155,10 @@ def main():
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["1"]
+    slots = ["2"]
     match_qty = 1
     # only needed for 2/4/6
-    main_stat = "ATK%"
+    main_stat = "SPD"
     filename = "TankSup"
     raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
