@@ -1,2 +1,5 @@
-atkm 13
-atk 8
+spd 17
+hpmi 355
+acc 11
+hp 8
+res 15

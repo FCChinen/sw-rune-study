@@ -57,9 +57,17 @@ Lowest Score: 75
 Highest Score: 151
 
 Tank/Sup: 40 runes for each slot
-2: 20 SPD 15 HP 5 DEF
+2: 20 SPD 10 HP 10 DEF
 4: 30 HP 10 DEF
 6: 30 HP 10 DEF Maybe RES?
+
+Slot 2(SPD):
+Lowest Score: 126
+Highest Score: 184
+
+Slot 2(HP):
+Lowest Score: 147
+Hightest Score: 170
 
 Slot 1:
 Lowest Score: 151

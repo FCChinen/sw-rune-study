@@ -158,8 +158,8 @@ def main():
     slots = ["2"]
     match_qty = 1
     # only needed for 2/4/6
-    main_stat = "SPD"
-    filename = "TankSup"
+    main_stat = "HP%"
+    filename = "TankSup_HP"
     raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
 if __name__ == "__main__":

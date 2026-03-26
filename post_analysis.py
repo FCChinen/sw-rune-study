@@ -63,12 +63,12 @@ def convert_rune(r: dict) -> Rune:
                 HPI = r.get("HP%I"),\
                 ACC = r.get("ACC"),\
                 ACCI = r.get("ACCI"),\
-                ATKFlat = r.get("ATK Flat"),\
-                ATKFlatI = r.get("ATK FlatI"),\
-                DEFFlat = r.get("DEF Flat"),\
-                DEFFlatI = r.get("DEF FlatI"),\
-                HPFlat = r.get("HP Flat"),\
-                HPFlatI = r.get("HP FlatI"),\
+                ATKFlat = r.get("ATK flat"),\
+                ATKFlatI = r.get("ATK flatI"),\
+                DEFFlat = r.get("DEF flat"),\
+                DEFFlatI = r.get("DEF flatI"),\
+                HPFlat = r.get("HP flat"),\
+                HPFlatI = r.get("HP flatI"),\
                 Set = r.get("Set", ""),\
                 Eff = r.get("Eff", Decimal("0.0")),\
                 BEff = r.get("BEff", Decimal("0.0")),\
@@ -76,8 +76,8 @@ def convert_rune(r: dict) -> Rune:
                 AdjustedScore = r.get("AdjustedScore", 0))
 
 slot = "Slot2"
-name = f"TankSup_{slot}"
-rune_qty = 20
+name = f"TankSup_HP_{slot}"
+rune_qty = 10
 
 with open(f"./analysis/{name}.txt", "r") as f:
     data = json.loads(f.read())
