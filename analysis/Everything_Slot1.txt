@@ -26,6 +26,7 @@
         "CDmg": 7,
         "ATK%": 8,
         "Set": "Fatal",
+        "Eff": 0,
         "BEff": 43.980000000000004,
         "Score": 59,
         "AdjustedScore": 84
@@ -36,6 +37,7 @@
         "ATK%": 6,
         "ACC": 6,
         "Set": "Fatal",
+        "Eff": 0,
         "BEff": 45.50714285714286,
         "Score": 63,
         "AdjustedScore": 88

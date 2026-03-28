@@ -46,6 +46,7 @@ def filter_stats(full_stats: list, filter: list = []) -> list:
 def output_data(name: str, data: list):
     with open(f"{name}.txt", "w") as f:
         f.write(json.dumps(data, indent=4))
+
 # The raw analysis is made to create the needed information of
 # the runes by: stats and by slot
 # (Needs to get runes-data.csv from SWOP Runes export:!)
@@ -140,9 +141,45 @@ def raw_analysis(stat_list: list, f_stats: list, \
         # output_data("75_84", i_75_84)
         # output_data("84_95", i_84_95)
         # output_data("95", i_95)
-        output_data(f"./analysis/everything_{filename}_Slot{slots[0]}", everything)
+        output_data(f"./analysis/{filename}_Slot{slots[0]}", everything)
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 
+# Creating a new function to get analysis of the BEST RUNES 
+def best_analysis(stat_list: list, f_stats: list, \
+                 slots: list, match_qty: int, \
+                 main_stat: str = "", filename: str = ""):
+    with open("runes-data.csv", "r") as f:
+        reader = csv.DictReader(f, delimiter = ";")
+        total_amount = 0
+        filtered_best = []
+        for row in reader:
+            if slots[0] in ["2", "4", "6"]:
+                if main_stat != row["m_t"]:
+                    continue
+            if "Slime" in row["monster_n"] or\
+                "Forest"in row["monster_n"] or\
+                "Inventory"in row["monster_n"]:
+                row["monster_n"] = ""
+            if row["monster_n"] != "":
+                continue
+            if row["slot"] in slots:
+                total_amount += 1
+                # just changing format to reuse the boozero eff function 
+                b_stats = get_boozero_stats(row)
+                #Excluding runes with spd
+                # getting the boozero efficiency
+                boozero_eff = calc_eff(b_stats)
+                # calculating the score, it may vary 1 point from the official
+                score = calc_score(b_stats)
+                # Is adjusted score to grow as boozero efficiency
+                adjusted_score = calc_adjusted_score(b_stats)
+                filtered_stats = filter_stats(b_stats, f_stats)
+                # Adjusted score adjusted to only filtered stats
+                b_eff = calc_adjusted_score(filtered_stats)
+                filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                                            , score, adjusted_score))
+        filtered_best = sorted(filtered_best, key=lambda x: x["AdjustedScore"])
+        output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 def main():
     stat_list = ["SPD", "HP%", "DEF%", "RES", "CRate", "CDmg", "ATK%", "ACC"]
     # stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
@@ -166,7 +203,7 @@ def main():
     match_qty = 1
     # only needed for 2/4/6
     main_stat = "HP%"
-    filename = "everything"
+    filename = "Everything"
     raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
 if __name__ == "__main__":

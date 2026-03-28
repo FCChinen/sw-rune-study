@@ -75,18 +75,19 @@ def convert_rune(r: dict) -> Rune:
                 Score = r.get("Score", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
 
-slot = "FastDPS_Slot1"
+slot = "Slot1"
 name = f"Everything_{slot}"
 rune_qty = 75
 
-with open(f"./analysis/everything_Slot1.txt", "r") as f:
+with open(f"./analysis/Everything_Slot1.txt", "r") as f:
     data = json.loads(f.read())
 
 converted_data = [convert_rune(d) for d in data]
 
 path_pattern = os.path.join("./kept_runes/", "*.txt")
-txt_files = glob.glob(path_pattern)
-txt_files = [t for t in txt_files if name not in t]
+# txt_files = glob.glob(path_pattern)
+# txt_files = [t for t in txt_files if name not in t]
+txt_files = ["./kept_runes/FastDPS_Slot1.txt", "./kept_runes/SlowDPS_Slot1.txt"]
 if txt_files:
     full_compare_list = []
     for compare_name in txt_files:

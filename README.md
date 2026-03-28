@@ -1,6 +1,11 @@
 # sw-rune-study
 repository to study my rune base
 
+# How to use
+First of all, get the data from swop and export the runes on the runes tab and get the file runes-data.csv and move to the root of the project.
+
+# Study itself
+
 For me to recall(Calculating using regular score)
 DPS: 25 Runes per Slot and 5 SPD for slot 2
 
@@ -101,7 +106,9 @@ Slot 5:
 Lowest Score: 173
 Highest Score: 211
 
+# Changing strategy
 
-# How to use
-First of all, get the data from swop and export the runes on the runes tab and get the file runes-data.csv and move to the root of the project.
+As I was doing the tank stuff, I noticed that most of my tank runes are garbage.
+So Im changing the strategy. I'll keep the best 75 runes of each slot.
 
+So I created the new post_analysis2.py create the analysis, only ignoring the DPS runes

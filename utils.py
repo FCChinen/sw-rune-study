@@ -11,17 +11,31 @@ def checking_stats(row: dict, stat: str) -> int:
 
 
 def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
-             score: int = 0, adjusted_score: int = 0) -> dict:
+             score: int = 0, adjusted_score: int = 0, \
+             dps_score: int = 0,\
+             tank_score: int = 0,\
+             control_score: int = 0,\
+             bruiser_score: int = 0
+             ) -> dict:
     idx_list = [1,2,3,4]
     custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI", \
                     "DEF%", "DEF%I", "HP%", "HP%I", "ATK flat", "ATK flatI", "DEF flat", "DEF flatI",\
                     "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
+                    "DPSScore", "TankScore", "ControlScore", "BruiserScore", \
                     "Eff", "BEff", "Score", "AdjustedScore"]
     rune = dict()
     for idx in idx_list:
         rune[row["s"+str(idx)+"_t"]] = int(row["s"+str(idx)+"_v"])
     if int(row["i_v"]) > 0:
         rune[row["i_t"]+"I"] = int(row["i_v"])
+    if tank_score is not None:
+        rune["TankScore"] = tank_score
+    if tank_score is not None:
+        rune["ControlScore"] = control_score
+    if tank_score is not None:
+        rune["BruiserScore"] = bruiser_score
+    if tank_score is not None:
+        rune["DPSScore"] = dps_score
     if eff:
         rune["Eff"] = eff
     if boozero_eff:
