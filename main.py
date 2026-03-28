@@ -70,6 +70,7 @@ def raw_analysis(stat_list: list, f_stats: list, \
         highest_84_95 = 0
         highest_75_84 = 0
         filtered_best = []
+        everything = []
         total_amount = 0
         for row in reader:
             if slots[0] in ["2", "4", "6"]:
@@ -97,6 +98,8 @@ def raw_analysis(stat_list: list, f_stats: list, \
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
                     b_eff = calc_adjusted_score(filtered_stats)
+                    everything.append(get_rune(row, b_eff, boozero_eff\
+                                                , score, adjusted_score))
                     filtered_best.append(get_rune(row, b_eff, boozero_eff\
                                                 , score, adjusted_score))
                     if boozero_eff < 75.0:
@@ -132,13 +135,17 @@ def raw_analysis(stat_list: list, f_stats: list, \
         # i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
         # i_95 = sorted(i_95, key=lambda x: x["Score"])
         filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
+        everything = sorted(everything, key=lambda x: x["AdjustedScore"])
         # output_data("75", i_75)
         # output_data("75_84", i_75_84)
         # output_data("84_95", i_84_95)
         # output_data("95", i_95)
+        output_data(f"./analysis/everything_{filename}_Slot{slots[0]}", everything)
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
+
 def main():
-    stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
+    stat_list = ["SPD", "HP%", "DEF%", "RES", "CRate", "CDmg", "ATK%", "ACC"]
+    # stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
     # stat_list = ["SPD", "HP%", "CRate", "CDmg"] # HP-based bruiser
     # stat_list = ["SPD", "DEF%", "CRate", "CDmg"] # Def-based bruiser
@@ -155,11 +162,11 @@ def main():
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
     # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
     # stat_list = []
-    slots = ["2"]
+    slots = ["1"]
     match_qty = 1
     # only needed for 2/4/6
     main_stat = "HP%"
-    filename = "TankSup_HP"
+    filename = "everything"
     raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
 
 if __name__ == "__main__":

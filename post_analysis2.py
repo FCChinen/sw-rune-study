@@ -75,11 +75,11 @@ def convert_rune(r: dict) -> Rune:
                 Score = r.get("Score", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
 
-slot = "Slot6"
-name = f"TankSup_HP_{slot}"
-rune_qty = 20
+slot = "FastDPS_Slot1"
+name = f"Everything_{slot}"
+rune_qty = 75
 
-with open(f"./analysis/{name}.txt", "r") as f:
+with open(f"./analysis/everything_Slot1.txt", "r") as f:
     data = json.loads(f.read())
 
 converted_data = [convert_rune(d) for d in data]

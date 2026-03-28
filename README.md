@@ -52,7 +52,7 @@ Slot 4(CD%):
 Lowest Score: 108
 Highest Score: 132
 
-Slot 6:
+Slot 6(ATK%):
 Lowest Score: 75
 Highest Score: 151
 
@@ -62,12 +62,32 @@ Tank/Sup: 40 runes for each slot
 6: 30 HP 10 DEF Maybe RES?
 
 Slot 2(SPD):
-Lowest Score: 126
-Highest Score: 184
+Lowest Score: 90
+Highest Score: 166
 
 Slot 2(HP):
 Lowest Score: 147
-Hightest Score: 170
+Highest Score: 170
+
+Slot 2(DEF):
+Lowest Score: 174
+Highest Score: 160
+
+Slot 4(DEF):
+Lowest Score: 184
+Highest Score: 107
+
+Slot 4 (HP):
+Lowest Score: 79
+Highest Score: 189
+
+Slot 6(DEF):
+Lowest Score: 104
+Highest Score: 180
+
+Slot 6(HP):
+Lowest Score: 107
+Highest Score: 218
 
 Slot 1:
 Lowest Score: 151
