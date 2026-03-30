@@ -145,8 +145,7 @@ def raw_analysis(stat_list: list, f_stats: list, \
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 
 # Creating a new function to get analysis of the BEST RUNES 
-def best_analysis(stat_list: list, f_stats: list, \
-                 slots: list, match_qty: int, \
+def best_analysis(slots: list,\
                  main_stat: str = "", filename: str = ""):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
@@ -166,17 +165,20 @@ def best_analysis(stat_list: list, f_stats: list, \
                 total_amount += 1
                 # just changing format to reuse the boozero eff function 
                 b_stats = get_boozero_stats(row)
-                #Excluding runes with spd
                 # getting the boozero efficiency
                 boozero_eff = calc_eff(b_stats)
                 # calculating the score, it may vary 1 point from the official
                 score = calc_score(b_stats)
                 # Is adjusted score to grow as boozero efficiency
                 adjusted_score = calc_adjusted_score(b_stats)
-                filtered_stats = filter_stats(b_stats, f_stats)
+                stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
+                tank_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
+                stat_list = ["SPD", "ACC"] # Control
+                control_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
+                stat_list = ["SPD", "HP%", "DEF%", "ATK%", "CRate", "CDmg"] # bruiser
+                bruiser_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
                 # Adjusted score adjusted to only filtered stats
-                b_eff = calc_adjusted_score(filtered_stats)
-                filtered_best.append(get_rune(row, b_eff, boozero_eff\
+                filtered_best.append(get_rune(row, 0, boozero_eff\
                                             , score, adjusted_score))
         filtered_best = sorted(filtered_best, key=lambda x: x["AdjustedScore"])
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
