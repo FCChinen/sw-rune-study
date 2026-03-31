@@ -136,12 +136,10 @@ def raw_analysis(stat_list: list, f_stats: list, \
         # i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
         # i_95 = sorted(i_95, key=lambda x: x["Score"])
         filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
-        everything = sorted(everything, key=lambda x: x["AdjustedScore"])
         # output_data("75", i_75)
         # output_data("75_84", i_75_84)
         # output_data("84_95", i_84_95)
         # output_data("95", i_95)
-        output_data(f"./analysis/{filename}_Slot{slots[0]}", everything)
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 
 # Creating a new function to get analysis of the BEST RUNES 
@@ -183,30 +181,48 @@ def best_analysis(slots: list,\
         filtered_best = sorted(filtered_best, key=lambda x: x["AdjustedScore"])
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 def main():
-    stat_list = ["SPD", "HP%", "DEF%", "RES", "CRate", "CDmg", "ATK%", "ACC"]
+    # stat_list = ["SPD", "HP%", "DEF%", "RES", "CRate", "CDmg", "ATK%", "ACC"] # Everything
     # stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
     # stat_list = ["SPD", "HP%", "CRate", "CDmg"] # HP-based bruiser
     # stat_list = ["SPD", "DEF%", "CRate", "CDmg"] # Def-based bruiser
     # stat_list = ["CDmg", "CRate", "ATK%"] # DPS
     # stat_list = ["CDmg", "CRate"] # DPS for slot 3
-    # stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
     # stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3/5
-    # stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
-    # stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
-    # stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
-    # stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
     # The stats are after the mapping so needs to be like this
-    f_stats = ['spd', 'spdi', 'hp', 'hpi', 'def', 'defi', 'res'] # Tank/Support
-    # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
-    # f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
+    # f_stats = ['spd', 'spdi', 'hp', 'hpi', 'def', 'defi', 'res'] # Tank/Support
     # stat_list = []
-    slots = ["1"]
     match_qty = 1
     # only needed for 2/4/6
-    main_stat = "HP%"
-    filename = "Everything"
-    raw_analysis(stat_list, f_stats, slots, match_qty, main_stat, filename)
+    for filename in ["FastDPS", "SlowDPS"]:
+        for i in range(1,7):
+            if filename == "FastDPS":
+                f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi', 'spd', 'spdi'] # FastDPS
+                slots = [str(i)]
+                if i in [1,3,5]:
+                    stat_list = ["SPD", "CRate", "CDmg", "ATK%"] # FastDPS for slot 1/3/5
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "", filename)
+                elif i == 2:
+                    stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "SPD", filename)
+                    stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "ATK%", filename)
+                else:
+                    stat_list = ["CRate", "ATK%", "SPD"] # FastDPS for slot 4
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "CDmg", filename)
+            else:
+                f_stats = ['cr', 'cri', 'atk', 'atki' , 'cd', 'cdi'] # SlowDPS
+                slots = [str(i)]
+                if i in [1,3,5]:
+                    stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "", filename)
+                elif i in [2, 6]:
+                    stat_list = ["CRate", "CDmg"] # SlowDPS for slot 2/6
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "ATK%", filename)
+                else:
+                    stat_list = ["CRate", "ATK%"] # SlowDPS for slot 4
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "CDmg", filename)
+
 
 if __name__ == "__main__":
     main()
