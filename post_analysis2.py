@@ -29,6 +29,10 @@ class Rune:
     HPFlat: int | None = field(metadata={"json": "HP flat"})
     HPFlatI: int | None = field(metadata={"json": "HP flatI"})
     Set: str
+    DPSScore: int
+    TankScore: int
+    ControlScore: int
+    BruiserScore: int
     Eff: Decimal = field(compare=False)
     BEff: Decimal = field(compare=False)
     Score: int = field(compare=False)
@@ -70,52 +74,94 @@ def convert_rune(r: dict) -> Rune:
                 HPFlat = r.get("HP flat"),\
                 HPFlatI = r.get("HP flatI"),\
                 Set = r.get("Set", ""),\
-                Eff = r.get("Eff", Decimal("0.0")),\
-                BEff = r.get("BEff", Decimal("0.0")),\
+                DPSScore = r.get("DPSScore", 0),
+                TankScore = r.get("TankScore", 0),
+                ControlScore = r.get("ControlScore", 0),
+                BruiserScore = r.get("BruiserScore", 0),
+                Eff = r.get("Eff", 0),\
+                BEff = r.get("BEff", 0),\
                 Score = r.get("Score", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
+easier = {
+    "slot1":{
+        "filename": f"./analysis/Everything_Slot1.txt",
+        "slot": "Slot1",
+        "name":  f"Everything_Slot1",
+        "rune_qty": 75,
+        "txt_files": ["./kept_runes/FastDPS_Slot1.txt.json", "./kept_runes/SlowDPS_Slot1.txt.json"]
+    },
+    "slot2" : {
+        "filename": f"./analysis/Everything_Slot2.txt",
+        "slot": "Slot2",
+        "name":  f"Everything_Slot2",
+        "rune_qty": 75,
+        "txt_files": ["./kept_runes/FastDPS_Slot2.txt.json", "./kept_runes/SlowDPS_Slot2.txt.json", "./kept_runes/FastDPS_SPD_Slot2.txt.json"]
+    },
+    "slot3" : {
+        "filename": f"./analysis/Everything_Slot3.txt",
+        "slot": "Slot3",
+        "name":  f"Everything_Slot3",
+        "rune_qty": 75,
+        "txt_files": ["./kept_runes/FastDPS_Slot3.txt.json", "./kept_runes/SlowDPS_Slot3.txt.json"]
+    },
+    "slot4" : {
+        "filename": f"./analysis/Everything_Slot4.txt",
+        "slot": "Slot4",
+        "name":  f"Everything_Slot4",
+        "rune_qty": 75,
+        "txt_files": ["./kept_runes/FastDPS_Slot4.txt.json", "./kept_runes/SlowDPS_Slot4.txt.json"]
+    },
+    "slot5" : {
+        "filename": f"./analysis/Everything_Slot5.txt",
+        "slot": "Slot5",
+        "name":  f"Everything_Slot5",
+        "rune_qty": 75,
+        "txt_files":["./kept_runes/FastDPS_Slot5.txt.json", "./kept_runes/SlowDPS_Slot5.txt.json"]
+    },
+    "slot6" : {
+        "filename": f"./analysis/Everything_Slot6.txt",
+        "slot": "Slot6",
+        "name":  f"Everything_Slot6",
+        "rune_qty": 75,
+        "txt_files": ["./kept_runes/FastDPS_Slot6.txt.json", "./kept_runes/SlowDPS_Slot6.txt.json"]
+    },
+}
 
-slot = "Slot1"
-name = f"Everything_{slot}"
-rune_qty = 75
+for val in easier.values():
+    with open(val["filename"], "r") as f:
+        data = json.loads(f.read())
 
-with open(f"./analysis/Everything_Slot1.txt", "r") as f:
-    data = json.loads(f.read())
+    converted_data = [convert_rune(d) for d in data]
 
-converted_data = [convert_rune(d) for d in data]
+    path_pattern = os.path.join("./kept_runes/", "*.txt.json")
+    #txt_files = glob.glob(path_pattern)
+    #txt_files = [t for t in.txt.json_files if name not in t]
+    if val["txt_files"]:
+        full_compare_list = []
+        for compare_name in val["txt_files"]:
+            if val["slot"] not in compare_name:
+                continue
+            with open(compare_name, "r") as f:
+                compare_data = json.loads(f.read())
+            c_converted_compare = [convert_rune(d) for d in compare_data]
+            for c in c_converted_compare:
+                full_compare_list.append(c)
 
-path_pattern = os.path.join("./kept_runes/", "*.txt")
-# txt_files = glob.glob(path_pattern)
-# txt_files = [t for t in txt_files if name not in t]
-txt_files = ["./kept_runes/FastDPS_Slot1.txt", "./kept_runes/SlowDPS_Slot1.txt"]
-if txt_files:
-    full_compare_list = []
-    for compare_name in txt_files:
-        if slot not in compare_name:
-            continue
-        print(compare_name)
-        with open(compare_name, "r") as f:
-            compare_data = json.loads(f.read())
-        c_converted_compare = [convert_rune(d) for d in compare_data]
-        for c in c_converted_compare:
-            full_compare_list.append(c)
+        idx = (-1)*(val["rune_qty"] + len(full_compare_list))
+        new_data = converted_data[idx:]
+        final_list = []
+        for rune in new_data:
+            if rune not in full_compare_list:
+                final_list.append({k: v for k, v in custom_asdict(rune).items()\
+                    if v is not None})
+        print(final_list)
+        final_list = sorted(final_list, key=lambda x: x["Eff"])
+        final_list = final_list[-1*val["rune_qty"]:]
+    else:
+        final_list = data[-1*val["rune_qty"]:]
 
-    idx = (-1)*(rune_qty + len(full_compare_list))
-    new_data = converted_data[idx:]
-    final_list = []
-    for rune in new_data:
-        if rune not in full_compare_list:
-            final_list.append({k: v for k, v in custom_asdict(rune).items()\
-                if v is not None})
-        else:
-            print(f"Rune is removed: {rune}")
-    final_list = sorted(final_list, key=lambda x: x["Eff"])
-    final_list = final_list[-1*rune_qty:]
-else:
-    final_list = data[-1*rune_qty:]
+    with open(f"""./kept_runes/{val["name"]}.json""", "w") as f:
+        f.write(json.dumps(final_list, indent=4, ensure_ascii=False))
 
-with open(f"./kept_runes/{name}.txt", "w") as f:
-    f.write(json.dumps(final_list, indent=4, ensure_ascii=False))
-
-print("highest: "+str(final_list[-1]["Eff"]))
-print("lowest: "+str(final_list[0]["Eff"]))
+    print("highest: "+str(final_list[-1]["Eff"]))
+    print("lowest: "+str(final_list[0]["Eff"]))

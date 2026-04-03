@@ -61,17 +61,7 @@ def raw_analysis(stat_list: list, f_stats: list, \
                  main_stat: str = "", filename: str = ""):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
-        i_75 = []
-        i_75_84 = []
-        i_84_95 = []
-        i_95 = []
-        count = [0, 0, 0, 0]
-        lowest_84_95 = 1000
-        lowest_75_84 = 1000
-        highest_84_95 = 0
-        highest_75_84 = 0
         filtered_best = []
-        everything = []
         total_amount = 0
         for row in reader:
             if slots[0] in ["2", "4", "6"]:
@@ -98,61 +88,27 @@ def raw_analysis(stat_list: list, f_stats: list, \
                     adjusted_score = calc_adjusted_score(b_stats)
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
-                    b_eff = calc_adjusted_score(filtered_stats)
-                    everything.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
-                    filtered_best.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
-                    if boozero_eff < 75.0:
-                        i_75.append(get_rune(row, b_eff, boozero_eff\
-                                             , score, adjusted_score))
-                        count[0] += 1
-                    elif 75.0 <= boozero_eff < 85.0:
-                        i_75_84.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
-                        if adjusted_score > highest_75_84:
-                            highest_75_84 = adjusted_score
-                        elif adjusted_score < lowest_75_84:
-                            lowest_75_84 = adjusted_score
-                        count[1] += 1
-                    elif 85.0 <= boozero_eff < 95.0:
-                        i_84_95.append(get_rune(row, b_eff, boozero_eff\
-                                                , score, adjusted_score))
-                        if adjusted_score < lowest_84_95:
-                            lowest_84_95 = adjusted_score 
-                        elif adjusted_score > highest_84_95:
-                            highest_84_95 = adjusted_score
-                        count[2] += 1
-                    elif 95.0 <= boozero_eff :
-                        i_95.append(get_rune(row, b_eff, boozero_eff\
-                                             , score, adjusted_score))
-                        count[3] += 1
-        print(f"less 75:{count[0]}\n75-84:{count[1]}\n85-95:{count[2]}\n95+:{count[3]}")
-        print(f"lowest 84: {lowest_75_84}\n highest 84: {highest_75_84}\n")
-        print(f"lowest 95: {lowest_84_95}\n highest 95: {highest_84_95}\n")
-        print(f"total amount: {total_amount}")
-        # i_75 = sorted(i_75, key=lambda x: x["Score"])
-        # i_75_84 = sorted(i_75_84, key=lambda x: x["Score"])
-        # i_84_95 = sorted(i_84_95, key=lambda x: x["Score"])
-        # i_95 = sorted(i_95, key=lambda x: x["Score"])
+                    b_eff = calc_score(filtered_stats)
+                    filtered_best.append(
+                        get_rune(
+                            row = row,
+                            eff = b_eff,
+                            boozero_eff = boozero_eff,
+                            score = score,
+                            adjusted_score = adjusted_score
+                        )
+                    )
         filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
-        # output_data("75", i_75)
-        # output_data("75_84", i_75_84)
-        # output_data("84_95", i_84_95)
-        # output_data("95", i_95)
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
 
 # Creating a new function to get analysis of the BEST RUNES 
 def best_analysis(slots: list,\
-                 main_stat: str = "", filename: str = ""):
+                 filename: str = ""):
     with open("runes-data.csv", "r") as f:
         reader = csv.DictReader(f, delimiter = ";")
         total_amount = 0
         filtered_best = []
         for row in reader:
-            if slots[0] in ["2", "4", "6"]:
-                if main_stat != row["m_t"]:
-                    continue
             if "Slime" in row["monster_n"] or\
                 "Forest"in row["monster_n"] or\
                 "Inventory"in row["monster_n"]:
@@ -169,18 +125,38 @@ def best_analysis(slots: list,\
                 score = calc_score(b_stats)
                 # Is adjusted score to grow as boozero efficiency
                 adjusted_score = calc_adjusted_score(b_stats)
-                stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
-                tank_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
-                stat_list = ["SPD", "ACC"] # Control
-                control_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
-                stat_list = ["SPD", "HP%", "DEF%", "ATK%", "CRate", "CDmg"] # bruiser
-                bruiser_score = calc_adjusted_score(filter_stats(b_stats, stat_list))
+                stat_list = ["spd", "spdi", "cr", "cri", "cd", "cdi", "atk", "atki"]
+                dps_score = calc_score(filter_stats(b_stats, stat_list))
+                stat_list = ["spd", "spdi", "hp", "hpi", "def", "defi", "res", "resi"] # Tank/Sup
+                tank_score = calc_score(filter_stats(b_stats, stat_list))
+                stat_list = ["spd", "spdi", "acc", "acci"] # Control
+                control_score = calc_score(filter_stats(b_stats, stat_list))
+                stat_list = ["spd", "spdi", "hp", "hpi",
+                             "def", "defi", "atk", "atki",
+                             "cr", "cri", "cd", "cdi"] # bruiser
+                bruiser_score = calc_score(filter_stats(b_stats, stat_list))
                 # Adjusted score adjusted to only filtered stats
-                filtered_best.append(get_rune(row, 0, boozero_eff\
-                                            , score, adjusted_score))
+                filtered_best.append(
+                    get_rune(
+                        row=row,
+                        eff=0,
+                        boozero_eff=boozero_eff,
+                        score=score,
+                        adjusted_score=adjusted_score,
+                        dps_score=dps_score,
+                        tank_score=tank_score,
+                        control_score=control_score,
+                        bruiser_score=bruiser_score,
+                        ))
         filtered_best = sorted(filtered_best, key=lambda x: x["AdjustedScore"])
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
-def main():
+def everything():
+    filename = "Everything"
+    slots = [[str(i)] for i in range(1,7)]
+    for slot in slots:
+        best_analysis(slot,filename)
+
+def dps():
     # stat_list = ["SPD", "HP%", "DEF%", "RES", "CRate", "CDmg", "ATK%", "ACC"] # Everything
     # stat_list = ["SPD", "HP%", "DEF%", "RES"] # Tank/Sup
     # stat_list = ["SPD", "ACC"'] # Control
@@ -204,7 +180,7 @@ def main():
                     raw_analysis(stat_list, f_stats, slots, match_qty, "", filename)
                 elif i == 2:
                     stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
-                    raw_analysis(stat_list, f_stats, slots, match_qty, "SPD", filename)
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "SPD", filename+"_SPD")
                     stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
                     raw_analysis(stat_list, f_stats, slots, match_qty, "ATK%", filename)
                 else:
@@ -225,4 +201,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    dps()

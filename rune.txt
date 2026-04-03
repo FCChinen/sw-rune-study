@@ -1,5 +1,4 @@
-spd 17
-hpmi 355
-acc 11
-hp 8
-res 15
+acc 4
+hp 18
+cr 15
+cd 11

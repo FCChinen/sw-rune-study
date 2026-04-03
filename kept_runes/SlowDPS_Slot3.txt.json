@@ -1,0 +1,58 @@
+[
+    {
+        "CRate": 23,
+        "CDmg": 11,
+        "RES": 7,
+        "ACC": 4,
+        "Set": "Fatal",
+        "Eff": 107,
+        "BEff": 64.16142857142857,
+        "Score": 134,
+        "AdjustedScore": 134
+    },
+    {
+        "CRate": 21,
+        "CDmg": 12,
+        "DEF%": 6,
+        "ACC": 6,
+        "Set": "Will",
+        "Eff": 103,
+        "BEff": 73.64428571428572,
+        "Score": 133,
+        "AdjustedScore": 158
+    },
+    {
+        "CRate": 11,
+        "CDmg": 22,
+        "SPD": 5,
+        "ACCI": 7,
+        "HP flat": 313,
+        "Set": "Blade",
+        "Eff": 98,
+        "BEff": 82.00285714285714,
+        "Score": 139,
+        "AdjustedScore": 156
+    },
+    {
+        "CRate": 22,
+        "CDmg": 9,
+        "SPD": 9,
+        "HP%": 6,
+        "Set": "Blade",
+        "Eff": 98,
+        "BEff": 82.14571428571429,
+        "Score": 130,
+        "AdjustedScore": 192
+    },
+    {
+        "CRate": 11,
+        "CDmg": 21,
+        "HP%": 6,
+        "ACC": 4,
+        "Set": "Nemesis",
+        "Eff": 95,
+        "BEff": 68.63,
+        "Score": 120,
+        "AdjustedScore": 145
+    }
+]

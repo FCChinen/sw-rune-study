@@ -1,5 +1,5 @@
 from decimal import Decimal
-
+import math
 def checking_stats(row: dict, stat: str) -> int:
     if row["i_t"] == stat and int(row["i_v"]) > 0:
         return int(row["i_v"])
@@ -21,6 +21,7 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
     custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI", \
                     "DEF%", "DEF%I", "HP%", "HP%I", "ATK flat", "ATK flatI", "DEF flat", "DEF flatI",\
                     "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
+                    "MainStat",
                     "DPSScore", "TankScore", "ControlScore", "BruiserScore", \
                     "Eff", "BEff", "Score", "AdjustedScore"]
     rune = dict()
@@ -36,6 +37,7 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
         rune["BruiserScore"] = bruiser_score
     if tank_score is not None:
         rune["DPSScore"] = dps_score
+    rune["MainStat"] = row["m_t"]
     if eff:
         rune["Eff"] = eff
     if boozero_eff:
@@ -70,7 +72,7 @@ def calc_score(data: list):
         elif stat in ["defm", "defmi"]:
             stat_val = float_val * Decimal("0.2")
         eff += stat_val
-    return round(eff)
+    return math.ceil(eff)
 
 def calc_adjusted_score(data: list):
     eff = Decimal("0")
