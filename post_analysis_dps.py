@@ -37,6 +37,7 @@ class Rune:
     Set: str
     Eff: Decimal = field(compare=False)
     BEff: Decimal = field(compare=False)
+    NewEff: int = field(compare=False)
     Score: int = field(compare=False)
     AdjustedScore: int = field(compare=False)
 
@@ -79,41 +80,45 @@ def convert_rune(r: dict) -> Rune:
                 Eff = r.get("Eff", 0),\
                 BEff = r.get("BEff", Decimal("0.0")),\
                 Score = r.get("Score", 0),\
+                NewEff = r.get("NewEff", 0),\
                 AdjustedScore = r.get("AdjustedScore", 0))
 
-slot = [1,2,3,4,5,6]
-rune_qty = 25
-rune_qty_dps = 5
+def main():
+    slot = [1,2,3,4,5,6]
+    rune_qty = 25
+    rune_qty_dps = 5
 
-kept_runes = [[],[],[],[],[],[]]
+    kept_runes = [[],[],[],[],[],[]]
 
-path_pattern = os.path.join("./analysis/", "*.txt")
-analysis_files = glob.glob(path_pattern)
+    path_pattern = os.path.join("./analysis/", "*.txt")
+    analysis_files = glob.glob(path_pattern)
 
-for analysis in analysis_files:
-    final_list = []
-    print(analysis)
-    slot = analysis.split('_')[-1].split('.')[0]
-    number_slot = int(slot[-1])-1
-    filename = analysis.split("/")[-1]
-    with open(analysis, 'r') as f:
+    for analysis in analysis_files:
+        final_list = []
+        print(analysis)
+        slot = analysis.split('_')[-1].split('.')[0]
+        number_slot = int(slot[-1])-1
+        filename = analysis.split("/")[-1]
+        with open(analysis, 'r') as f:
+            data = json.loads(f.read())
+
+        converted_data = [convert_rune(d) for d in data]
+        for i in range(len(converted_data) - 1, -1, -1):
+            if converted_data[i] not in kept_runes[number_slot]:
+                kept_runes[number_slot].append(converted_data[i])
+                final_list.append({k: v for k, v, in custom_asdict(converted_data[i]).items() if v is not None})
+                if len(final_list) >= rune_qty:
+                    break
+                if len(final_list) >= rune_qty_dps and "Slow" in analysis:
+                    break
+
+        with open(f"./kept_runes/{filename}.json", 'w') as f:
+            f.write(json.dumps(final_list, indent = 4, ensure_ascii = False, cls=DecimalEncoder))
+
+    with open(f"./kept_runes/FastDPS_SPD_Slot2.txt.json", 'r') as f:
         data = json.loads(f.read())
+    with open(f"./kept_runes/FastDPS_SPD_Slot2.txt.json", 'w') as f:
+        f.write(json.dumps(data[:10], indent = 4))
 
-    converted_data = [convert_rune(d) for d in data]
-    for i in range(len(converted_data) - 1, -1, -1):
-        if converted_data[i] not in kept_runes[number_slot]:
-            kept_runes[number_slot].append(converted_data[i])
-            final_list.append({k: v for k, v, in custom_asdict(converted_data[i]).items() if v is not None})
-            if len(final_list) >= rune_qty:
-                break
-            if len(final_list) >= rune_qty_dps and "Slow" in analysis:
-                break
-
-    with open(f"./kept_runes/{filename}.json", 'w') as f:
-        f.write(json.dumps(final_list, indent = 4, ensure_ascii = False, cls=DecimalEncoder))
-
-with open(f"./kept_runes/FastDPS_SPD_Slot2.txt.json", 'r') as f:
-    data = json.loads(f.read())
-with open(f"./kept_runes/FastDPS_SPD_Slot2.txt.json", 'w') as f:
-    f.write(json.dumps(data[:10], indent = 4))
-
+if __name__ == "__main__":
+    main()

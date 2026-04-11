@@ -1,5 +1,210 @@
 [
     {
+        "SPD": 5,
+        "HP%I": 7,
+        "ATK flat": 17,
+        "DEF flat": 13,
+        "Set": "Swift",
+        "MainStat": "HP flat",
+        "DPSScore": 23,
+        "TankScore": 38,
+        "ControlScore": 17,
+        "BruiserScore": 43,
+        "BEff": 32.599999999999994,
+        "Score": 43,
+        "AdjustedScore": 60,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 7,
+        "SPD": 4,
+        "ATK flatI": 17,
+        "RES": 4,
+        "Set": "Swift",
+        "MainStat": "HP flat",
+        "DPSScore": 39,
+        "TankScore": 24,
+        "ControlScore": 14,
+        "BruiserScore": 39,
+        "BEff": 28.639999999999997,
+        "Score": 49,
+        "AdjustedScore": 66,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 6,
+        "ATK%": 8,
+        "ACCI": 4,
+        "Set": "Intangible",
+        "MainStat": "HP flat",
+        "DPSScore": 40,
+        "TankScore": 0,
+        "ControlScore": 10,
+        "BruiserScore": 40,
+        "BEff": 29.98,
+        "Score": 50,
+        "AdjustedScore": 75,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 6,
+        "HP%": 7,
+        "RES": 6,
+        "Set": "Despair",
+        "MainStat": "HP flat",
+        "DPSScore": 20,
+        "TankScore": 33,
+        "ControlScore": 0,
+        "BruiserScore": 38,
+        "BEff": 30.98,
+        "Score": 53,
+        "AdjustedScore": 77,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 5,
+        "HP%": 7,
+        "ACC": 8,
+        "Set": "Blade",
+        "MainStat": "HP flat",
+        "DPSScore": 17,
+        "TankScore": 18,
+        "ControlScore": 20,
+        "BruiserScore": 34,
+        "BEff": 31.65,
+        "Score": 54,
+        "AdjustedScore": 79,
+        "IsGemmed": false
+    },
+    {
+        "ATK%": 7,
+        "DEF flatI": 17,
+        "RES": 7,
+        "ACC": 7,
+        "Set": "Fatal",
+        "MainStat": "HP flat",
+        "DPSScore": 18,
+        "TankScore": 21,
+        "ControlScore": 18,
+        "BruiserScore": 21,
+        "BEff": 32.7,
+        "Score": 56,
+        "AdjustedScore": 81,
+        "IsGemmed": false
+    },
+    {
+        "HP%": 6,
+        "ATK flatI": 20,
+        "RES": 7,
+        "ACC": 7,
+        "Set": "Swift",
+        "MainStat": "HP flat",
+        "DPSScore": 7,
+        "TankScore": 33,
+        "ControlScore": 18,
+        "BruiserScore": 22,
+        "BEff": 32.0,
+        "Score": 57,
+        "AdjustedScore": 82,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 6,
+        "ATK%": 7,
+        "ATK flatI": 13,
+        "RES": 8,
+        "Set": "Blade",
+        "MainStat": "HP flat",
+        "DPSScore": 39,
+        "TankScore": 20,
+        "ControlScore": 0,
+        "BruiserScore": 39,
+        "BEff": 33.15714285714286,
+        "Score": 59,
+        "AdjustedScore": 84,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 6,
+        "CDmg": 5,
+        "ATK%": 6,
+        "ACCI": 7,
+        "Set": "Fatal",
+        "MainStat": "HP flat",
+        "DPSScore": 49,
+        "TankScore": 0,
+        "ControlScore": 18,
+        "BruiserScore": 49,
+        "BEff": 46.69428571428571,
+        "Score": 67,
+        "AdjustedScore": 91,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 6,
+        "ATK%": 8,
+        "DEF%I": 8,
+        "RES": 5,
+        "Set": "Blade",
+        "MainStat": "HP flat",
+        "DPSScore": 37,
+        "TankScore": 33,
+        "ControlScore": 0,
+        "BruiserScore": 57,
+        "BEff": 37.85714285714286,
+        "Score": 70,
+        "AdjustedScore": 94,
+        "IsGemmed": false
+    },
+    {
+        "ATK%I": 6,
+        "SPD": 6,
+        "DEF%": 6,
+        "ATK flat": 10,
+        "Set": "Energy",
+        "MainStat": "HP flat",
+        "DPSScore": 39,
+        "TankScore": 36,
+        "ControlScore": 21,
+        "BruiserScore": 54,
+        "BEff": 44.26,
+        "Score": 54,
+        "AdjustedScore": 116,
+        "IsGemmed": false
+    },
+    {
+        "CRateI": 5,
+        "CDmg": 4,
+        "SPD": 4,
+        "DEF%": 5,
+        "Set": "Swift",
+        "MainStat": "HP flat",
+        "DPSScore": 42,
+        "TankScore": 27,
+        "ControlScore": 14,
+        "BruiserScore": 54,
+        "BEff": 51.161428571428566,
+        "Score": 54,
+        "AdjustedScore": 116,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 5,
+        "SPD": 4,
+        "DEF%": 5,
+        "ACC": 5,
+        "Set": "Fatal",
+        "MainStat": "HP flat",
+        "DPSScore": 31,
+        "TankScore": 27,
+        "ControlScore": 27,
+        "BruiserScore": 43,
+        "BEff": 41.59,
+        "Score": 56,
+        "AdjustedScore": 117,
+        "IsGemmed": false
+    },
+    {
         "CDmgI": 4,
         "SPD": 20,
         "ATK flat": 12,
@@ -7,13 +212,14 @@
         "RES": 6,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 83,
-        "TankScore": 86,
+        "DPSScore": 84,
+        "TankScore": 87,
         "ControlScore": 68,
         "BruiserScore": 87,
         "BEff": 60.971428571428575,
         "Score": 102,
-        "AdjustedScore": 119
+        "AdjustedScore": 119,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -22,13 +228,14 @@
         "DEF flat": 17,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 100,
+        "DPSScore": 101,
         "TankScore": 17,
         "ControlScore": 14,
         "BruiserScore": 104,
         "BEff": 64.61428571428573,
         "Score": 104,
-        "AdjustedScore": 121
+        "AdjustedScore": 121,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -37,13 +244,14 @@
         "DEF flat": 20,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 100,
+        "DPSScore": 101,
         "TankScore": 18,
         "ControlScore": 14,
-        "BruiserScore": 104,
+        "BruiserScore": 105,
         "BEff": 65.12142857142857,
-        "Score": 104,
-        "AdjustedScore": 122
+        "Score": 105,
+        "AdjustedScore": 122,
+        "IsGemmed": false
     },
     {
         "CRate": 27,
@@ -52,13 +260,30 @@
         "ACC": 7,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 95,
+        "DPSScore": 96,
         "TankScore": 10,
         "ControlScore": 18,
-        "BruiserScore": 95,
+        "BruiserScore": 96,
         "BEff": 51.81,
         "Score": 123,
-        "AdjustedScore": 123
+        "AdjustedScore": 123,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 4,
+        "ATK%": 5,
+        "SPD": 6,
+        "RESI": 8,
+        "Set": "Energy",
+        "MainStat": "HP flat",
+        "DPSScore": 45,
+        "TankScore": 41,
+        "ControlScore": 21,
+        "BruiserScore": 45,
+        "BEff": 45.83142857142857,
+        "Score": 65,
+        "AdjustedScore": 126,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -69,11 +294,12 @@
         "MainStat": "HP flat",
         "DPSScore": 91,
         "TankScore": 73,
-        "ControlScore": 54,
-        "BruiserScore": 94,
+        "ControlScore": 55,
+        "BruiserScore": 95,
         "BEff": 60.29,
-        "Score": 109,
-        "AdjustedScore": 126
+        "Score": 110,
+        "AdjustedScore": 126,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -84,12 +310,13 @@
         "Set": "Guard",
         "MainStat": "HP flat",
         "DPSScore": 35,
-        "TankScore": 88,
+        "TankScore": 89,
         "ControlScore": 14,
-        "BruiserScore": 37,
+        "BruiserScore": 38,
         "BEff": 59.190000000000005,
         "Score": 110,
-        "AdjustedScore": 127
+        "AdjustedScore": 127,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -99,13 +326,14 @@
         "RES": 6,
         "Set": "Endure",
         "MainStat": "HP flat",
-        "DPSScore": 79,
-        "TankScore": 99,
+        "DPSScore": 80,
+        "TankScore": 100,
         "ControlScore": 68,
         "BruiserScore": 96,
         "BEff": 61.97142857142857,
-        "Score": 110,
-        "AdjustedScore": 128
+        "Score": 111,
+        "AdjustedScore": 128,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -114,13 +342,14 @@
         "ACC": 5,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 81,
+        "DPSScore": 82,
         "TankScore": 86,
-        "ControlScore": 80,
-        "BruiserScore": 81,
+        "ControlScore": 81,
+        "BruiserScore": 82,
         "BEff": 58.82,
-        "Score": 111,
-        "AdjustedScore": 128
+        "Score": 112,
+        "AdjustedScore": 128,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -130,12 +359,45 @@
         "Set": "Rage",
         "MainStat": "HP flat",
         "DPSScore": 108,
-        "TankScore": 16,
+        "TankScore": 17,
         "ControlScore": 14,
-        "BruiserScore": 110,
+        "BruiserScore": 111,
         "BEff": 67.47571428571428,
-        "Score": 110,
-        "AdjustedScore": 128
+        "Score": 111,
+        "AdjustedScore": 128,
+        "IsGemmed": false
+    },
+    {
+        "CRateI": 5,
+        "ATK%": 7,
+        "SPD": 4,
+        "HP%": 6,
+        "Set": "Fatal",
+        "MainStat": "HP flat",
+        "DPSScore": 48,
+        "TankScore": 29,
+        "ControlScore": 14,
+        "BruiserScore": 63,
+        "BEff": 54.589999999999996,
+        "Score": 63,
+        "AdjustedScore": 130,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 5,
+        "ATK%": 6,
+        "DEF%": 8,
+        "RES": 5,
+        "Set": "Despair",
+        "MainStat": "HP flat",
+        "DPSScore": 29,
+        "TankScore": 33,
+        "ControlScore": 0,
+        "BruiserScore": 49,
+        "BEff": 44.714285714285715,
+        "Score": 62,
+        "AdjustedScore": 132,
+        "IsGemmed": false
     },
     {
         "CRate": 18,
@@ -146,11 +408,12 @@
         "MainStat": "HP flat",
         "DPSScore": 79,
         "TankScore": 20,
-        "ControlScore": 32,
+        "ControlScore": 33,
         "BruiserScore": 79,
         "BEff": 62.94,
         "Score": 132,
-        "AdjustedScore": 132
+        "AdjustedScore": 132,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -164,8 +427,43 @@
         "ControlScore": 86,
         "BruiserScore": 102,
         "BEff": 72.19428571428571,
-        "Score": 119,
-        "AdjustedScore": 136
+        "Score": 120,
+        "AdjustedScore": 136,
+        "IsGemmed": false
+    },
+    {
+        "ATK%": 5,
+        "SPD": 4,
+        "DEF%I": 8,
+        "HP%": 6,
+        "RES": 4,
+        "Set": "Energy",
+        "MainStat": "HP flat",
+        "DPSScore": 27,
+        "TankScore": 59,
+        "ControlScore": 14,
+        "BruiserScore": 62,
+        "BEff": 47.94,
+        "Score": 72,
+        "AdjustedScore": 138,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 6,
+        "ATK%I": 5,
+        "SPD": 4,
+        "HP%": 6,
+        "RES": 8,
+        "Set": "Despair",
+        "MainStat": "HP flat",
+        "DPSScore": 43,
+        "TankScore": 49,
+        "ControlScore": 14,
+        "BruiserScore": 58,
+        "BEff": 50.79714285714286,
+        "Score": 78,
+        "AdjustedScore": 140,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -174,13 +472,14 @@
         "ACC": 28,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 28,
+        "DPSScore": 29,
         "TankScore": 42,
         "ControlScore": 87,
-        "BruiserScore": 28,
+        "BruiserScore": 29,
         "BEff": 59.171428571428564,
-        "Score": 123,
-        "AdjustedScore": 140
+        "Score": 124,
+        "AdjustedScore": 140,
+        "IsGemmed": false
     },
     {
         "CRate": 19,
@@ -190,13 +489,14 @@
         "DEF flat": 16,
         "Set": "Seal",
         "MainStat": "HP flat",
-        "DPSScore": 121,
+        "DPSScore": 122,
         "TankScore": 44,
         "ControlScore": 41,
-        "BruiserScore": 124,
+        "BruiserScore": 125,
         "BEff": 74.90428571428572,
-        "Score": 124,
-        "AdjustedScore": 141
+        "Score": 125,
+        "AdjustedScore": 141,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -207,12 +507,13 @@
         "Set": "Revenge",
         "MainStat": "HP flat",
         "DPSScore": 97,
-        "TankScore": 21,
+        "TankScore": 22,
         "ControlScore": 0,
         "BruiserScore": 118,
         "BEff": 63.260000000000005,
         "Score": 118,
-        "AdjustedScore": 143
+        "AdjustedScore": 143,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -226,8 +527,26 @@
         "ControlScore": 17,
         "BruiserScore": 115,
         "BEff": 71.37285714285714,
+        "Score": 128,
+        "AdjustedScore": 144,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 5,
+        "CDmg": 7,
+        "SPD": 5,
+        "DEF flatI": 19,
+        "ACC": 28,
+        "Set": "Swift",
+        "MainStat": "HP flat",
+        "DPSScore": 54,
+        "TankScore": 21,
+        "ControlScore": 87,
+        "BruiserScore": 57,
+        "BEff": 71.15,
         "Score": 127,
-        "AdjustedScore": 144
+        "AdjustedScore": 144,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -242,7 +561,8 @@
         "BruiserScore": 104,
         "BEff": 67.97,
         "Score": 119,
-        "AdjustedScore": 144
+        "AdjustedScore": 144,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -257,7 +577,8 @@
         "BruiserScore": 119,
         "BEff": 71.44285714285714,
         "Score": 119,
-        "AdjustedScore": 144
+        "AdjustedScore": 144,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -268,12 +589,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 18,
+        "TankScore": 19,
         "ControlScore": 0,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 72.51714285714286,
-        "Score": 122,
-        "AdjustedScore": 147
+        "Score": 123,
+        "AdjustedScore": 147,
+        "IsGemmed": false
     },
     {
         "CRate": 20,
@@ -283,13 +605,14 @@
         "ACC": 8,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 70,
+        "DPSScore": 71,
         "TankScore": 32,
         "ControlScore": 20,
         "BruiserScore": 102,
         "BEff": 61.9,
         "Score": 122,
-        "AdjustedScore": 147
+        "AdjustedScore": 147,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -301,11 +624,12 @@
         "MainStat": "HP flat",
         "DPSScore": 111,
         "TankScore": 33,
-        "ControlScore": 20,
-        "BruiserScore": 123,
+        "ControlScore": 21,
+        "BruiserScore": 124,
         "BEff": 74.17428571428572,
-        "Score": 123,
-        "AdjustedScore": 148
+        "Score": 124,
+        "AdjustedScore": 148,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -321,7 +645,8 @@
         "BruiserScore": 97,
         "BEff": 76.38714285714286,
         "Score": 132,
-        "AdjustedScore": 149
+        "AdjustedScore": 149,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -331,13 +656,14 @@
         "ACC": 7,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 107,
+        "DPSScore": 108,
         "TankScore": 17,
-        "ControlScore": 34,
-        "BruiserScore": 107,
+        "ControlScore": 35,
+        "BruiserScore": 108,
         "BEff": 64.23,
         "Score": 125,
-        "AdjustedScore": 150
+        "AdjustedScore": 150,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -348,12 +674,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 82,
-        "TankScore": 20,
+        "TankScore": 21,
         "ControlScore": 57,
         "BruiserScore": 85,
         "BEff": 64.95,
         "Score": 125,
-        "AdjustedScore": 150
+        "AdjustedScore": 150,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -363,13 +690,14 @@
         "ACC": 4,
         "Set": "Focus",
         "MainStat": "HP flat",
-        "DPSScore": 110,
+        "DPSScore": 111,
         "TankScore": 73,
         "ControlScore": 68,
-        "BruiserScore": 110,
+        "BruiserScore": 111,
         "BEff": 77.84,
-        "Score": 135,
-        "AdjustedScore": 152
+        "Score": 136,
+        "AdjustedScore": 152,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -384,7 +712,8 @@
         "BruiserScore": 90,
         "BEff": 61.07999999999999,
         "Score": 90,
-        "AdjustedScore": 152
+        "AdjustedScore": 152,
+        "IsGemmed": true
     },
     {
         "CRate": 16,
@@ -393,13 +722,14 @@
         "ACC": 7,
         "Set": "Destroy",
         "MainStat": "HP flat",
-        "DPSScore": 89,
+        "DPSScore": 90,
         "TankScore": 20,
         "ControlScore": 18,
-        "BruiserScore": 109,
+        "BruiserScore": 110,
         "BEff": 71.13714285714286,
         "Score": 127,
-        "AdjustedScore": 152
+        "AdjustedScore": 152,
+        "IsGemmed": false
     },
     {
         "CRate": 18,
@@ -413,8 +743,9 @@
         "ControlScore": 18,
         "BruiserScore": 111,
         "BEff": 71.79714285714286,
-        "Score": 128,
-        "AdjustedScore": 153
+        "Score": 129,
+        "AdjustedScore": 153,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -424,13 +755,14 @@
         "RES": 7,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 119,
+        "DPSScore": 120,
         "TankScore": 106,
-        "ControlScore": 88,
-        "BruiserScore": 119,
+        "ControlScore": 89,
+        "BruiserScore": 120,
         "BEff": 73.47428571428571,
         "Score": 137,
-        "AdjustedScore": 154
+        "AdjustedScore": 154,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -445,8 +777,9 @@
         "ControlScore": 18,
         "BruiserScore": 113,
         "BEff": 74.81714285714287,
-        "Score": 130,
-        "AdjustedScore": 155
+        "Score": 131,
+        "AdjustedScore": 155,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -456,13 +789,14 @@
         "ACC": 32,
         "Set": "Intangible",
         "MainStat": "HP flat",
-        "DPSScore": 33,
-        "TankScore": 31,
+        "DPSScore": 34,
+        "TankScore": 32,
         "ControlScore": 94,
         "BruiserScore": 51,
         "BEff": 66.05428571428571,
         "Score": 131,
-        "AdjustedScore": 156
+        "AdjustedScore": 156,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -472,13 +806,14 @@
         "ATK flat": 12,
         "Set": "Shield",
         "MainStat": "HP flat",
-        "DPSScore": 113,
+        "DPSScore": 114,
         "TankScore": 18,
         "ControlScore": 0,
         "BruiserScore": 131,
         "BEff": 75.35714285714286,
         "Score": 131,
-        "AdjustedScore": 156
+        "AdjustedScore": 156,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -494,7 +829,8 @@
         "BruiserScore": 121,
         "BEff": 72.21000000000001,
         "Score": 131,
-        "AdjustedScore": 156
+        "AdjustedScore": 156,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -503,13 +839,14 @@
         "RES": 16,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 78,
+        "DPSScore": 79,
         "TankScore": 55,
         "ControlScore": 0,
-        "BruiserScore": 93,
+        "BruiserScore": 94,
         "BEff": 65.96000000000001,
-        "Score": 133,
-        "AdjustedScore": 158
+        "Score": 134,
+        "AdjustedScore": 158,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -519,13 +856,14 @@
         "ACC": 6,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 115,
-        "TankScore": 3,
+        "DPSScore": 116,
+        "TankScore": 4,
         "ControlScore": 15,
-        "BruiserScore": 118,
+        "BruiserScore": 119,
         "BEff": 74.02428571428571,
         "Score": 134,
-        "AdjustedScore": 158
+        "AdjustedScore": 158,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -537,11 +875,12 @@
         "MainStat": "HP flat",
         "DPSScore": 123,
         "TankScore": 14,
-        "ControlScore": 26,
+        "ControlScore": 27,
         "BruiserScore": 123,
         "BEff": 75.77714285714286,
-        "Score": 135,
-        "AdjustedScore": 160
+        "Score": 136,
+        "AdjustedScore": 160,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -550,13 +889,14 @@
         "ACC": 8,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 116,
+        "DPSScore": 117,
         "TankScore": 0,
         "ControlScore": 20,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 74.77285714285713,
-        "Score": 136,
-        "AdjustedScore": 161
+        "Score": 137,
+        "AdjustedScore": 161,
+        "IsGemmed": true
     },
     {
         "CRate": 12,
@@ -572,7 +912,8 @@
         "BruiserScore": 126,
         "BEff": 76.11714285714285,
         "Score": 136,
-        "AdjustedScore": 161
+        "AdjustedScore": 161,
+        "IsGemmed": true
     },
     {
         "CRate": 12,
@@ -584,11 +925,12 @@
         "MainStat": "HP flat",
         "DPSScore": 124,
         "TankScore": 33,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 124,
         "BEff": 76.63428571428571,
-        "Score": 136,
-        "AdjustedScore": 161
+        "Score": 137,
+        "AdjustedScore": 161,
+        "IsGemmed": false
     },
     {
         "ATK%": 5,
@@ -598,13 +940,14 @@
         "ACC": 6,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 84,
+        "DPSScore": 85,
         "TankScore": 70,
         "ControlScore": 83,
-        "BruiserScore": 86,
+        "BruiserScore": 87,
         "BEff": 67.6,
-        "Score": 101,
-        "AdjustedScore": 163
+        "Score": 102,
+        "AdjustedScore": 163,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -614,13 +957,14 @@
         "ACCI": 6,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 69,
+        "DPSScore": 70,
         "TankScore": 55,
         "ControlScore": 15,
         "BruiserScore": 107,
         "BEff": 76.17714285714285,
-        "Score": 139,
-        "AdjustedScore": 164
+        "Score": 140,
+        "AdjustedScore": 164,
+        "IsGemmed": false
     },
     {
         "SPD": 20,
@@ -629,13 +973,14 @@
         "RES": 5,
         "Set": "Endure",
         "MainStat": "HP flat",
-        "DPSScore": 58,
-        "TankScore": 99,
-        "ControlScore": 54,
+        "DPSScore": 59,
+        "TankScore": 100,
+        "ControlScore": 55,
         "BruiserScore": 91,
         "BEff": 66.96000000000001,
-        "Score": 103,
-        "AdjustedScore": 165
+        "Score": 104,
+        "AdjustedScore": 165,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -647,10 +992,11 @@
         "DPSScore": 73,
         "TankScore": 58,
         "ControlScore": 10,
-        "BruiserScore": 130,
+        "BruiserScore": 131,
         "BEff": 76.48714285714286,
-        "Score": 140,
-        "AdjustedScore": 165
+        "Score": 141,
+        "AdjustedScore": 165,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -659,13 +1005,14 @@
         "DEF flat": 32,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 78,
+        "DPSScore": 79,
         "TankScore": 19,
         "ControlScore": 0,
-        "BruiserScore": 97,
+        "BruiserScore": 98,
         "BEff": 62.52,
-        "Score": 97,
-        "AdjustedScore": 167
+        "Score": 98,
+        "AdjustedScore": 167,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -681,7 +1028,25 @@
         "BruiserScore": 135,
         "BEff": 84.19428571428571,
         "Score": 150,
-        "AdjustedScore": 167
+        "AdjustedScore": 167,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 12,
+        "CDmg": 6,
+        "ATK%": 23,
+        "SPDI": 6,
+        "ACC": 4,
+        "Set": "Energy",
+        "MainStat": "HP flat",
+        "DPSScore": 135,
+        "TankScore": 21,
+        "ControlScore": 31,
+        "BruiserScore": 135,
+        "BEff": 79.77714285714285,
+        "Score": 145,
+        "AdjustedScore": 169,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -696,7 +1061,8 @@
         "BruiserScore": 107,
         "BEff": 73.04285714285713,
         "Score": 107,
-        "AdjustedScore": 169
+        "AdjustedScore": 169,
+        "IsGemmed": false
     },
     {
         "ATK%": 7,
@@ -706,13 +1072,14 @@
         "ACCI": 7,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 65,
+        "DPSScore": 66,
         "TankScore": 68,
-        "ControlScore": 65,
-        "BruiserScore": 85,
+        "ControlScore": 66,
+        "BruiserScore": 86,
         "BEff": 77.03999999999999,
         "Score": 103,
-        "AdjustedScore": 170
+        "AdjustedScore": 170,
+        "IsGemmed": false
     },
     {
         "CRate": 19,
@@ -727,7 +1094,8 @@
         "BruiserScore": 108,
         "BEff": 72.78142857142856,
         "Score": 108,
-        "AdjustedScore": 170
+        "AdjustedScore": 170,
+        "IsGemmed": true
     },
     {
         "SPD": 20,
@@ -736,13 +1104,14 @@
         "ACC": 6,
         "Set": "Guard",
         "MainStat": "HP flat",
-        "DPSScore": 54,
+        "DPSScore": 55,
         "TankScore": 93,
-        "ControlScore": 69,
+        "ControlScore": 70,
         "BruiserScore": 93,
         "BEff": 69.46000000000001,
         "Score": 108,
-        "AdjustedScore": 170
+        "AdjustedScore": 170,
+        "IsGemmed": false
     },
     {
         "DEF%": 35,
@@ -752,12 +1121,29 @@
         "Set": "Shield",
         "MainStat": "HP flat",
         "DPSScore": 0,
-        "TankScore": 90,
+        "TankScore": 91,
         "ControlScore": 10,
-        "BruiserScore": 90,
+        "BruiserScore": 91,
         "BEff": 63.3,
-        "Score": 100,
-        "AdjustedScore": 170
+        "Score": 101,
+        "AdjustedScore": 170,
+        "IsGemmed": false
+    },
+    {
+        "CDmg": 7,
+        "SPD": 12,
+        "HP%": 20,
+        "ACC": 12,
+        "Set": "Revenge",
+        "MainStat": "HP flat",
+        "DPSScore": 47,
+        "TankScore": 60,
+        "ControlScore": 58,
+        "BruiserScore": 80,
+        "BEff": 64.58,
+        "Score": 110,
+        "AdjustedScore": 171,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -767,13 +1153,14 @@
         "DEF flat": 16,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 89,
+        "DPSScore": 90,
         "TankScore": 89,
         "ControlScore": 68,
         "BruiserScore": 110,
         "BEff": 71.15,
         "Score": 110,
-        "AdjustedScore": 172
+        "AdjustedScore": 172,
+        "IsGemmed": false
     },
     {
         "CDmg": 11,
@@ -783,12 +1170,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 92,
-        "TankScore": 79,
-        "ControlScore": 61,
-        "BruiserScore": 110,
+        "TankScore": 80,
+        "ControlScore": 62,
+        "BruiserScore": 111,
         "BEff": 71.35142857142856,
-        "Score": 110,
-        "AdjustedScore": 172
+        "Score": 111,
+        "AdjustedScore": 172,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -798,12 +1186,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 49,
-        "TankScore": 71,
+        "TankScore": 72,
         "ControlScore": 14,
-        "BruiserScore": 106,
+        "BruiserScore": 107,
         "BEff": 71.94,
-        "Score": 106,
-        "AdjustedScore": 173
+        "Score": 107,
+        "AdjustedScore": 173,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -813,13 +1202,14 @@
         "ATK flat": 18,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 137,
-        "TankScore": 40,
-        "ControlScore": 20,
-        "BruiserScore": 157,
+        "DPSScore": 138,
+        "TankScore": 41,
+        "ControlScore": 21,
+        "BruiserScore": 158,
         "BEff": 86.17285714285714,
-        "Score": 157,
-        "AdjustedScore": 174
+        "Score": 158,
+        "AdjustedScore": 174,
+        "IsGemmed": true
     },
     {
         "SPD": 6,
@@ -830,11 +1220,12 @@
         "MainStat": "HP flat",
         "DPSScore": 25,
         "TankScore": 108,
-        "ControlScore": 20,
-        "BruiserScore": 97,
+        "ControlScore": 21,
+        "BruiserScore": 98,
         "BEff": 67.56,
-        "Score": 112,
-        "AdjustedScore": 174
+        "Score": 113,
+        "AdjustedScore": 174,
+        "IsGemmed": false
     },
     {
         "CDmg": 20,
@@ -843,13 +1234,14 @@
         "ACC": 4,
         "Set": "Destroy",
         "MainStat": "HP flat",
-        "DPSScore": 102,
+        "DPSScore": 103,
         "TankScore": 34,
         "ControlScore": 44,
-        "BruiserScore": 102,
+        "BruiserScore": 103,
         "BEff": 66.75714285714287,
-        "Score": 112,
-        "AdjustedScore": 174
+        "Score": 113,
+        "AdjustedScore": 174,
+        "IsGemmed": false
     },
     {
         "SPD": 21,
@@ -859,12 +1251,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 78,
-        "TankScore": 86,
-        "ControlScore": 91,
+        "TankScore": 87,
+        "ControlScore": 92,
         "BruiserScore": 93,
         "BEff": 72.16,
         "Score": 113,
-        "AdjustedScore": 175
+        "AdjustedScore": 175,
+        "IsGemmed": false
     },
     {
         "SPD": 6,
@@ -873,13 +1266,14 @@
         "ACC": 8,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 20,
+        "DPSScore": 21,
         "TankScore": 88,
-        "ControlScore": 40,
+        "ControlScore": 41,
         "BruiserScore": 88,
         "BEff": 73.25999999999999,
         "Score": 108,
-        "AdjustedScore": 175
+        "AdjustedScore": 175,
+        "IsGemmed": true
     },
     {
         "CRate": 11,
@@ -889,13 +1283,14 @@
         "RES": 15,
         "Set": "Fight",
         "MainStat": "HP flat",
-        "DPSScore": 117,
+        "DPSScore": 118,
         "TankScore": 102,
-        "ControlScore": 61,
-        "BruiserScore": 120,
+        "ControlScore": 62,
+        "BruiserScore": 121,
         "BEff": 87.31,
         "Score": 158,
-        "AdjustedScore": 175
+        "AdjustedScore": 175,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -910,7 +1305,8 @@
         "BruiserScore": 103,
         "BEff": 64.91999999999999,
         "Score": 113,
-        "AdjustedScore": 175
+        "AdjustedScore": 175,
+        "IsGemmed": false
     },
     {
         "CRate": 7,
@@ -926,7 +1322,8 @@
         "BruiserScore": 135,
         "BEff": 83.22428571428571,
         "Score": 150,
-        "AdjustedScore": 175
+        "AdjustedScore": 175,
+        "IsGemmed": true
     },
     {
         "CDmg": 12,
@@ -941,7 +1338,8 @@
         "BruiserScore": 115,
         "BEff": 71.5142857142857,
         "Score": 115,
-        "AdjustedScore": 177
+        "AdjustedScore": 177,
+        "IsGemmed": false
     },
     {
         "CRate": 24,
@@ -956,7 +1354,8 @@
         "BruiserScore": 115,
         "BEff": 68.42,
         "Score": 115,
-        "AdjustedScore": 177
+        "AdjustedScore": 177,
+        "IsGemmed": false
     },
     {
         "CDmg": 7,
@@ -971,7 +1370,8 @@
         "BruiserScore": 101,
         "BEff": 65.94,
         "Score": 116,
-        "AdjustedScore": 178
+        "AdjustedScore": 178,
+        "IsGemmed": false
     },
     {
         "ATK%": 31,
@@ -980,13 +1380,14 @@
         "RES": 5,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 81,
+        "DPSScore": 82,
         "TankScore": 28,
         "ControlScore": 0,
-        "BruiserScore": 96,
+        "BruiserScore": 97,
         "BEff": 66.2,
         "Score": 109,
-        "AdjustedScore": 179
+        "AdjustedScore": 179,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -1001,7 +1402,8 @@
         "BruiserScore": 112,
         "BEff": 79.15,
         "Score": 112,
-        "AdjustedScore": 179
+        "AdjustedScore": 179,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -1016,7 +1418,8 @@
         "BruiserScore": 109,
         "BEff": 66.88000000000001,
         "Score": 109,
-        "AdjustedScore": 179
+        "AdjustedScore": 179,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -1027,12 +1430,13 @@
         "Set": "Shield",
         "MainStat": "HP flat",
         "DPSScore": 28,
-        "TankScore": 82,
+        "TankScore": 83,
         "ControlScore": 0,
-        "BruiserScore": 95,
+        "BruiserScore": 96,
         "BEff": 63.87142857142857,
-        "Score": 110,
-        "AdjustedScore": 180
+        "Score": 111,
+        "AdjustedScore": 180,
+        "IsGemmed": false
     },
     {
         "SPD": 17,
@@ -1047,7 +1451,8 @@
         "BruiserScore": 68,
         "BEff": 69.53999999999999,
         "Score": 118,
-        "AdjustedScore": 180
+        "AdjustedScore": 180,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -1059,10 +1464,11 @@
         "DPSScore": 28,
         "TankScore": 104,
         "ControlScore": 14,
-        "BruiserScore": 45,
+        "BruiserScore": 46,
         "BEff": 66.65428571428572,
         "Score": 118,
-        "AdjustedScore": 180
+        "AdjustedScore": 180,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1071,13 +1477,14 @@
         "HP%": 26,
         "Set": "Focus",
         "MainStat": "HP flat",
-        "DPSScore": 70,
+        "DPSScore": 71,
         "TankScore": 85,
-        "ControlScore": 37,
+        "ControlScore": 38,
         "BruiserScore": 118,
         "BEff": 78.88,
         "Score": 118,
-        "AdjustedScore": 180
+        "AdjustedScore": 180,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -1086,13 +1493,14 @@
         "ACC": 7,
         "Set": "Nemesis",
         "MainStat": "HP flat",
-        "DPSScore": 53,
-        "TankScore": 61,
-        "ControlScore": 31,
+        "DPSScore": 54,
+        "TankScore": 62,
+        "ControlScore": 32,
         "BruiserScore": 101,
         "BEff": 66.9,
-        "Score": 118,
-        "AdjustedScore": 180
+        "Score": 119,
+        "AdjustedScore": 180,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -1101,13 +1509,14 @@
         "ACC": 4,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 91,
-        "TankScore": 92,
+        "DPSScore": 92,
+        "TankScore": 93,
         "ControlScore": 85,
         "BruiserScore": 109,
         "BEff": 72.47,
         "Score": 119,
-        "AdjustedScore": 181
+        "AdjustedScore": 181,
+        "IsGemmed": false
     },
     {
         "CDmg": 6,
@@ -1119,10 +1528,11 @@
         "DPSScore": 34,
         "TankScore": 102,
         "ControlScore": 17,
-        "BruiserScore": 101,
+        "BruiserScore": 102,
         "BEff": 67.45714285714286,
         "Score": 119,
-        "AdjustedScore": 181
+        "AdjustedScore": 181,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -1131,13 +1541,14 @@
         "RES": 14,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 81,
+        "DPSScore": 82,
         "TankScore": 99,
-        "ControlScore": 61,
+        "ControlScore": 62,
         "BruiserScore": 84,
         "BEff": 74.47999999999999,
         "Score": 119,
-        "AdjustedScore": 181
+        "AdjustedScore": 181,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -1146,13 +1557,14 @@
         "RES": 7,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 74,
-        "TankScore": 99,
-        "ControlScore": 54,
+        "DPSScore": 75,
+        "TankScore": 100,
+        "ControlScore": 55,
         "BruiserScore": 102,
         "BEff": 70.84,
-        "Score": 119,
-        "AdjustedScore": 181
+        "Score": 120,
+        "AdjustedScore": 181,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -1162,13 +1574,14 @@
         "DEF flatI": 20,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 100,
+        "DPSScore": 101,
         "TankScore": 36,
         "ControlScore": 17,
-        "BruiserScore": 119,
+        "BruiserScore": 120,
         "BEff": 78.24428571428572,
-        "Score": 119,
-        "AdjustedScore": 181
+        "Score": 120,
+        "AdjustedScore": 181,
+        "IsGemmed": false
     },
     {
         "SPD": 4,
@@ -1179,12 +1592,13 @@
         "Set": "Will",
         "MainStat": "HP flat",
         "DPSScore": 14,
-        "TankScore": 102,
-        "ControlScore": 26,
-        "BruiserScore": 102,
+        "TankScore": 103,
+        "ControlScore": 27,
+        "BruiserScore": 103,
         "BEff": 75.74,
         "Score": 115,
-        "AdjustedScore": 182
+        "AdjustedScore": 182,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1199,7 +1613,8 @@
         "BruiserScore": 120,
         "BEff": 77.92,
         "Score": 120,
-        "AdjustedScore": 182
+        "AdjustedScore": 182,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1208,13 +1623,14 @@
         "HP%": 16,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 33,
+        "DPSScore": 34,
         "TankScore": 75,
         "ControlScore": 0,
-        "BruiserScore": 108,
+        "BruiserScore": 109,
         "BEff": 73.32,
-        "Score": 108,
-        "AdjustedScore": 183
+        "Score": 109,
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1224,12 +1640,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 70,
+        "TankScore": 71,
         "ControlScore": 58,
         "BruiserScore": 116,
         "BEff": 79.84,
         "Score": 116,
-        "AdjustedScore": 183
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "ATK%": 18,
@@ -1239,12 +1656,13 @@
         "Set": "Destroy",
         "MainStat": "HP flat",
         "DPSScore": 79,
-        "TankScore": 71,
+        "TankScore": 72,
         "ControlScore": 34,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 81.1,
-        "Score": 116,
-        "AdjustedScore": 183
+        "Score": 117,
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "SPD": 7,
@@ -1254,12 +1672,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 24,
-        "TankScore": 116,
+        "TankScore": 117,
         "ControlScore": 24,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 80.12,
-        "Score": 116,
-        "AdjustedScore": 183
+        "Score": 117,
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -1268,13 +1687,14 @@
         "ACC": 7,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 103,
+        "DPSScore": 104,
         "TankScore": 75,
-        "ControlScore": 92,
-        "BruiserScore": 103,
+        "ControlScore": 93,
+        "BruiserScore": 104,
         "BEff": 75.42,
         "Score": 121,
-        "AdjustedScore": 183
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -1284,12 +1704,13 @@
         "Set": "Swift",
         "MainStat": "HP flat",
         "DPSScore": 86,
-        "TankScore": 84,
-        "ControlScore": 54,
+        "TankScore": 85,
+        "ControlScore": 55,
         "BruiserScore": 116,
         "BEff": 79.57428571428571,
         "Score": 116,
-        "AdjustedScore": 183
+        "AdjustedScore": 183,
+        "IsGemmed": false
     },
     {
         "CDmg": 11,
@@ -1305,7 +1726,8 @@
         "BruiserScore": 112,
         "BEff": 68.51142857142857,
         "Score": 122,
-        "AdjustedScore": 184
+        "AdjustedScore": 184,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -1318,10 +1740,11 @@
         "DPSScore": 120,
         "TankScore": 20,
         "ControlScore": 17,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 82.19999999999999,
-        "Score": 122,
-        "AdjustedScore": 184
+        "Score": 123,
+        "AdjustedScore": 184,
+        "IsGemmed": false
     },
     {
         "CRate": 18,
@@ -1336,7 +1759,8 @@
         "BruiserScore": 114,
         "BEff": 75.79714285714286,
         "Score": 114,
-        "AdjustedScore": 184
+        "AdjustedScore": 184,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -1345,13 +1769,14 @@
         "SPD": 15,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 123,
+        "DPSScore": 124,
         "TankScore": 51,
         "ControlScore": 51,
-        "BruiserScore": 123,
+        "BruiserScore": 124,
         "BEff": 82.4557142857143,
-        "Score": 123,
-        "AdjustedScore": 185
+        "Score": 124,
+        "AdjustedScore": 185,
+        "IsGemmed": false
     },
     {
         "ATK%": 7,
@@ -1360,13 +1785,14 @@
         "ATK flat": 14,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 22,
+        "DPSScore": 23,
         "TankScore": 88,
         "ControlScore": 0,
         "BruiserScore": 110,
         "BEff": 76.4,
         "Score": 110,
-        "AdjustedScore": 185
+        "AdjustedScore": 185,
+        "IsGemmed": false
     },
     {
         "SPD": 19,
@@ -1375,13 +1801,14 @@
         "ATK flat": 11,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 68,
+        "DPSScore": 69,
         "TankScore": 115,
         "ControlScore": 65,
-        "BruiserScore": 118,
+        "BruiserScore": 119,
         "BEff": 83.94,
-        "Score": 118,
-        "AdjustedScore": 185
+        "Score": 119,
+        "AdjustedScore": 185,
+        "IsGemmed": false
     },
     {
         "CDmg": 7,
@@ -1396,7 +1823,8 @@
         "BruiserScore": 118,
         "BEff": 81.5,
         "Score": 118,
-        "AdjustedScore": 185
+        "AdjustedScore": 185,
+        "IsGemmed": false
     },
     {
         "SPD": 24,
@@ -1411,7 +1839,8 @@
         "BruiserScore": 104,
         "BEff": 77.34,
         "Score": 124,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "ATK%": 13,
@@ -1426,7 +1855,8 @@
         "BruiserScore": 120,
         "BEff": 77.6,
         "Score": 120,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "ATK%": 34,
@@ -1436,12 +1866,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 102,
-        "TankScore": 34,
+        "TankScore": 35,
         "ControlScore": 17,
-        "BruiserScore": 119,
+        "BruiserScore": 120,
         "BEff": 80.69999999999999,
-        "Score": 119,
-        "AdjustedScore": 186
+        "Score": 120,
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1450,13 +1881,14 @@
         "RES": 7,
         "Set": "Guard",
         "MainStat": "HP flat",
-        "DPSScore": 13,
-        "TankScore": 102,
+        "DPSScore": 14,
+        "TankScore": 103,
         "ControlScore": 0,
-        "BruiserScore": 98,
+        "BruiserScore": 99,
         "BEff": 66.32,
         "Score": 116,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -1466,13 +1898,14 @@
         "ATK flat": 14,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 106,
-        "TankScore": 70,
+        "DPSScore": 107,
+        "TankScore": 71,
         "ControlScore": 58,
         "BruiserScore": 119,
         "BEff": 83.57000000000001,
         "Score": 119,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -1483,12 +1916,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 79,
-        "TankScore": 94,
-        "ControlScore": 54,
+        "TankScore": 95,
+        "ControlScore": 55,
         "BruiserScore": 119,
         "BEff": 90.75142857142856,
         "Score": 119,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -1504,7 +1938,8 @@
         "BruiserScore": 119,
         "BEff": 77.05,
         "Score": 119,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -1514,12 +1949,13 @@
         "Set": "Fight",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 40,
-        "ControlScore": 20,
+        "TankScore": 41,
+        "ControlScore": 21,
         "BruiserScore": 124,
         "BEff": 80.13142857142857,
         "Score": 124,
-        "AdjustedScore": 186
+        "AdjustedScore": 186,
+        "IsGemmed": true
     },
     {
         "ATK%": 13,
@@ -1528,13 +1964,14 @@
         "HP%": 7,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 90,
+        "DPSScore": 91,
         "TankScore": 88,
         "ControlScore": 58,
-        "BruiserScore": 120,
+        "BruiserScore": 121,
         "BEff": 81.52,
-        "Score": 120,
-        "AdjustedScore": 187
+        "Score": 121,
+        "AdjustedScore": 187,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -1546,10 +1983,11 @@
         "DPSScore": 100,
         "TankScore": 18,
         "ControlScore": 0,
-        "BruiserScore": 117,
+        "BruiserScore": 118,
         "BEff": 77.20142857142858,
-        "Score": 117,
-        "AdjustedScore": 187
+        "Score": 118,
+        "AdjustedScore": 187,
+        "IsGemmed": false
     },
     {
         "SPD": 10,
@@ -1561,11 +1999,12 @@
         "MainStat": "HP flat",
         "DPSScore": 40,
         "TankScore": 102,
-        "ControlScore": 46,
-        "BruiserScore": 107,
+        "ControlScore": 47,
+        "BruiserScore": 108,
         "BEff": 78.7,
         "Score": 120,
-        "AdjustedScore": 187
+        "AdjustedScore": 187,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -1575,13 +2014,14 @@
         "ATK flatI": 15,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 60,
-        "TankScore": 80,
-        "ControlScore": 20,
-        "BruiserScore": 120,
+        "DPSScore": 61,
+        "TankScore": 81,
+        "ControlScore": 21,
+        "BruiserScore": 121,
         "BEff": 77.75999999999999,
-        "Score": 120,
-        "AdjustedScore": 187
+        "Score": 121,
+        "AdjustedScore": 187,
+        "IsGemmed": false
     },
     {
         "CDmg": 6,
@@ -1590,13 +2030,14 @@
         "HP%": 7,
         "Set": "Will",
         "MainStat": "HP flat",
-        "DPSScore": 102,
+        "DPSScore": 103,
         "TankScore": 38,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 120,
         "BEff": 78.11714285714285,
         "Score": 120,
-        "AdjustedScore": 187
+        "AdjustedScore": 187,
+        "IsGemmed": false
     },
     {
         "ATK%": 23,
@@ -1606,13 +2047,14 @@
         "ACC": 4,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 71,
+        "DPSScore": 72,
         "TankScore": 54,
         "ControlScore": 24,
-        "BruiserScore": 91,
+        "BruiserScore": 92,
         "BEff": 77.94,
-        "Score": 121,
-        "AdjustedScore": 188
+        "Score": 122,
+        "AdjustedScore": 188,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -1622,12 +2064,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 126,
-        "TankScore": 20,
-        "ControlScore": 20,
+        "TankScore": 21,
+        "ControlScore": 21,
         "BruiserScore": 126,
         "BEff": 80.58428571428571,
         "Score": 126,
-        "AdjustedScore": 188
+        "AdjustedScore": 188,
+        "IsGemmed": false
     },
     {
         "CDmg": 12,
@@ -1636,13 +2079,14 @@
         "DEF flat": 12,
         "Set": "Will",
         "MainStat": "HP flat",
-        "DPSScore": 108,
-        "TankScore": 92,
+        "DPSScore": 109,
+        "TankScore": 93,
         "ControlScore": 75,
         "BruiserScore": 126,
         "BEff": 78.73428571428572,
         "Score": 126,
-        "AdjustedScore": 188
+        "AdjustedScore": 188,
+        "IsGemmed": false
     },
     {
         "SPD": 12,
@@ -1657,7 +2101,8 @@
         "BruiserScore": 102,
         "BEff": 79.9,
         "Score": 122,
-        "AdjustedScore": 188
+        "AdjustedScore": 188,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -1670,10 +2115,11 @@
         "DPSScore": 100,
         "TankScore": 91,
         "ControlScore": 68,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 86.55000000000001,
-        "Score": 122,
-        "AdjustedScore": 189
+        "Score": 123,
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "ATK%": 6,
@@ -1682,13 +2128,14 @@
         "RES": 6,
         "Set": "Intangible",
         "MainStat": "HP flat",
-        "DPSScore": 69,
+        "DPSScore": 70,
         "TankScore": 107,
-        "ControlScore": 54,
+        "ControlScore": 55,
         "BruiserScore": 107,
         "BEff": 81.86,
         "Score": 122,
-        "AdjustedScore": 189
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "SPD": 8,
@@ -1697,13 +2144,14 @@
         "ACC": 17,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 27,
+        "DPSScore": 28,
         "TankScore": 80,
         "ControlScore": 70,
         "BruiserScore": 80,
         "BEff": 79.58,
-        "Score": 122,
-        "AdjustedScore": 189
+        "Score": 123,
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -1713,13 +2161,14 @@
         "ACC": 7,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 87,
+        "DPSScore": 88,
         "TankScore": 62,
         "ControlScore": 62,
         "BruiserScore": 105,
         "BEff": 81.19999999999999,
-        "Score": 122,
-        "AdjustedScore": 189
+        "Score": 123,
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -1728,13 +2177,14 @@
         "RES": 4,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 97,
+        "DPSScore": 98,
         "TankScore": 88,
         "ControlScore": 58,
-        "BruiserScore": 117,
+        "BruiserScore": 118,
         "BEff": 74.47999999999999,
-        "Score": 127,
-        "AdjustedScore": 189
+        "Score": 128,
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -1746,11 +2196,12 @@
         "MainStat": "HP flat",
         "DPSScore": 110,
         "TankScore": 72,
-        "ControlScore": 54,
+        "ControlScore": 55,
         "BruiserScore": 110,
         "BEff": 76.69,
-        "Score": 127,
-        "AdjustedScore": 189
+        "Score": 128,
+        "AdjustedScore": 189,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -1759,13 +2210,14 @@
         "SPD": 9,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 128,
-        "TankScore": 20,
-        "ControlScore": 20,
-        "BruiserScore": 128,
+        "DPSScore": 129,
+        "TankScore": 21,
+        "ControlScore": 21,
+        "BruiserScore": 129,
         "BEff": 81.76142857142857,
-        "Score": 128,
-        "AdjustedScore": 190
+        "Score": 129,
+        "AdjustedScore": 190,
+        "IsGemmed": true
     },
     {
         "CRate": 11,
@@ -1775,12 +2227,13 @@
         "Set": "Focus",
         "MainStat": "HP flat",
         "DPSScore": 113,
-        "TankScore": 52,
-        "ControlScore": 37,
+        "TankScore": 53,
+        "ControlScore": 38,
         "BruiserScore": 128,
         "BEff": 83.19,
         "Score": 128,
-        "AdjustedScore": 190
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -1791,12 +2244,13 @@
         "Set": "Violent",
         "MainStat": "HP flat",
         "DPSScore": 20,
-        "TankScore": 85,
+        "TankScore": 86,
         "ControlScore": 15,
-        "BruiserScore": 105,
+        "BruiserScore": 106,
         "BEff": 71.6,
-        "Score": 120,
-        "AdjustedScore": 190
+        "Score": 121,
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -1807,12 +2261,13 @@
         "Set": "Guard",
         "MainStat": "HP flat",
         "DPSScore": 84,
-        "TankScore": 34,
-        "ControlScore": 44,
+        "TankScore": 35,
+        "ControlScore": 45,
         "BruiserScore": 101,
         "BEff": 71.31428571428572,
-        "Score": 128,
-        "AdjustedScore": 190
+        "Score": 129,
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "SPD": 19,
@@ -1827,7 +2282,8 @@
         "BruiserScore": 108,
         "BEff": 77.84,
         "Score": 128,
-        "AdjustedScore": 190
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -1837,13 +2293,14 @@
         "RES": 13,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 74,
+        "DPSScore": 75,
         "TankScore": 112,
         "ControlScore": 58,
         "BruiserScore": 96,
         "BEff": 78.07000000000001,
-        "Score": 128,
-        "AdjustedScore": 190
+        "Score": 129,
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1852,13 +2309,14 @@
         "HP%": 24,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 63,
-        "TankScore": 97,
-        "ControlScore": 37,
-        "BruiserScore": 123,
+        "DPSScore": 64,
+        "TankScore": 98,
+        "ControlScore": 38,
+        "BruiserScore": 124,
         "BEff": 80.88,
-        "Score": 123,
-        "AdjustedScore": 190
+        "Score": 124,
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -1869,11 +2327,12 @@
         "MainStat": "HP flat",
         "DPSScore": 101,
         "TankScore": 89,
-        "ControlScore": 61,
+        "ControlScore": 62,
         "BruiserScore": 116,
         "BEff": 75.14,
-        "Score": 128,
-        "AdjustedScore": 190
+        "Score": 129,
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -1882,13 +2341,14 @@
         "HP%": 5,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 110,
+        "DPSScore": 111,
         "TankScore": 50,
-        "ControlScore": 37,
+        "ControlScore": 38,
         "BruiserScore": 123,
         "BEff": 80.84,
         "Score": 123,
-        "AdjustedScore": 190
+        "AdjustedScore": 190,
+        "IsGemmed": true
     },
     {
         "CRate": 15,
@@ -1903,7 +2363,8 @@
         "BruiserScore": 113,
         "BEff": 72.19,
         "Score": 128,
-        "AdjustedScore": 190
+        "AdjustedScore": 190,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -1913,13 +2374,14 @@
         "DEF%": 10,
         "Set": "Destroy",
         "MainStat": "HP flat",
-        "DPSScore": 99,
-        "TankScore": 79,
-        "ControlScore": 54,
-        "BruiserScore": 124,
+        "DPSScore": 100,
+        "TankScore": 80,
+        "ControlScore": 55,
+        "BruiserScore": 125,
         "BEff": 92.89428571428572,
-        "Score": 124,
-        "AdjustedScore": 191
+        "Score": 125,
+        "AdjustedScore": 191,
+        "IsGemmed": false
     },
     {
         "ATK%": 19,
@@ -1934,7 +2396,8 @@
         "BruiserScore": 124,
         "BEff": 80.9,
         "Score": 124,
-        "AdjustedScore": 191
+        "AdjustedScore": 191,
+        "IsGemmed": true
     },
     {
         "ATK%": 15,
@@ -1945,11 +2408,12 @@
         "MainStat": "HP flat",
         "DPSScore": 92,
         "TankScore": 87,
-        "ControlScore": 54,
+        "ControlScore": 55,
         "BruiserScore": 107,
         "BEff": 82.86,
-        "Score": 124,
-        "AdjustedScore": 191
+        "Score": 125,
+        "AdjustedScore": 191,
+        "IsGemmed": false
     },
     {
         "ATK%": 5,
@@ -1959,13 +2423,14 @@
         "ACCI": 6,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 26,
-        "TankScore": 96,
+        "DPSScore": 27,
+        "TankScore": 97,
         "ControlScore": 29,
         "BruiserScore": 109,
         "BEff": 78.94,
         "Score": 124,
-        "AdjustedScore": 191
+        "AdjustedScore": 191,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -1974,13 +2439,14 @@
         "HP%": 6,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 81,
+        "DPSScore": 82,
         "TankScore": 35,
         "ControlScore": 0,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 76.63,
-        "Score": 116,
-        "AdjustedScore": 191
+        "Score": 117,
+        "AdjustedScore": 191,
+        "IsGemmed": false
     },
     {
         "CRate": 19,
@@ -1993,10 +2459,11 @@
         "DPSScore": 99,
         "TankScore": 44,
         "ControlScore": 14,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 81.35285714285715,
         "Score": 129,
-        "AdjustedScore": 191
+        "AdjustedScore": 191,
+        "IsGemmed": true
     },
     {
         "ATK%": 18,
@@ -2006,12 +2473,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 45,
-        "TankScore": 52,
+        "TankScore": 53,
         "ControlScore": 20,
         "BruiserScore": 98,
         "BEff": 77.0,
         "Score": 118,
-        "AdjustedScore": 192
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -2023,10 +2491,11 @@
         "DPSScore": 105,
         "TankScore": 18,
         "ControlScore": 0,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 79.28,
-        "Score": 122,
-        "AdjustedScore": 192
+        "Score": 123,
+        "AdjustedScore": 192,
+        "IsGemmed": true
     },
     {
         "CDmgI": 6,
@@ -2039,10 +2508,11 @@
         "DPSScore": 68,
         "TankScore": 94,
         "ControlScore": 66,
-        "BruiserScore": 110,
+        "BruiserScore": 111,
         "BEff": 83.05714285714285,
-        "Score": 125,
-        "AdjustedScore": 192
+        "Score": 126,
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "SPD": 17,
@@ -2052,12 +2522,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 58,
-        "TankScore": 125,
+        "TankScore": 126,
         "ControlScore": 58,
         "BruiserScore": 113,
         "BEff": 83.52,
-        "Score": 125,
-        "AdjustedScore": 192
+        "Score": 126,
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -2067,13 +2538,14 @@
         "ACCI": 7,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 50,
-        "TankScore": 96,
+        "DPSScore": 51,
+        "TankScore": 97,
         "ControlScore": 52,
         "BruiserScore": 96,
         "BEff": 73.55,
-        "Score": 130,
-        "AdjustedScore": 192
+        "Score": 131,
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2082,13 +2554,14 @@
         "HP%": 16,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 84,
-        "TankScore": 67,
-        "ControlScore": 27,
-        "BruiserScore": 124,
+        "DPSScore": 85,
+        "TankScore": 68,
+        "ControlScore": 28,
+        "BruiserScore": 125,
         "BEff": 80.56,
-        "Score": 124,
-        "AdjustedScore": 192
+        "Score": 125,
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -2097,13 +2570,14 @@
         "DEF flat": 18,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 126,
-        "TankScore": 78,
+        "DPSScore": 127,
+        "TankScore": 79,
         "ControlScore": 75,
         "BruiserScore": 130,
         "BEff": 80.25,
         "Score": 130,
-        "AdjustedScore": 192
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CDmg": 20,
@@ -2113,12 +2587,13 @@
         "Set": "Violent",
         "MainStat": "HP flat",
         "DPSScore": 113,
-        "TankScore": 34,
+        "TankScore": 35,
         "ControlScore": 17,
         "BruiserScore": 113,
         "BEff": 72.45714285714286,
-        "Score": 130,
-        "AdjustedScore": 192
+        "Score": 131,
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 19,
@@ -2133,7 +2608,8 @@
         "BruiserScore": 110,
         "BEff": 71.87,
         "Score": 130,
-        "AdjustedScore": 192
+        "AdjustedScore": 192,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2143,13 +2619,14 @@
         "RESI": 4,
         "Set": "Intangible",
         "MainStat": "HP flat",
-        "DPSScore": 101,
+        "DPSScore": 102,
         "TankScore": 64,
         "ControlScore": 34,
-        "BruiserScore": 121,
+        "BruiserScore": 122,
         "BEff": 84.30857142857143,
-        "Score": 131,
-        "AdjustedScore": 193
+        "Score": 132,
+        "AdjustedScore": 193,
+        "IsGemmed": false
     },
     {
         "CDmgI": 4,
@@ -2159,13 +2636,14 @@
         "ACC": 4,
         "Set": "Nemesis",
         "MainStat": "HP flat",
-        "DPSScore": 118,
-        "TankScore": 57,
-        "ControlScore": 64,
+        "DPSScore": 119,
+        "TankScore": 58,
+        "ControlScore": 65,
         "BruiserScore": 121,
         "BEff": 78.83142857142856,
         "Score": 131,
-        "AdjustedScore": 193
+        "AdjustedScore": 193,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -2174,13 +2652,14 @@
         "HP%": 28,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 58,
+        "DPSScore": 59,
         "TankScore": 65,
         "ControlScore": 0,
-        "BruiserScore": 123,
+        "BruiserScore": 124,
         "BEff": 79.58571428571429,
-        "Score": 123,
-        "AdjustedScore": 193
+        "Score": 124,
+        "AdjustedScore": 193,
+        "IsGemmed": true
     },
     {
         "CRate": 9,
@@ -2196,7 +2675,8 @@
         "BruiserScore": 101,
         "BEff": 75.16999999999999,
         "Score": 131,
-        "AdjustedScore": 193
+        "AdjustedScore": 193,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -2211,7 +2691,8 @@
         "BruiserScore": 123,
         "BEff": 72.5,
         "Score": 123,
-        "AdjustedScore": 193
+        "AdjustedScore": 193,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -2221,13 +2702,14 @@
         "ATK flat": 18,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 92,
-        "TankScore": 72,
-        "ControlScore": 37,
-        "BruiserScore": 127,
+        "DPSScore": 93,
+        "TankScore": 73,
+        "ControlScore": 38,
+        "BruiserScore": 128,
         "BEff": 85.01,
-        "Score": 127,
-        "AdjustedScore": 194
+        "Score": 128,
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2236,13 +2718,14 @@
         "DEF%": 16,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 87,
+        "DPSScore": 88,
         "TankScore": 88,
         "ControlScore": 48,
-        "BruiserScore": 127,
+        "BruiserScore": 128,
         "BEff": 83.52,
-        "Score": 127,
-        "AdjustedScore": 194
+        "Score": 128,
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -2255,10 +2738,11 @@
         "DPSScore": 62,
         "TankScore": 104,
         "ControlScore": 34,
-        "BruiserScore": 114,
+        "BruiserScore": 115,
         "BEff": 84.12142857142857,
         "Score": 132,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2268,12 +2752,13 @@
         "Set": "Vampire",
         "MainStat": "HP flat",
         "DPSScore": 92,
-        "TankScore": 54,
-        "ControlScore": 94,
+        "TankScore": 55,
+        "ControlScore": 95,
         "BruiserScore": 92,
         "BEff": 75.84,
         "Score": 132,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2284,12 +2769,13 @@
         "Set": "Guard",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 44,
+        "TankScore": 45,
         "ControlScore": 17,
         "BruiserScore": 119,
         "BEff": 83.00857142857143,
         "Score": 132,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "SPD": 17,
@@ -2299,12 +2785,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 58,
-        "TankScore": 132,
+        "TankScore": 133,
         "ControlScore": 58,
-        "BruiserScore": 97,
+        "BruiserScore": 98,
         "BEff": 79.52,
-        "Score": 132,
-        "AdjustedScore": 194
+        "Score": 133,
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -2315,12 +2802,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 100,
-        "TankScore": 98,
-        "ControlScore": 71,
+        "TankScore": 99,
+        "ControlScore": 72,
         "BruiserScore": 127,
         "BEff": 85.47999999999999,
         "Score": 127,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": true
     },
     {
         "ATK%": 12,
@@ -2330,13 +2818,14 @@
         "DEF flatI": 16,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 91,
+        "DPSScore": 92,
         "TankScore": 97,
-        "ControlScore": 61,
+        "ControlScore": 62,
         "BruiserScore": 127,
         "BEff": 84.78,
         "Score": 127,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2346,12 +2835,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 92,
-        "TankScore": 89,
-        "ControlScore": 54,
+        "TankScore": 90,
+        "ControlScore": 55,
         "BruiserScore": 127,
         "BEff": 83.84,
         "Score": 127,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -2360,13 +2850,14 @@
         "ACC": 14,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 79,
+        "DPSScore": 80,
         "TankScore": 57,
-        "ControlScore": 79,
+        "ControlScore": 80,
         "BruiserScore": 92,
         "BEff": 82.88,
         "Score": 127,
-        "AdjustedScore": 194
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -2375,13 +2866,14 @@
         "HP%": 5,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 97,
+        "DPSScore": 98,
         "TankScore": 88,
         "ControlScore": 58,
-        "BruiserScore": 127,
+        "BruiserScore": 128,
         "BEff": 84.47999999999999,
-        "Score": 127,
-        "AdjustedScore": 194
+        "Score": 128,
+        "AdjustedScore": 194,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -2396,7 +2888,8 @@
         "BruiserScore": 120,
         "BEff": 77.97,
         "Score": 120,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "ATK%": 15,
@@ -2408,10 +2901,11 @@
         "DPSScore": 38,
         "TankScore": 65,
         "ControlScore": 18,
-        "BruiserScore": 102,
+        "BruiserScore": 103,
         "BEff": 78.0,
         "Score": 120,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "ATK%": 22,
@@ -2426,7 +2920,8 @@
         "BruiserScore": 100,
         "BEff": 78.0,
         "Score": 120,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -2435,13 +2930,14 @@
         "HP%": 20,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 40,
+        "DPSScore": 41,
         "TankScore": 108,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 128,
         "BEff": 81.25999999999999,
         "Score": 128,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "SPD": 5,
@@ -2451,13 +2947,14 @@
         "DEF flatI": 11,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 21,
-        "TankScore": 124,
+        "DPSScore": 22,
+        "TankScore": 125,
         "ControlScore": 17,
-        "BruiserScore": 128,
+        "BruiserScore": 129,
         "BEff": 83.99999999999999,
-        "Score": 128,
-        "AdjustedScore": 195
+        "Score": 129,
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "DEF%": 23,
@@ -2472,7 +2969,8 @@
         "BruiserScore": 95,
         "BEff": 70.0,
         "Score": 125,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -2483,12 +2981,13 @@
         "Set": "Endure",
         "MainStat": "HP flat",
         "DPSScore": 100,
-        "TankScore": 37,
+        "TankScore": 38,
         "ControlScore": 64,
         "BruiserScore": 103,
         "BEff": 74.82,
         "Score": 133,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2500,10 +2999,11 @@
         "DPSScore": 20,
         "TankScore": 68,
         "ControlScore": 38,
-        "BruiserScore": 87,
+        "BruiserScore": 88,
         "BEff": 69.98,
         "Score": 125,
-        "AdjustedScore": 195
+        "AdjustedScore": 195,
+        "IsGemmed": false
     },
     {
         "ATK%": 7,
@@ -2518,7 +3018,25 @@
         "BruiserScore": 129,
         "BEff": 82.9,
         "Score": 129,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
+    },
+    {
+        "CDmgI": 7,
+        "SPD": 22,
+        "HP%": 5,
+        "RES": 5,
+        "ACC": 6,
+        "Set": "Blade",
+        "MainStat": "HP flat",
+        "DPSScore": 95,
+        "TankScore": 100,
+        "ControlScore": 90,
+        "BruiserScore": 107,
+        "BEff": 78.82,
+        "Score": 135,
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -2528,13 +3046,14 @@
         "DEF%": 13,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 101,
+        "DPSScore": 102,
         "TankScore": 50,
         "ControlScore": 17,
         "BruiserScore": 134,
         "BEff": 83.69285714285714,
         "Score": 134,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "SPD": 10,
@@ -2549,7 +3068,8 @@
         "BruiserScore": 109,
         "BEff": 82.9,
         "Score": 129,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "SPD": 16,
@@ -2558,13 +3078,14 @@
         "ACC": 8,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 54,
-        "TankScore": 114,
-        "ControlScore": 74,
+        "DPSScore": 55,
+        "TankScore": 115,
+        "ControlScore": 75,
         "BruiserScore": 67,
         "BEff": 76.86,
-        "Score": 134,
-        "AdjustedScore": 196
+        "Score": 135,
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -2574,13 +3095,14 @@
         "RES": 7,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 91,
-        "TankScore": 109,
-        "ControlScore": 71,
+        "DPSScore": 92,
+        "TankScore": 110,
+        "ControlScore": 72,
         "BruiserScore": 112,
         "BEff": 86.66,
-        "Score": 129,
-        "AdjustedScore": 196
+        "Score": 130,
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "ATK%": 12,
@@ -2596,7 +3118,8 @@
         "BruiserScore": 92,
         "BEff": 82.9,
         "Score": 129,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRate": 14,
@@ -2608,11 +3131,12 @@
         "MainStat": "HP flat",
         "DPSScore": 87,
         "TankScore": 76,
-        "ControlScore": 53,
+        "ControlScore": 54,
         "BruiserScore": 107,
         "BEff": 75.84,
-        "Score": 134,
-        "AdjustedScore": 196
+        "Score": 135,
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -2623,12 +3147,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 52,
-        "ControlScore": 52,
+        "TankScore": 53,
+        "ControlScore": 53,
         "BruiserScore": 119,
         "BEff": 75.21,
         "Score": 134,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -2641,10 +3166,11 @@
         "DPSScore": 84,
         "TankScore": 84,
         "ControlScore": 34,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 85.07714285714286,
         "Score": 134,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2660,7 +3186,8 @@
         "BruiserScore": 99,
         "BEff": 86.09142857142857,
         "Score": 134,
-        "AdjustedScore": 196
+        "AdjustedScore": 196,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -2671,12 +3198,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 95,
-        "TankScore": 32,
+        "TankScore": 33,
         "ControlScore": 0,
-        "BruiserScore": 127,
+        "BruiserScore": 128,
         "BEff": 73.73,
-        "Score": 127,
-        "AdjustedScore": 197
+        "Score": 128,
+        "AdjustedScore": 197,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -2685,13 +3213,14 @@
         "HP%": 32,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 67,
+        "DPSScore": 68,
         "TankScore": 102,
         "ControlScore": 34,
         "BruiserScore": 135,
         "BEff": 85.40714285714286,
         "Score": 135,
-        "AdjustedScore": 197
+        "AdjustedScore": 197,
+        "IsGemmed": false
     },
     {
         "CDmg": 6,
@@ -2701,13 +3230,14 @@
         "HP%I": 6,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 62,
-        "TankScore": 98,
+        "DPSScore": 63,
+        "TankScore": 99,
         "ControlScore": 31,
         "BruiserScore": 130,
         "BEff": 73.09714285714286,
         "Score": 130,
-        "AdjustedScore": 197
+        "AdjustedScore": 197,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2716,13 +3246,14 @@
         "DEF%": 8,
         "Set": "Rage",
         "MainStat": "HP flat",
-        "DPSScore": 110,
-        "TankScore": 40,
-        "ControlScore": 20,
-        "BruiserScore": 130,
+        "DPSScore": 111,
+        "TankScore": 41,
+        "ControlScore": 21,
+        "BruiserScore": 131,
         "BEff": 82.24,
-        "Score": 130,
-        "AdjustedScore": 197
+        "Score": 131,
+        "AdjustedScore": 197,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -2732,13 +3263,14 @@
         "ACCI": 6,
         "Set": "Revenge",
         "MainStat": "HP flat",
-        "DPSScore": 120,
-        "TankScore": 20,
-        "ControlScore": 35,
-        "BruiserScore": 120,
+        "DPSScore": 121,
+        "TankScore": 21,
+        "ControlScore": 36,
+        "BruiserScore": 121,
         "BEff": 76.74000000000001,
-        "Score": 135,
-        "AdjustedScore": 197
+        "Score": 136,
+        "AdjustedScore": 197,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -2753,7 +3285,8 @@
         "BruiserScore": 127,
         "BEff": 81.09285714285714,
         "Score": 127,
-        "AdjustedScore": 197
+        "AdjustedScore": 197,
+        "IsGemmed": true
     },
     {
         "CRate": 6,
@@ -2768,7 +3301,8 @@
         "BruiserScore": 131,
         "BEff": 84.2,
         "Score": 131,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -2778,12 +3312,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 69,
-        "TankScore": 120,
+        "TankScore": 121,
         "ControlScore": 58,
         "BruiserScore": 132,
         "BEff": 86.09142857142857,
         "Score": 132,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -2794,12 +3329,13 @@
         "Set": "Nemesis",
         "MainStat": "HP flat",
         "DPSScore": 100,
-        "TankScore": 82,
+        "TankScore": 83,
         "ControlScore": 51,
-        "BruiserScore": 131,
+        "BruiserScore": 132,
         "BEff": 85.81428571428572,
-        "Score": 131,
-        "AdjustedScore": 198
+        "Score": 132,
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CDmg": 7,
@@ -2808,13 +3344,14 @@
         "DEF%": 12,
         "Set": "Fight",
         "MainStat": "HP flat",
-        "DPSScore": 101,
+        "DPSScore": 102,
         "TankScore": 64,
         "ControlScore": 34,
-        "BruiserScore": 131,
+        "BruiserScore": 132,
         "BEff": 83.9,
-        "Score": 131,
-        "AdjustedScore": 198
+        "Score": 132,
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CRate": 4,
@@ -2823,13 +3360,14 @@
         "RES": 14,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 13,
+        "DPSScore": 14,
         "TankScore": 115,
         "ControlScore": 0,
-        "BruiserScore": 93,
+        "BruiserScore": 94,
         "BEff": 71.32,
-        "Score": 128,
-        "AdjustedScore": 198
+        "Score": 129,
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "SPD": 10,
@@ -2838,13 +3376,14 @@
         "RES": 10,
         "Set": "Destroy",
         "MainStat": "HP flat",
-        "DPSScore": 38,
+        "DPSScore": 39,
         "TankScore": 132,
         "ControlScore": 34,
         "BruiserScore": 111,
         "BEff": 78.2,
         "Score": 136,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "ATK%": 13,
@@ -2854,12 +3393,13 @@
         "Set": "Swift",
         "MainStat": "HP flat",
         "DPSScore": 84,
-        "TankScore": 98,
+        "TankScore": 99,
         "ControlScore": 51,
         "BruiserScore": 131,
         "BEff": 85.19999999999999,
         "Score": 131,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -2875,7 +3415,8 @@
         "BruiserScore": 98,
         "BEff": 71.3,
         "Score": 128,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CRate": 14,
@@ -2891,7 +3432,8 @@
         "BruiserScore": 136,
         "BEff": 86.55428571428571,
         "Score": 136,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CDmg": 18,
@@ -2902,12 +3444,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 111,
-        "TankScore": 47,
-        "ControlScore": 27,
+        "TankScore": 48,
+        "ControlScore": 28,
         "BruiserScore": 131,
         "BEff": 83.15142857142857,
         "Score": 131,
-        "AdjustedScore": 198
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "CDmg": 16,
@@ -2917,13 +3460,14 @@
         "ACC": 8,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 93,
+        "DPSScore": 94,
         "TankScore": 29,
         "ControlScore": 34,
-        "BruiserScore": 108,
+        "BruiserScore": 109,
         "BEff": 72.92571428571428,
-        "Score": 128,
-        "AdjustedScore": 198
+        "Score": 129,
+        "AdjustedScore": 198,
+        "IsGemmed": false
     },
     {
         "ATK%": 15,
@@ -2934,11 +3478,12 @@
         "MainStat": "HP flat",
         "DPSScore": 75,
         "TankScore": 95,
-        "ControlScore": 37,
-        "BruiserScore": 112,
+        "ControlScore": 38,
+        "BruiserScore": 113,
         "BEff": 84.56,
-        "Score": 132,
-        "AdjustedScore": 199
+        "Score": 133,
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CDmg": 6,
@@ -2950,10 +3495,11 @@
         "DPSScore": 72,
         "TankScore": 58,
         "ControlScore": 0,
-        "BruiserScore": 129,
+        "BruiserScore": 130,
         "BEff": 75.15714285714286,
-        "Score": 129,
-        "AdjustedScore": 199
+        "Score": 130,
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -2962,13 +3508,14 @@
         "HP%": 13,
         "Set": "Guard",
         "MainStat": "HP flat",
-        "DPSScore": 71,
-        "TankScore": 52,
+        "DPSScore": 72,
+        "TankScore": 53,
         "ControlScore": 0,
         "BruiserScore": 124,
         "BEff": 79.61,
         "Score": 124,
-        "AdjustedScore": 199
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "SPD": 5,
@@ -2980,10 +3527,11 @@
         "DPSScore": 17,
         "TankScore": 132,
         "ControlScore": 17,
-        "BruiserScore": 54,
+        "BruiserScore": 55,
         "BEff": 82.6,
         "Score": 132,
-        "AdjustedScore": 199
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "ATK%": 19,
@@ -2992,13 +3540,14 @@
         "HP%": 13,
         "Set": "Fight",
         "MainStat": "HP flat",
-        "DPSScore": 64,
-        "TankScore": 84,
+        "DPSScore": 65,
+        "TankScore": 85,
         "ControlScore": 17,
         "BruiserScore": 132,
         "BEff": 82.6,
         "Score": 132,
-        "AdjustedScore": 199
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "SPD": 11,
@@ -3007,13 +3556,14 @@
         "ACC": 7,
         "Set": "Destroy",
         "MainStat": "HP flat",
-        "DPSScore": 37,
+        "DPSScore": 38,
         "TankScore": 115,
         "ControlScore": 55,
         "BruiserScore": 115,
         "BEff": 84.56,
-        "Score": 132,
-        "AdjustedScore": 199
+        "Score": 133,
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CDmgI": 5,
@@ -3029,7 +3579,8 @@
         "BruiserScore": 92,
         "BEff": 71.71428571428571,
         "Score": 129,
-        "AdjustedScore": 199
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CDmg": 6,
@@ -3039,13 +3590,14 @@
         "ACCI": 5,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 29,
-        "TankScore": 82,
-        "ControlScore": 12,
+        "DPSScore": 30,
+        "TankScore": 83,
+        "ControlScore": 13,
         "BruiserScore": 112,
         "BEff": 79.85714285714286,
-        "Score": 124,
-        "AdjustedScore": 199
+        "Score": 125,
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -3061,7 +3613,8 @@
         "BruiserScore": 132,
         "BEff": 92.77714285714285,
         "Score": 132,
-        "AdjustedScore": 199
+        "AdjustedScore": 199,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -3071,12 +3624,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 138,
-        "TankScore": 20,
-        "ControlScore": 20,
+        "TankScore": 21,
+        "ControlScore": 21,
         "BruiserScore": 138,
         "BEff": 85.58428571428571,
         "Score": 138,
-        "AdjustedScore": 200
+        "AdjustedScore": 200,
+        "IsGemmed": true
     },
     {
         "CRateI": 4,
@@ -3086,13 +3640,14 @@
         "ACC": 7,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 27,
+        "DPSScore": 28,
         "TankScore": 85,
         "ControlScore": 18,
-        "BruiserScore": 112,
+        "BruiserScore": 113,
         "BEff": 82.03428571428572,
         "Score": 130,
-        "AdjustedScore": 200
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "ATK%": 18,
@@ -3102,13 +3657,14 @@
         "RES": 13,
         "Set": "Focus",
         "MainStat": "HP flat",
-        "DPSScore": 85,
-        "TankScore": 110,
+        "DPSScore": 86,
+        "TankScore": 111,
         "ControlScore": 58,
-        "BruiserScore": 105,
+        "BruiserScore": 106,
         "BEff": 81.72,
         "Score": 138,
-        "AdjustedScore": 200
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -3118,13 +3674,14 @@
         "DEF flat": 15,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 40,
-        "TankScore": 120,
-        "ControlScore": 27,
-        "BruiserScore": 133,
+        "DPSScore": 41,
+        "TankScore": 121,
+        "ControlScore": 28,
+        "BruiserScore": 134,
         "BEff": 87.4,
-        "Score": 133,
-        "AdjustedScore": 200
+        "Score": 134,
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -3139,7 +3696,8 @@
         "BruiserScore": 115,
         "BEff": 80.0,
         "Score": 125,
-        "AdjustedScore": 200
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -3154,7 +3712,8 @@
         "BruiserScore": 110,
         "BEff": 71.98,
         "Score": 130,
-        "AdjustedScore": 200
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -3165,12 +3724,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 124,
-        "TankScore": 52,
-        "ControlScore": 37,
+        "TankScore": 53,
+        "ControlScore": 38,
         "BruiserScore": 124,
         "BEff": 87.21000000000001,
-        "Score": 138,
-        "AdjustedScore": 200
+        "Score": 139,
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CDmg": 10,
@@ -3179,13 +3739,14 @@
         "HP%": 8,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 112,
+        "DPSScore": 113,
         "TankScore": 37,
         "ControlScore": 17,
-        "BruiserScore": 132,
+        "BruiserScore": 133,
         "BEff": 83.02857142857142,
-        "Score": 132,
-        "AdjustedScore": 200
+        "Score": 133,
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -3194,13 +3755,14 @@
         "ACC": 6,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 123,
-        "TankScore": 54,
-        "ControlScore": 69,
-        "BruiserScore": 123,
+        "DPSScore": 124,
+        "TankScore": 55,
+        "ControlScore": 70,
+        "BruiserScore": 124,
         "BEff": 78.49,
-        "Score": 138,
-        "AdjustedScore": 200
+        "Score": 139,
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRate": 19,
@@ -3209,13 +3771,14 @@
         "ACC": 14,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 103,
-        "TankScore": 20,
-        "ControlScore": 55,
-        "BruiserScore": 103,
+        "DPSScore": 104,
+        "TankScore": 21,
+        "ControlScore": 56,
+        "BruiserScore": 104,
         "BEff": 75.53,
-        "Score": 138,
-        "AdjustedScore": 200
+        "Score": 139,
+        "AdjustedScore": 200,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -3225,12 +3788,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 104,
-        "TankScore": 72,
-        "ControlScore": 37,
+        "TankScore": 73,
+        "ControlScore": 38,
         "BruiserScore": 139,
         "BEff": 87.57428571428571,
         "Score": 139,
-        "AdjustedScore": 201
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "ATK%": 11,
@@ -3241,12 +3805,13 @@
         "Set": "Destroy",
         "MainStat": "HP flat",
         "DPSScore": 48,
-        "TankScore": 106,
-        "ControlScore": 20,
+        "TankScore": 107,
+        "ControlScore": 21,
         "BruiserScore": 134,
         "BEff": 83.85999999999999,
         "Score": 134,
-        "AdjustedScore": 201
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -3257,12 +3822,13 @@
         "Set": "Fight",
         "MainStat": "HP flat",
         "DPSScore": 122,
-        "TankScore": 75,
+        "TankScore": 76,
         "ControlScore": 58,
-        "BruiserScore": 124,
+        "BruiserScore": 125,
         "BEff": 79.5342857142857,
-        "Score": 139,
-        "AdjustedScore": 201
+        "Score": 140,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -3275,10 +3841,11 @@
         "DPSScore": 54,
         "TankScore": 114,
         "ControlScore": 34,
-        "BruiserScore": 116,
+        "BruiserScore": 117,
         "BEff": 74.9,
         "Score": 134,
-        "AdjustedScore": 201
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "ATK%": 16,
@@ -3289,12 +3856,13 @@
         "Set": "Vampire",
         "MainStat": "HP flat",
         "DPSScore": 77,
-        "TankScore": 88,
+        "TankScore": 89,
         "ControlScore": 31,
         "BruiserScore": 102,
         "BEff": 84.03999999999999,
-        "Score": 134,
-        "AdjustedScore": 201
+        "Score": 135,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -3303,13 +3871,14 @@
         "HP%": 12,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 51,
+        "DPSScore": 52,
         "TankScore": 75,
         "ControlScore": 0,
-        "BruiserScore": 126,
+        "BruiserScore": 127,
         "BEff": 80.63,
-        "Score": 126,
-        "AdjustedScore": 201
+        "Score": 127,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -3324,7 +3893,8 @@
         "BruiserScore": 119,
         "BEff": 80.53428571428572,
         "Score": 139,
-        "AdjustedScore": 201
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CRateI": 6,
@@ -3339,8 +3909,9 @@
         "ControlScore": 30,
         "BruiserScore": 122,
         "BEff": 83.58,
-        "Score": 134,
-        "AdjustedScore": 201
+        "Score": 135,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -3350,13 +3921,14 @@
         "ACC": 26,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 36,
+        "DPSScore": 37,
         "TankScore": 30,
         "ControlScore": 65,
-        "BruiserScore": 66,
+        "BruiserScore": 67,
         "BEff": 72.3,
-        "Score": 131,
-        "AdjustedScore": 201
+        "Score": 132,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -3367,12 +3939,13 @@
         "Set": "Rage",
         "MainStat": "HP flat",
         "DPSScore": 117,
-        "TankScore": 53,
+        "TankScore": 54,
         "ControlScore": 31,
-        "BruiserScore": 129,
+        "BruiserScore": 130,
         "BEff": 87.02714285714285,
-        "Score": 139,
-        "AdjustedScore": 201
+        "Score": 140,
+        "AdjustedScore": 201,
+        "IsGemmed": false
     },
     {
         "CRate": 15,
@@ -3387,8 +3960,9 @@
         "ControlScore": 64,
         "BruiserScore": 128,
         "BEff": 79.15,
-        "Score": 140,
-        "AdjustedScore": 202
+        "Score": 141,
+        "AdjustedScore": 202,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -3399,12 +3973,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 34,
-        "TankScore": 114,
+        "TankScore": 115,
         "ControlScore": 14,
-        "BruiserScore": 134,
+        "BruiserScore": 135,
         "BEff": 83.64,
-        "Score": 134,
-        "AdjustedScore": 202
+        "Score": 135,
+        "AdjustedScore": 202,
+        "IsGemmed": false
     },
     {
         "CDmgI": 6,
@@ -3417,10 +3992,11 @@
         "DPSScore": 80,
         "TankScore": 118,
         "ControlScore": 58,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 81.97714285714285,
         "Score": 140,
-        "AdjustedScore": 202
+        "AdjustedScore": 202,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -3431,12 +4007,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 91,
-        "TankScore": 116,
-        "ControlScore": 71,
+        "TankScore": 117,
+        "ControlScore": 72,
         "BruiserScore": 136,
         "BEff": 91.28,
         "Score": 136,
-        "AdjustedScore": 203
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -3446,12 +4023,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 119,
-        "TankScore": 34,
+        "TankScore": 35,
         "ControlScore": 17,
-        "BruiserScore": 136,
+        "BruiserScore": 137,
         "BEff": 84.53,
-        "Score": 136,
-        "AdjustedScore": 203
+        "Score": 137,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -3462,12 +4040,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 43,
-        "TankScore": 110,
-        "ControlScore": 20,
+        "TankScore": 111,
+        "ControlScore": 21,
         "BruiserScore": 133,
         "BEff": 77.41,
         "Score": 133,
-        "AdjustedScore": 203
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CRate": 14,
@@ -3479,10 +4058,11 @@
         "DPSScore": 116,
         "TankScore": 18,
         "ControlScore": 0,
-        "BruiserScore": 133,
+        "BruiserScore": 134,
         "BEff": 83.62,
-        "Score": 133,
-        "AdjustedScore": 203
+        "Score": 134,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "ATK%": 18,
@@ -3497,7 +4077,8 @@
         "BruiserScore": 136,
         "BEff": 85.24,
         "Score": 136,
-        "AdjustedScore": 203
+        "AdjustedScore": 203,
+        "IsGemmed": true
     },
     {
         "SPD": 4,
@@ -3507,12 +4088,13 @@
         "Set": "Destroy",
         "MainStat": "HP flat",
         "DPSScore": 14,
-        "TankScore": 136,
+        "TankScore": 137,
         "ControlScore": 14,
-        "BruiserScore": 106,
+        "BruiserScore": 107,
         "BEff": 83.94,
-        "Score": 136,
-        "AdjustedScore": 203
+        "Score": 137,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -3522,12 +4104,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 49,
-        "TankScore": 101,
+        "TankScore": 102,
         "ControlScore": 14,
-        "BruiserScore": 136,
+        "BruiserScore": 137,
         "BEff": 83.94,
-        "Score": 136,
-        "AdjustedScore": 203
+        "Score": 137,
+        "AdjustedScore": 203,
+        "IsGemmed": true
     },
     {
         "ATK%": 6,
@@ -3540,10 +4123,11 @@
         "DPSScore": 46,
         "TankScore": 121,
         "ControlScore": 31,
-        "BruiserScore": 118,
+        "BruiserScore": 119,
         "BEff": 85.24,
         "Score": 136,
-        "AdjustedScore": 203
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -3553,13 +4137,14 @@
         "RES": 15,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 28,
+        "DPSScore": 29,
         "TankScore": 122,
         "ControlScore": 17,
         "BruiserScore": 96,
         "BEff": 74.87142857142857,
-        "Score": 133,
-        "AdjustedScore": 203
+        "Score": 134,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -3570,12 +4155,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 35,
-        "TankScore": 78,
+        "TankScore": 79,
         "ControlScore": 20,
         "BruiserScore": 96,
         "BEff": 76.9,
-        "Score": 133,
-        "AdjustedScore": 203
+        "Score": 134,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -3588,10 +4174,11 @@
         "DPSScore": 104,
         "TankScore": 50,
         "ControlScore": 17,
-        "BruiserScore": 136,
+        "BruiserScore": 137,
         "BEff": 94.57428571428571,
-        "Score": 136,
-        "AdjustedScore": 203
+        "Score": 137,
+        "AdjustedScore": 203,
+        "IsGemmed": false
     },
     {
         "CDmg": 13,
@@ -3601,13 +4188,14 @@
         "RESI": 5,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 64,
+        "DPSScore": 65,
         "TankScore": 70,
         "ControlScore": 0,
         "BruiserScore": 122,
         "BEff": 75.95714285714286,
-        "Score": 134,
-        "AdjustedScore": 204
+        "Score": 135,
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -3618,12 +4206,13 @@
         "Set": "Blade",
         "MainStat": "HP flat",
         "DPSScore": 132,
-        "TankScore": 37,
-        "ControlScore": 47,
+        "TankScore": 38,
+        "ControlScore": 48,
         "BruiserScore": 132,
         "BEff": 88.57428571428571,
         "Score": 142,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -3633,13 +4222,14 @@
         "DEF flatI": 12,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 140,
-        "TankScore": 36,
+        "DPSScore": 141,
+        "TankScore": 37,
         "ControlScore": 34,
-        "BruiserScore": 142,
+        "BruiserScore": 143,
         "BEff": 88.92714285714287,
-        "Score": 142,
-        "AdjustedScore": 204
+        "Score": 143,
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -3654,7 +4244,8 @@
         "BruiserScore": 142,
         "BEff": 90.4557142857143,
         "Score": 142,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -3670,7 +4261,8 @@
         "BruiserScore": 130,
         "BEff": 92.07857142857144,
         "Score": 130,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "ATK%": 12,
@@ -3686,7 +4278,8 @@
         "BruiserScore": 117,
         "BEff": 84.6,
         "Score": 137,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": true
     },
     {
         "ATK%": 10,
@@ -3702,7 +4295,8 @@
         "BruiserScore": 109,
         "BEff": 84.2,
         "Score": 129,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -3713,12 +4307,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 115,
-        "TankScore": 70,
+        "TankScore": 71,
         "ControlScore": 73,
-        "BruiserScore": 127,
+        "BruiserScore": 128,
         "BEff": 80.47999999999999,
-        "Score": 142,
-        "AdjustedScore": 204
+        "Score": 143,
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -3729,12 +4324,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 62,
-        "TankScore": 52,
-        "ControlScore": 102,
+        "TankScore": 53,
+        "ControlScore": 103,
         "BruiserScore": 77,
         "BEff": 77.94000000000001,
         "Score": 142,
-        "AdjustedScore": 204
+        "AdjustedScore": 204,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -3744,13 +4340,14 @@
         "HP%": 8,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 80,
+        "DPSScore": 81,
         "TankScore": 69,
         "ControlScore": 14,
-        "BruiserScore": 135,
+        "BruiserScore": 136,
         "BEff": 85.6542857142857,
-        "Score": 135,
-        "AdjustedScore": 205
+        "Score": 136,
+        "AdjustedScore": 205,
+        "IsGemmed": false
     },
     {
         "DEF%": 10,
@@ -3765,7 +4362,8 @@
         "BruiserScore": 80,
         "BEff": 74.0,
         "Score": 135,
-        "AdjustedScore": 205
+        "AdjustedScore": 205,
+        "IsGemmed": false
     },
     {
         "ATK%": 24,
@@ -3774,13 +4372,14 @@
         "HP%": 25,
         "Set": "Will",
         "MainStat": "HP flat",
-        "DPSScore": 65,
+        "DPSScore": 66,
         "TankScore": 93,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 138,
         "BEff": 85.25999999999999,
         "Score": 138,
-        "AdjustedScore": 205
+        "AdjustedScore": 205,
+        "IsGemmed": true
     },
     {
         "CDmg": 7,
@@ -3790,13 +4389,14 @@
         "ACC": 12,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 32,
-        "TankScore": 72,
+        "DPSScore": 33,
+        "TankScore": 73,
         "ControlScore": 30,
         "BruiserScore": 90,
         "BEff": 74.0,
         "Score": 135,
-        "AdjustedScore": 205
+        "AdjustedScore": 205,
+        "IsGemmed": false
     },
     {
         "ATK%": 17,
@@ -3806,13 +4406,14 @@
         "ACC": 8,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 42,
+        "DPSScore": 43,
         "TankScore": 68,
         "ControlScore": 20,
         "BruiserScore": 95,
         "BEff": 82.0,
         "Score": 130,
-        "AdjustedScore": 205
+        "AdjustedScore": 205,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -3821,13 +4422,14 @@
         "HP%": 5,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 130,
-        "TankScore": 70,
+        "DPSScore": 131,
+        "TankScore": 71,
         "ControlScore": 58,
         "BruiserScore": 143,
         "BEff": 91.00714285714285,
         "Score": 143,
-        "AdjustedScore": 205
+        "AdjustedScore": 205,
+        "IsGemmed": false
     },
     {
         "CRate": 18,
@@ -3837,12 +4439,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 94,
-        "TankScore": 70,
-        "ControlScore": 20,
+        "TankScore": 71,
+        "ControlScore": 21,
         "BruiserScore": 144,
         "BEff": 87.91428571428571,
         "Score": 144,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CDmg": 11,
@@ -3853,12 +4456,13 @@
         "Set": "Nemesis",
         "MainStat": "HP flat",
         "DPSScore": 122,
-        "TankScore": 63,
+        "TankScore": 64,
         "ControlScore": 41,
-        "BruiserScore": 144,
+        "BruiserScore": 145,
         "BEff": 83.09142857142857,
-        "Score": 144,
-        "AdjustedScore": 206
+        "Score": 145,
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CRate": 13,
@@ -3867,13 +4471,14 @@
         "HP%": 17,
         "Set": "Vampire",
         "MainStat": "HP flat",
-        "DPSScore": 68,
+        "DPSScore": 69,
         "TankScore": 68,
         "ControlScore": 0,
         "BruiserScore": 136,
         "BEff": 84.57571428571428,
         "Score": 136,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "SPD": 9,
@@ -3883,12 +4488,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 17,
-        "TankScore": 104,
+        "TankScore": 105,
         "ControlScore": 52,
-        "BruiserScore": 104,
+        "BruiserScore": 105,
         "BEff": 85.6,
         "Score": 140,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": true
     },
     {
         "ATK%": 8,
@@ -3904,7 +4510,8 @@
         "BruiserScore": 124,
         "BEff": 76.9,
         "Score": 139,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CDmg": 4,
@@ -3915,12 +4522,13 @@
         "Set": "Swift",
         "MainStat": "HP flat",
         "DPSScore": 79,
-        "TankScore": 60,
-        "ControlScore": 100,
-        "BruiserScore": 91,
+        "TankScore": 61,
+        "ControlScore": 101,
+        "BruiserScore": 92,
         "BEff": 80.11142857142858,
         "Score": 144,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CRate": 9,
@@ -3931,12 +4539,13 @@
         "Set": "Despair",
         "MainStat": "HP flat",
         "DPSScore": 97,
-        "TankScore": 80,
+        "TankScore": 81,
         "ControlScore": 63,
-        "BruiserScore": 129,
+        "BruiserScore": 130,
         "BEff": 90.50999999999999,
-        "Score": 144,
-        "AdjustedScore": 206
+        "Score": 145,
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CRate": 22,
@@ -3946,13 +4555,14 @@
         "ATK flat": 19,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 106,
+        "DPSScore": 107,
         "TankScore": 65,
-        "ControlScore": 27,
+        "ControlScore": 28,
         "BruiserScore": 144,
         "BEff": 80.74000000000001,
         "Score": 144,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -3962,13 +4572,14 @@
         "ACC": 9,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 121,
+        "DPSScore": 122,
         "TankScore": 14,
-        "ControlScore": 36,
-        "BruiserScore": 121,
+        "ControlScore": 37,
+        "BruiserScore": 122,
         "BEff": 87.2642857142857,
         "Score": 144,
-        "AdjustedScore": 206
+        "AdjustedScore": 206,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -3979,12 +4590,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 90,
-        "TankScore": 87,
-        "ControlScore": 37,
+        "TankScore": 88,
+        "ControlScore": 38,
         "BruiserScore": 140,
         "BEff": 77.54,
         "Score": 140,
-        "AdjustedScore": 207
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -3994,13 +4606,14 @@
         "ATK flat": 20,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 57,
+        "DPSScore": 58,
         "TankScore": 75,
         "ControlScore": 0,
-        "BruiserScore": 132,
+        "BruiserScore": 133,
         "BEff": 85.32,
-        "Score": 132,
-        "AdjustedScore": 207
+        "Score": 133,
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CDmg": 15,
@@ -4016,7 +4629,8 @@
         "BruiserScore": 140,
         "BEff": 78.68285714285715,
         "Score": 140,
-        "AdjustedScore": 207
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -4028,11 +4642,12 @@
         "MainStat": "HP flat",
         "DPSScore": 55,
         "TankScore": 65,
-        "ControlScore": 12,
+        "ControlScore": 13,
         "BruiserScore": 120,
         "BEff": 82.98,
-        "Score": 132,
-        "AdjustedScore": 207
+        "Score": 133,
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -4041,13 +4656,14 @@
         "HP%": 14,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 67,
+        "DPSScore": 68,
         "TankScore": 70,
         "ControlScore": 0,
-        "BruiserScore": 137,
+        "BruiserScore": 138,
         "BEff": 85.20142857142858,
-        "Score": 137,
-        "AdjustedScore": 207
+        "Score": 138,
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -4059,10 +4675,11 @@
         "DPSScore": 90,
         "TankScore": 48,
         "ControlScore": 0,
-        "BruiserScore": 122,
+        "BruiserScore": 123,
         "BEff": 74.96000000000001,
-        "Score": 137,
-        "AdjustedScore": 207
+        "Score": 138,
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CDmgI": 4,
@@ -4072,13 +4689,14 @@
         "HP%": 14,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 75,
-        "TankScore": 109,
-        "ControlScore": 44,
-        "BruiserScore": 140,
+        "DPSScore": 76,
+        "TankScore": 110,
+        "ControlScore": 45,
+        "BruiserScore": 141,
         "BEff": 88.45142857142856,
-        "Score": 140,
-        "AdjustedScore": 207
+        "Score": 141,
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -4088,13 +4706,14 @@
         "ACCI": 7,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 87,
+        "DPSScore": 88,
         "TankScore": 86,
-        "ControlScore": 68,
-        "BruiserScore": 122,
+        "ControlScore": 69,
+        "BruiserScore": 123,
         "BEff": 88.83,
         "Score": 140,
-        "AdjustedScore": 207
+        "AdjustedScore": 207,
+        "IsGemmed": false
     },
     {
         "CRate": 17,
@@ -4103,13 +4722,14 @@
         "HP%": 5,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 73,
-        "TankScore": 84,
+        "DPSScore": 74,
+        "TankScore": 85,
         "ControlScore": 17,
         "BruiserScore": 141,
         "BEff": 86.21,
         "Score": 141,
-        "AdjustedScore": 208
+        "AdjustedScore": 208,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -4121,11 +4741,12 @@
         "MainStat": "HP flat",
         "DPSScore": 54,
         "TankScore": 65,
-        "ControlScore": 102,
+        "ControlScore": 103,
         "BruiserScore": 69,
         "BEff": 80.21000000000001,
-        "Score": 146,
-        "AdjustedScore": 208
+        "Score": 147,
+        "AdjustedScore": 208,
+        "IsGemmed": false
     },
     {
         "CRateI": 5,
@@ -4135,13 +4756,14 @@
         "DEF%": 14,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 106,
+        "DPSScore": 107,
         "TankScore": 93,
         "ControlScore": 58,
-        "BruiserScore": 141,
+        "BruiserScore": 142,
         "BEff": 100.17,
-        "Score": 141,
-        "AdjustedScore": 208
+        "Score": 142,
+        "AdjustedScore": 208,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -4152,12 +4774,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 114,
-        "TankScore": 73,
+        "TankScore": 74,
         "ControlScore": 41,
         "BruiserScore": 129,
         "BEff": 80.5,
-        "Score": 146,
-        "AdjustedScore": 208
+        "Score": 147,
+        "AdjustedScore": 208,
+        "IsGemmed": false
     },
     {
         "CDmg": 10,
@@ -4166,13 +4789,14 @@
         "ACC": 16,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 60,
+        "DPSScore": 61,
         "TankScore": 38,
         "ControlScore": 40,
         "BruiserScore": 98,
         "BEff": 75.42857142857143,
         "Score": 138,
-        "AdjustedScore": 208
+        "AdjustedScore": 208,
+        "IsGemmed": false
     },
     {
         "ATK%": 5,
@@ -4185,10 +4809,11 @@
         "DPSScore": 67,
         "TankScore": 112,
         "ControlScore": 72,
-        "BruiserScore": 124,
+        "BruiserScore": 125,
         "BEff": 89.86,
         "Score": 142,
-        "AdjustedScore": 209
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -4204,7 +4829,8 @@
         "BruiserScore": 134,
         "BEff": 93.65,
         "Score": 134,
-        "AdjustedScore": 209
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "CDmg": 21,
@@ -4215,12 +4841,13 @@
         "Set": "Vampire",
         "MainStat": "HP flat",
         "DPSScore": 79,
-        "TankScore": 42,
+        "TankScore": 43,
         "ControlScore": 18,
-        "BruiserScore": 121,
+        "BruiserScore": 122,
         "BEff": 76.0,
         "Score": 139,
-        "AdjustedScore": 209
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "CDmg": 17,
@@ -4231,12 +4858,13 @@
         "Set": "Violent",
         "MainStat": "HP flat",
         "DPSScore": 85,
-        "TankScore": 74,
+        "TankScore": 75,
         "ControlScore": 17,
-        "BruiserScore": 142,
+        "BruiserScore": 143,
         "BEff": 77.02857142857142,
-        "Score": 142,
-        "AdjustedScore": 209
+        "Score": 143,
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "ATK%": 25,
@@ -4247,12 +4875,13 @@
         "Set": "Energy",
         "MainStat": "HP flat",
         "DPSScore": 87,
-        "TankScore": 75,
-        "ControlScore": 20,
+        "TankScore": 76,
+        "ControlScore": 21,
         "BruiserScore": 142,
         "BEff": 86.35999999999999,
         "Score": 142,
-        "AdjustedScore": 209
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -4262,13 +4891,14 @@
         "HP%": 8,
         "Set": "Endure",
         "MainStat": "HP flat",
-        "DPSScore": 104,
-        "TankScore": 55,
-        "ControlScore": 20,
-        "BruiserScore": 139,
+        "DPSScore": 105,
+        "TankScore": 56,
+        "ControlScore": 21,
+        "BruiserScore": 140,
         "BEff": 88.03857142857142,
-        "Score": 139,
-        "AdjustedScore": 209
+        "Score": 140,
+        "AdjustedScore": 209,
+        "IsGemmed": false
     },
     {
         "ATK%": 15,
@@ -4283,7 +4913,8 @@
         "BruiserScore": 125,
         "BEff": 84.0,
         "Score": 135,
-        "AdjustedScore": 210
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -4297,8 +4928,9 @@
         "ControlScore": 0,
         "BruiserScore": 103,
         "BEff": 76.3,
-        "Score": 140,
-        "AdjustedScore": 210
+        "Score": 141,
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "CRateI": 6,
@@ -4311,10 +4943,28 @@
         "DPSScore": 35,
         "TankScore": 100,
         "ControlScore": 0,
-        "BruiserScore": 87,
+        "BruiserScore": 88,
         "BEff": 83.98,
         "Score": 135,
-        "AdjustedScore": 210
+        "AdjustedScore": 210,
+        "IsGemmed": false
+    },
+    {
+        "CRate": 4,
+        "CDmg": 5,
+        "ATK%": 30,
+        "HP%": 7,
+        "ACCI": 8,
+        "Set": "Fatal",
+        "MainStat": "HP flat",
+        "DPSScore": 103,
+        "TankScore": 18,
+        "ControlScore": 20,
+        "BruiserScore": 120,
+        "BEff": 86.03428571428572,
+        "Score": 140,
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "ATK%": 13,
@@ -4329,7 +4979,8 @@
         "BruiserScore": 108,
         "BEff": 90.52,
         "Score": 143,
-        "AdjustedScore": 210
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "ATK%": 14,
@@ -4338,13 +4989,14 @@
         "RES": 8,
         "Set": "Nemesis",
         "MainStat": "HP flat",
-        "DPSScore": 55,
+        "DPSScore": 56,
         "TankScore": 108,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 123,
         "BEff": 87.25999999999999,
         "Score": 143,
-        "AdjustedScore": 210
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -4353,13 +5005,14 @@
         "ACC": 22,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 53,
-        "TankScore": 60,
-        "ControlScore": 75,
-        "BruiserScore": 93,
+        "DPSScore": 54,
+        "TankScore": 61,
+        "ControlScore": 76,
+        "BruiserScore": 94,
         "BEff": 79.56,
-        "Score": 148,
-        "AdjustedScore": 210
+        "Score": 149,
+        "AdjustedScore": 210,
+        "IsGemmed": false
     },
     {
         "CRate": 7,
@@ -4375,7 +5028,8 @@
         "BruiserScore": 120,
         "BEff": 86.02428571428571,
         "Score": 140,
-        "AdjustedScore": 210
+        "AdjustedScore": 210,
+        "IsGemmed": true
     },
     {
         "CRate": 6,
@@ -4385,13 +5039,14 @@
         "ACC": 19,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 89,
+        "DPSScore": 90,
         "TankScore": 67,
         "ControlScore": 102,
         "BruiserScore": 102,
         "BEff": 82.84,
-        "Score": 149,
-        "AdjustedScore": 211
+        "Score": 150,
+        "AdjustedScore": 211,
+        "IsGemmed": false
     },
     {
         "SPD": 15,
@@ -4404,10 +5059,11 @@
         "DPSScore": 51,
         "TankScore": 144,
         "ControlScore": 51,
-        "BruiserScore": 126,
+        "BruiserScore": 127,
         "BEff": 93.6,
         "Score": 144,
-        "AdjustedScore": 211
+        "AdjustedScore": 211,
+        "IsGemmed": false
     },
     {
         "CRateI": 4,
@@ -4417,13 +5073,14 @@
         "HP%": 14,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 71,
+        "DPSScore": 72,
         "TankScore": 93,
-        "ControlScore": 20,
+        "ControlScore": 21,
         "BruiserScore": 144,
         "BEff": 87.57999999999998,
         "Score": 144,
-        "AdjustedScore": 211
+        "AdjustedScore": 211,
+        "IsGemmed": false
     },
     {
         "CRate": 5,
@@ -4433,13 +5090,14 @@
         "RESI": 7,
         "Set": "Intangible",
         "MainStat": "HP flat",
-        "DPSScore": 131,
+        "DPSScore": 132,
         "TankScore": 55,
-        "ControlScore": 37,
-        "BruiserScore": 131,
+        "ControlScore": 38,
+        "BruiserScore": 132,
         "BEff": 91.35285714285715,
         "Score": 149,
-        "AdjustedScore": 211
+        "AdjustedScore": 211,
+        "IsGemmed": true
     },
     {
         "ATK%": 8,
@@ -4448,13 +5106,14 @@
         "HP%": 20,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 57,
+        "DPSScore": 58,
         "TankScore": 125,
-        "ControlScore": 37,
+        "ControlScore": 38,
         "BruiserScore": 145,
         "BEff": 89.56,
         "Score": 145,
-        "AdjustedScore": 212
+        "AdjustedScore": 212,
+        "IsGemmed": false
     },
     {
         "CRate": 8,
@@ -4463,13 +5122,14 @@
         "DEF%": 7,
         "Set": "Vampire",
         "MainStat": "HP flat",
-        "DPSScore": 124,
+        "DPSScore": 125,
         "TankScore": 18,
         "ControlScore": 0,
         "BruiserScore": 142,
         "BEff": 86.92571428571429,
         "Score": 142,
-        "AdjustedScore": 212
+        "AdjustedScore": 212,
+        "IsGemmed": true
     },
     {
         "CRate": 10,
@@ -4478,13 +5138,14 @@
         "ACC": 8,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 130,
-        "TankScore": 37,
-        "ControlScore": 57,
-        "BruiserScore": 130,
+        "DPSScore": 131,
+        "TankScore": 38,
+        "ControlScore": 58,
+        "BruiserScore": 131,
         "BEff": 81.86,
-        "Score": 150,
-        "AdjustedScore": 212
+        "Score": 151,
+        "AdjustedScore": 212,
+        "IsGemmed": false
     },
     {
         "ATK%": 20,
@@ -4500,7 +5161,8 @@
         "BruiserScore": 106,
         "BEff": 90.22,
         "Score": 146,
-        "AdjustedScore": 213
+        "AdjustedScore": 213,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -4510,13 +5172,14 @@
         "ACC": 7,
         "Set": "Shield",
         "MainStat": "HP flat",
-        "DPSScore": 53,
+        "DPSScore": 54,
         "TankScore": 93,
         "ControlScore": 38,
         "BruiserScore": 126,
         "BEff": 79.25999999999999,
-        "Score": 143,
-        "AdjustedScore": 213
+        "Score": 144,
+        "AdjustedScore": 213,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -4526,13 +5189,14 @@
         "DEF flat": 18,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 122,
-        "TankScore": 21,
+        "DPSScore": 123,
+        "TankScore": 22,
         "ControlScore": 0,
-        "BruiserScore": 143,
+        "BruiserScore": 144,
         "BEff": 90.93714285714286,
-        "Score": 143,
-        "AdjustedScore": 213
+        "Score": 144,
+        "AdjustedScore": 213,
+        "IsGemmed": false
     },
     {
         "CDmgI": 5,
@@ -4548,7 +5212,8 @@
         "BruiserScore": 148,
         "BEff": 92.4142857142857,
         "Score": 148,
-        "AdjustedScore": 215
+        "AdjustedScore": 215,
+        "IsGemmed": false
     },
     {
         "CDmg": 5,
@@ -4561,10 +5226,11 @@
         "DPSScore": 113,
         "TankScore": 52,
         "ControlScore": 52,
-        "BruiserScore": 130,
+        "BruiserScore": 131,
         "BEff": 90.61428571428571,
         "Score": 148,
-        "AdjustedScore": 215
+        "AdjustedScore": 215,
+        "IsGemmed": false
     },
     {
         "CRate": 16,
@@ -4574,13 +5240,14 @@
         "RESI": 6,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 72,
-        "TankScore": 72,
+        "DPSScore": 73,
+        "TankScore": 73,
         "ControlScore": 0,
         "BruiserScore": 130,
         "BEff": 88.28,
         "Score": 145,
-        "AdjustedScore": 215
+        "AdjustedScore": 215,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -4589,13 +5256,14 @@
         "ACC": 29,
         "Set": "Focus",
         "MainStat": "HP flat",
-        "DPSScore": 40,
-        "TankScore": 55,
+        "DPSScore": 41,
+        "TankScore": 56,
         "ControlScore": 93,
-        "BruiserScore": 75,
+        "BruiserScore": 76,
         "BEff": 89.25999999999999,
         "Score": 148,
-        "AdjustedScore": 215
+        "AdjustedScore": 215,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -4610,7 +5278,8 @@
         "BruiserScore": 75,
         "BEff": 77.98,
         "Score": 145,
-        "AdjustedScore": 215
+        "AdjustedScore": 215,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -4620,13 +5289,14 @@
         "HP%": 15,
         "Set": "Blade",
         "MainStat": "HP flat",
-        "DPSScore": 73,
-        "TankScore": 81,
+        "DPSScore": 74,
+        "TankScore": 82,
         "ControlScore": 14,
         "BruiserScore": 141,
         "BEff": 87.60000000000001,
         "Score": 141,
-        "AdjustedScore": 216
+        "AdjustedScore": 216,
+        "IsGemmed": false
     },
     {
         "CRate": 21,
@@ -4637,12 +5307,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 107,
-        "TankScore": 67,
+        "TankScore": 68,
         "ControlScore": 55,
         "BruiserScore": 122,
         "BEff": 83.49,
-        "Score": 154,
-        "AdjustedScore": 216
+        "Score": 155,
+        "AdjustedScore": 216,
+        "IsGemmed": false
     },
     {
         "CRateI": 6,
@@ -4652,13 +5323,14 @@
         "ACC": 14,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 87,
-        "TankScore": 75,
+        "DPSScore": 88,
+        "TankScore": 76,
         "ControlScore": 83,
         "BruiserScore": 115,
         "BEff": 92.52,
         "Score": 150,
-        "AdjustedScore": 217
+        "AdjustedScore": 217,
+        "IsGemmed": false
     },
     {
         "ATK%": 8,
@@ -4669,11 +5341,12 @@
         "MainStat": "HP flat",
         "DPSScore": 78,
         "TankScore": 93,
-        "ControlScore": 95,
+        "ControlScore": 96,
         "BruiserScore": 113,
         "BEff": 93.52,
-        "Score": 150,
-        "AdjustedScore": 217
+        "Score": 151,
+        "AdjustedScore": 217,
+        "IsGemmed": false
     },
     {
         "CRate": 7,
@@ -4689,7 +5362,8 @@
         "BruiserScore": 155,
         "BEff": 93.78142857142858,
         "Score": 155,
-        "AdjustedScore": 217
+        "AdjustedScore": 217,
+        "IsGemmed": true
     },
     {
         "CRateI": 4,
@@ -4699,13 +5373,14 @@
         "RES": 6,
         "Set": "Violent",
         "MainStat": "HP flat",
-        "DPSScore": 48,
+        "DPSScore": 49,
         "TankScore": 95,
         "ControlScore": 0,
-        "BruiserScore": 128,
+        "BruiserScore": 129,
         "BEff": 87.32,
-        "Score": 143,
-        "AdjustedScore": 218
+        "Score": 144,
+        "AdjustedScore": 218,
+        "IsGemmed": false
     },
     {
         "SPD": 10,
@@ -4721,7 +5396,8 @@
         "BruiserScore": 82,
         "BEff": 91.9,
         "Score": 152,
-        "AdjustedScore": 218
+        "AdjustedScore": 218,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -4731,13 +5407,14 @@
         "ACC": 20,
         "Set": "Swift",
         "MainStat": "HP flat",
-        "DPSScore": 70,
+        "DPSScore": 71,
         "TankScore": 28,
         "ControlScore": 50,
         "BruiserScore": 98,
         "BEff": 79.3,
         "Score": 148,
-        "AdjustedScore": 218
+        "AdjustedScore": 218,
+        "IsGemmed": false
     },
     {
         "CRate": 12,
@@ -4753,7 +5430,8 @@
         "BruiserScore": 157,
         "BEff": 96.47999999999999,
         "Score": 157,
-        "AdjustedScore": 219
+        "AdjustedScore": 219,
+        "IsGemmed": true
     },
     {
         "CRate": 6,
@@ -4764,12 +5442,13 @@
         "Set": "Fatal",
         "MainStat": "HP flat",
         "DPSScore": 37,
-        "TankScore": 112,
+        "TankScore": 113,
         "ControlScore": 0,
         "BruiserScore": 102,
         "BEff": 89.83714285714287,
-        "Score": 149,
-        "AdjustedScore": 219
+        "Score": 150,
+        "AdjustedScore": 219,
+        "IsGemmed": false
     },
     {
         "CRate": 10,
@@ -4780,12 +5459,13 @@
         "Set": "Endure",
         "MainStat": "HP flat",
         "DPSScore": 102,
-        "TankScore": 37,
-        "ControlScore": 92,
+        "TankScore": 38,
+        "ControlScore": 93,
         "BruiserScore": 102,
         "BEff": 94.57428571428571,
         "Score": 157,
-        "AdjustedScore": 219
+        "AdjustedScore": 219,
+        "IsGemmed": false
     },
     {
         "CRate": 23,
@@ -4800,8 +5480,9 @@
         "ControlScore": 0,
         "BruiserScore": 133,
         "BEff": 90.44714285714286,
-        "Score": 150,
-        "AdjustedScore": 220
+        "Score": 151,
+        "AdjustedScore": 220,
+        "IsGemmed": false
     },
     {
         "CDmg": 10,
@@ -4814,10 +5495,11 @@
         "DPSScore": 66,
         "TankScore": 65,
         "ControlScore": 15,
-        "BruiserScore": 130,
+        "BruiserScore": 131,
         "BEff": 88.42857142857143,
         "Score": 146,
-        "AdjustedScore": 220
+        "AdjustedScore": 220,
+        "IsGemmed": false
     },
     {
         "ATK%": 20,
@@ -4828,12 +5510,13 @@
         "Set": "Will",
         "MainStat": "HP flat",
         "DPSScore": 91,
-        "TankScore": 103,
+        "TankScore": 104,
         "ControlScore": 41,
-        "BruiserScore": 153,
+        "BruiserScore": 154,
         "BEff": 93.52,
-        "Score": 153,
-        "AdjustedScore": 220
+        "Score": 154,
+        "AdjustedScore": 220,
+        "IsGemmed": true
     },
     {
         "CRate": 6,
@@ -4846,10 +5529,11 @@
         "DPSScore": 20,
         "TankScore": 111,
         "ControlScore": 20,
-        "BruiserScore": 130,
+        "BruiserScore": 131,
         "BEff": 80.58,
-        "Score": 150,
-        "AdjustedScore": 220
+        "Score": 151,
+        "AdjustedScore": 220,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -4859,13 +5543,14 @@
         "ACC": 14,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 83,
-        "TankScore": 46,
+        "DPSScore": 84,
+        "TankScore": 47,
         "ControlScore": 49,
         "BruiserScore": 116,
         "BEff": 81.62,
         "Score": 151,
-        "AdjustedScore": 221
+        "AdjustedScore": 221,
+        "IsGemmed": false
     },
     {
         "CRate": 6,
@@ -4877,11 +5562,12 @@
         "MainStat": "HP flat",
         "DPSScore": 123,
         "TankScore": 116,
-        "ControlScore": 78,
-        "BruiserScore": 160,
+        "ControlScore": 79,
+        "BruiserScore": 161,
         "BEff": 99.05999999999999,
-        "Score": 160,
-        "AdjustedScore": 222
+        "Score": 161,
+        "AdjustedScore": 222,
+        "IsGemmed": false
     },
     {
         "CRate": 11,
@@ -4891,13 +5577,14 @@
         "DEF%": 19,
         "Set": "Endure",
         "MainStat": "HP flat",
-        "DPSScore": 109,
-        "TankScore": 88,
+        "DPSScore": 110,
+        "TankScore": 89,
         "ControlScore": 41,
         "BruiserScore": 157,
         "BEff": 104.85,
         "Score": 157,
-        "AdjustedScore": 224
+        "AdjustedScore": 224,
+        "IsGemmed": false
     },
     {
         "CRate": 14,
@@ -4907,13 +5594,14 @@
         "RESI": 7,
         "Set": "Fatal",
         "MainStat": "HP flat",
-        "DPSScore": 66,
-        "TankScore": 82,
+        "DPSScore": 67,
+        "TankScore": 83,
         "ControlScore": 0,
-        "BruiserScore": 131,
+        "BruiserScore": 132,
         "BEff": 89.62,
         "Score": 149,
-        "AdjustedScore": 224
+        "AdjustedScore": 224,
+        "IsGemmed": false
     },
     {
         "CRate": 7,
@@ -4923,13 +5611,14 @@
         "ACCI": 8,
         "Set": "Energy",
         "MainStat": "HP flat",
-        "DPSScore": 142,
+        "DPSScore": 143,
         "TankScore": 41,
         "ControlScore": 61,
-        "BruiserScore": 142,
+        "BruiserScore": 143,
         "BEff": 97.10142857142857,
-        "Score": 162,
-        "AdjustedScore": 224
+        "Score": 163,
+        "AdjustedScore": 224,
+        "IsGemmed": true
     },
     {
         "CRate": 11,
@@ -4939,13 +5628,30 @@
         "ACCI": 7,
         "Set": "Focus",
         "MainStat": "HP flat",
-        "DPSScore": 36,
-        "TankScore": 102,
+        "DPSScore": 37,
+        "TankScore": 103,
         "ControlScore": 18,
         "BruiserScore": 119,
         "BEff": 82.63,
-        "Score": 156,
-        "AdjustedScore": 226
+        "Score": 157,
+        "AdjustedScore": 226,
+        "IsGemmed": false
+    },
+    {
+        "SPD": 12,
+        "DEF%": 16,
+        "HP%": 23,
+        "RES": 10,
+        "Set": "Destroy",
+        "MainStat": "HP flat",
+        "DPSScore": 41,
+        "TankScore": 164,
+        "ControlScore": 41,
+        "BruiserScore": 139,
+        "BEff": 97.22,
+        "Score": 164,
+        "AdjustedScore": 230,
+        "IsGemmed": false
     },
     {
         "CRate": 18,
@@ -4955,12 +5661,13 @@
         "ACCI": 8,
         "Set": "Despair",
         "MainStat": "HP flat",
-        "DPSScore": 87,
-        "TankScore": 52,
+        "DPSScore": 88,
+        "TankScore": 53,
         "ControlScore": 20,
         "BruiserScore": 140,
         "BEff": 94.36857142857143,
         "Score": 160,
-        "AdjustedScore": 230
+        "AdjustedScore": 230,
+        "IsGemmed": false
     }
 ]

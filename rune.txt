@@ -1,4 +1,3 @@
-acc 4
-hp 18
-cr 15
-cd 11
+cr 11
+atk 31
+cd 8

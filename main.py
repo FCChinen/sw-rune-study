@@ -89,13 +89,15 @@ def raw_analysis(stat_list: list, f_stats: list, \
                     filtered_stats = filter_stats(b_stats, f_stats)
                     # Adjusted score adjusted to only filtered stats
                     b_eff = calc_score(filtered_stats)
+                    gem = is_gemmed(row)
                     filtered_best.append(
                         get_rune(
                             row = row,
                             eff = b_eff,
                             boozero_eff = boozero_eff,
                             score = score,
-                            adjusted_score = adjusted_score
+                            adjusted_score = adjusted_score,
+                            is_gemmed = gem
                         )
                     )
         filtered_best = sorted(filtered_best, key=lambda x: x["Eff"])
@@ -136,6 +138,7 @@ def best_analysis(slots: list,\
                              "cr", "cri", "cd", "cdi"] # bruiser
                 bruiser_score = calc_score(filter_stats(b_stats, stat_list))
                 # Adjusted score adjusted to only filtered stats
+                gem = is_gemmed(row)
                 filtered_best.append(
                     get_rune(
                         row=row,
@@ -147,6 +150,7 @@ def best_analysis(slots: list,\
                         tank_score=tank_score,
                         control_score=control_score,
                         bruiser_score=bruiser_score,
+                        is_gemmed = gem,
                         ))
         filtered_best = sorted(filtered_best, key=lambda x: x["AdjustedScore"])
         output_data(f"./analysis/{filename}_Slot{slots[0]}", filtered_best)
@@ -201,4 +205,5 @@ def dps():
 
 
 if __name__ == "__main__":
-    dps()
+    # dps()
+    everything()

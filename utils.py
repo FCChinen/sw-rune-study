@@ -1,5 +1,7 @@
 from decimal import Decimal
 import math
+import json
+
 def checking_stats(row: dict, stat: str) -> int:
     if row["i_t"] == stat and int(row["i_v"]) > 0:
         return int(row["i_v"])
@@ -9,9 +11,9 @@ def checking_stats(row: dict, stat: str) -> int:
             return int(row["s"+str(idx)+"_v"])
     return 0
 
-
 def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
              score: int = 0, adjusted_score: int = 0, \
+             is_gemmed: bool = False, \
              dps_score: int = 0,\
              tank_score: int = 0,\
              control_score: int = 0,\
@@ -23,7 +25,7 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
                     "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
                     "MainStat",
                     "DPSScore", "TankScore", "ControlScore", "BruiserScore", \
-                    "Eff", "BEff", "Score", "AdjustedScore"]
+                    "Eff", "BEff", "Score", "AdjustedScore", "IsGemmed"]
     rune = dict()
     for idx in idx_list:
         rune[row["s"+str(idx)+"_t"]] = int(row["s"+str(idx)+"_v"])
@@ -48,6 +50,7 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
         rune["Set"] = row["set"]
     if adjusted_score:
         rune["AdjustedScore"] = adjusted_score
+    rune["IsGemmed"] = is_gemmed
     return {key: rune[key] for key in custom_order if key in rune}
 
 def calc_score(data: list):
@@ -125,3 +128,10 @@ def has_stats(row: dict, stat_list: list = []) -> int:
             count += 1
 
     return count
+
+def is_gemmed(row: dict) -> bool:
+    for i in range(1,5):
+        data = json.loads(row.get(f"s{i}_data", "{}")).get("enchanted", False)
+        if data:
+            return True
+    return False
