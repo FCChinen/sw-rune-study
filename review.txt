@@ -1,0 +1,21 @@
+AdjustedScore
+Everything_Slot1 Lowest: 203 Highest: 226
+Everything_Slot2 Lowest: 188 Highest: 260
+Everything_Slot3 Lowest: 206 Highest: 236
+Everything_Slot4 Lowest: 186 Highest: 228
+Everything_Slot5 Lowest: 204 Highest: 230
+Everything_Slot6 Lowest: 169 Highest: 224
+Score: ATK CR CD SPD
+Gemmed_FastDPS_SPD_Slot2 Lowest: 95 Highest: 129
+Gemmed_FastDPS_Slot1 Lowest: 142 Highest: 162
+Gemmed_FastDPS_Slot3 Lowest: 118 Highest: 138
+Gemmed_FastDPS_Slot4 Lowest: 95 Highest: 133
+Gemmed_FastDPS_Slot5 Lowest: 140 Highest: 159
+Gemmed_FastDPS_Slot6 Lowest: 79 Highest: 123
+Score: ATK CR CD
+Gemmed_SlowDPS_Slot1 Lowest: 130 Highest: 137
+Gemmed_SlowDPS_Slot2 Lowest: 87 Highest: 99
+Gemmed_SlowDPS_Slot3 Lowest: 99 Highest: 107
+Gemmed_SlowDPS_Slot4 Lowest: 101 Highest: 115
+Gemmed_SlowDPS_Slot5 Lowest: 124 Highest: 129
+Gemmed_SlowDPS_Slot6 Lowest: 81 Highest: 89

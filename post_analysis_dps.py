@@ -34,6 +34,12 @@ class Rune:
     DEFFlatI: int | None = field(metadata={"json": "DEF flatI"})
     HPFlat: int | None = field(metadata={"json": "HP flat"})
     HPFlatI: int | None = field(metadata={"json": "HP flatI"})
+    MainStat: str = field(metadata={"json": "MainStat"})
+    Gemmed: str | None = field(metadata={"json": "Gemmed"}, compare=False)
+    DPSScore: int | None = field(metadata={"json": "DPSScore"}, compare=False)
+    TankScore: int | None = field(metadata={"json": "TankScore"}, compare=False)
+    ControlScore: int | None = field(metadata={"json": "ControlScore"}, compare=False)
+    BruiserScore: int | None = field(metadata={"json": "BruiserScore"}, compare=False)
     Set: str
     Eff: Decimal = field(compare=False)
     BEff: Decimal = field(compare=False)
@@ -76,7 +82,13 @@ def convert_rune(r: dict) -> Rune:
                 DEFFlatI = r.get("DEF flatI"),\
                 HPFlat = r.get("HP flat"),\
                 HPFlatI = r.get("HP flatI"),\
+                MainStat = r.get("MainStat", ""),\
                 Set = r.get("Set", ""),\
+                DPSScore = r.get("DPSScore", 0),\
+                TankScore = r.get("TankScore", 0),\
+                ControlScore = r.get("ControlScore", 0),\
+                BruiserScore = r.get("BruiserScore", 0),\
+                Gemmed = r.get("Gemmed", ""),\
                 Eff = r.get("Eff", 0),\
                 BEff = r.get("BEff", Decimal("0.0")),\
                 Score = r.get("Score", 0),\

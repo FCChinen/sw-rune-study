@@ -128,11 +128,11 @@ def best_analysis(slots: list,\
                 # Is adjusted score to grow as boozero efficiency
                 adjusted_score = calc_adjusted_score(b_stats)
                 stat_list = ["spd", "spdi", "cr", "cri", "cd", "cdi", "atk", "atki"]
-                dps_score = calc_score(filter_stats(b_stats, stat_list))
+                dps_score = calc_eff(filter_stats(b_stats, stat_list))
                 stat_list = ["spd", "spdi", "hp", "hpi", "def", "defi", "res", "resi"] # Tank/Sup
-                tank_score = calc_score(filter_stats(b_stats, stat_list))
+                tank_score = calc_eff(filter_stats(b_stats, stat_list))
                 stat_list = ["spd", "spdi", "acc", "acci"] # Control
-                control_score = calc_score(filter_stats(b_stats, stat_list))
+                control_score = calc_eff(filter_stats(b_stats, stat_list))
                 stat_list = ["spd", "spdi", "hp", "hpi",
                              "def", "defi", "atk", "atki",
                              "cr", "cri", "cd", "cdi"] # bruiser
@@ -185,6 +185,9 @@ def dps():
                 elif i == 2:
                     stat_list = ["CRate", "ATK%", "CDmg"] # FastDPS SPD for slot 2 or Slow slot 1/3/5
                     raw_analysis(stat_list, f_stats, slots, match_qty, "SPD", filename+"_SPD")
+                    stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
+                    raw_analysis(stat_list, f_stats, slots, match_qty, "ATK%", filename)
+                elif i == 6:
                     stat_list = ["SPD", "CRate", "CDmg"] # FastDPS for slot 2/6
                     raw_analysis(stat_list, f_stats, slots, match_qty, "ATK%", filename)
                 else:

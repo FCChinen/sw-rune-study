@@ -46,6 +46,7 @@ def calc_eff(data: list):
         else:
             print(f"stat {stat} not found")
         eff += stat_val
+        print(f"eff{eff} stat:{stat}: stat_val:{stat_val}")
         
         # print(f"{stat}: {int(float_val)} {stat_val}")
     if grindCount == 4:
