@@ -1,7 +1,6 @@
 import csv
 import json
 from utils import *
-from eff import calc_eff
 
 def get_boozero_stats(row: dict) -> list:
     mapping_dict = {
@@ -44,7 +43,7 @@ def filter_stats(full_stats: list, filter: list = []) -> list:
     return filtered_stats
 
 def output_data(name: str, data: list):
-    with open(f"{name}.txt", "w") as f:
+    with open(f"{name}.json", "w") as f:
         f.write(json.dumps(data, indent=4))
 
 # The raw analysis is made to create the needed information of
@@ -129,6 +128,8 @@ def best_analysis(slots: list,\
                 adjusted_score = calc_adjusted_score(b_stats)
                 stat_list = ["spd", "spdi", "cr", "cri", "cd", "cdi", "atk", "atki"]
                 dps_score = calc_eff(filter_stats(b_stats, stat_list))
+                stat_list = ["cr", "cri", "cd", "cdi", "atk", "atki"]
+                slow_dps_score = calc_eff(filter_stats(b_stats, stat_list))
                 stat_list = ["spd", "spdi", "hp", "hpi", "def", "defi", "res", "resi"] # Tank/Sup
                 tank_score = calc_eff(filter_stats(b_stats, stat_list))
                 stat_list = ["spd", "spdi", "acc", "acci"] # Control
@@ -136,7 +137,7 @@ def best_analysis(slots: list,\
                 stat_list = ["spd", "spdi", "hp", "hpi",
                              "def", "defi", "atk", "atki",
                              "cr", "cri", "cd", "cdi"] # bruiser
-                bruiser_score = calc_score(filter_stats(b_stats, stat_list))
+                bruiser_score = calc_eff(filter_stats(b_stats, stat_list))
                 # Adjusted score adjusted to only filtered stats
                 gem = is_gemmed(row)
                 filtered_best.append(
@@ -146,6 +147,7 @@ def best_analysis(slots: list,\
                         boozero_eff=boozero_eff,
                         score=score,
                         adjusted_score=adjusted_score,
+                        slow_dps_score=slow_dps_score,
                         dps_score=dps_score,
                         tank_score=tank_score,
                         control_score=control_score,

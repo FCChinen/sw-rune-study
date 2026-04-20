@@ -2,6 +2,61 @@ from decimal import Decimal
 import math
 import json
 
+def calc_eff(data: list):
+    eff = float(0)
+    grindCount = 0
+    critCount = 0
+    for line in data:
+        stat, val = line.split(" ")
+        float_val = float(val)
+        stat_val = 0
+        if "spd" == stat:
+            stat_val = (float_val+5.0)*1.66
+            grindCount+=1
+        elif "spdi" == stat:
+            stat_val = float_val*1.66
+        elif "cd" == stat or "cdi" == stat:
+            stat_val = float_val+float_val/7
+            critCount += 1
+        elif "res" == stat or "resi" == stat:
+            stat_val = float_val
+        elif "acc" == stat or "acci"== stat:
+            stat_val = float_val
+        elif "cr" == stat or "cri" == stat:
+            stat_val = float_val*1.33
+            critCount += 1
+        elif "hp" == stat or "atk" == stat or "def" == stat:
+            stat_val = 10.0 + float_val
+            grindCount+=1
+        elif "hpi" == stat or "atki" == stat or "defi" == stat:
+            stat_val = float_val
+            grindCount+=1
+        elif "hpm" == stat:
+            stat_val = (float_val+550)/100
+        elif "hpmi" == stat:
+            stat_val = (float_val)/100
+        elif "atkm" == stat:
+            stat_val = (float_val+30)/10
+        elif "atkmi" == stat:
+            stat_val = (float_val)/10
+        elif "defmi" == stat:
+            stat_val = (float_val)/10
+        elif "defm" == stat:
+            stat_val = (float_val+30)/10
+        else:
+            print(f"stat {stat} not found")
+        eff += stat_val
+        print(f"eff{eff} stat:{stat}: stat_val:{stat_val}")
+        
+        # print(f"{stat}: {int(float_val)} {stat_val}")
+    if grindCount == 4:
+        eff -= 10.0
+        # print("-10")
+    if critCount == 2:
+        eff += 10.0
+        # print("bonus crit: +10")
+    return eff
+
 def checking_stats(row: dict, stat: str) -> int:
     if row["i_t"] == stat and int(row["i_v"]) > 0:
         return int(row["i_v"])
@@ -14,16 +69,17 @@ def checking_stats(row: dict, stat: str) -> int:
 def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
              score: int = 0, adjusted_score: int = 0, \
              is_gemmed: bool = False, \
-             dps_score: int = 0,\
-             tank_score: int = 0,\
-             control_score: int = 0,\
-             bruiser_score: int = 0
+             slow_dps_score: float = 0,\
+             dps_score: float = 0,\
+             tank_score: float = 0,\
+             control_score: float = 0,\
+             bruiser_score: float = 0
              ) -> dict:
     idx_list = [1,2,3,4]
     custom_order = ["CRate","CRateI", "CDmg", "CDmgI", "ATK%", "ATK%I", "SPD", "SPDI", \
                     "DEF%", "DEF%I", "HP%", "HP%I", "ATK flat", "ATK flatI", "DEF flat", "DEF flatI",\
                     "HP flat", "HP flatI", "RES", "RESI", "ACC", "ACCI", "Set", \
-                    "MainStat",
+                    "MainStat", "SlowDPSSCore",\
                     "DPSScore", "TankScore", "ControlScore", "BruiserScore", \
                     "Eff", "BEff", "Score", "AdjustedScore", "IsGemmed"]
     rune = dict()
@@ -33,12 +89,14 @@ def get_rune(row: dict, eff: float = 0.0, boozero_eff: float = 0.0,\
         rune[row["i_t"]+"I"] = int(row["i_v"])
     if tank_score is not None:
         rune["TankScore"] = tank_score
-    if tank_score is not None:
+    if control_score is not None:
         rune["ControlScore"] = control_score
-    if tank_score is not None:
+    if bruiser_score is not None:
         rune["BruiserScore"] = bruiser_score
-    if tank_score is not None:
+    if dps_score is not None:
         rune["DPSScore"] = dps_score
+    if slow_dps_score is not None:
+        rune["SlowDPSSCore"] = slow_dps_score
     rune["MainStat"] = row["m_t"]
     if eff:
         rune["Eff"] = eff

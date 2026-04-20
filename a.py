@@ -1,62 +1,66 @@
 import json
-from post_analysis_dps import DecimalEncoder, Rune, custom_asdict, convert_rune
-from dataclasses import fields
-rune1 = {
-        "CRate": 5,
-        "SPD": 19,
-        "ATK%": 16,
-        "HP%": 15,
-        "ACCI": 8,
-        "MainStat": "ATK flat",
-        "Gemmed": "None",
-        "DPSScore": 122,
-        "TankScore": 103,
-        "ControlScore": 85,
-        "BruiserScore": 159,
-        "Set": "Guard",
-        "Eff": 0,
-        "BEff": 105.49,
-        "NewEff": 179,
-        "Score": 179,
-        "AdjustedScore": 246
-    }
-converted_rune1 = convert_rune(rune1)
-rune2 = {
-        "CRate": 5,
-        "SPD": 19,
-        "ATK%": 16,
-        "HP%": 15,
-        "ACCI": 8,
-        "Gemmed": "CDmg",
-        "Set": "Guard",
-        "Eff": 122,
-        "BEff": 105.49,
-        "NewEff": 145,
-        "Score": 179,
-        "AdjustedScore": 246
-    } 
-converted_rune2 = convert_rune(rune2)
+import matplotlib.pyplot as plt
+import numpy as np
 
-def diff_dataclass(a, b):
-    diffs = {}
+with open('./analysis/Everything_Slot1.json', 'r') as f:
+    data = json.load(f)
 
-    for f in fields(a):
-        if not f.compare:
-            continue  # ignora campos com compare=False
-        
-        v1 = getattr(a, f.name)
-        v2 = getattr(b, f.name)
+print(json.dumps(data[0], indent=4))
 
-        if v1 != v2:
-            diffs[f.name] = (v1, v2)
+new_data = ["SlowDPSSCore", "DPSScore","TankScore", "ControlScore", "BruiserScore", "BEff"]
 
-    return diffs
+data = sorted(data, key=lambda x: x["SlowDPSSCore"], reverse=True)
+slow_dps = data[:5]
+data = sorted(data[5:30], key=lambda x: x["DPSScore"], reverse=True)
+# tank = sorted(data, key=lambda x: x["TankScore"], reverse=True)
+# control = sorted(data, key=lambda x: x["ControlScore"], reverse=True)
+# bruiser = sorted(data, key=lambda x: x["BruiserScore"], reverse=True)
+# overall = sorted(data, key=lambda x: x["BEff"], reverse=True)
+with open(f'./kept_runes/SlowDPSSCore_Slot1.json', 'w') as f:
+    f.write(json.dumps(slow_dps, indent=4))
 
-from dataclasses import fields
+with open(f'./kept_runes/DPSScore_Slot1.json', 'w') as f:
+    f.write(json.dumps(data, indent=4))
+# runes = {
+#     "SlowDPSSCore": [],
+#     "DPSScore": [],
+#     "TankScore": [],
+#     "ControlScore": [],
+#     "BruiserScore": [],
+#     "BEff": [],
+# }
 
-for f in fields(converted_rune1):
-    if f.compare:
-        v1 = getattr(converted_rune1, f.name)
-        v2 = getattr(converted_rune2, f.name)
-        if v1 != v2:
-            print("f.name", f.name, "v1", v1, "v2", v2)
+# for type in new_data:
+#     with open(f'./kept_runes/{type}_Slot1.json', 'w') as f:
+#         runes[type] = sorted(data, key=lambda x: x[type], reverse=True)
+#         f.write(json.dumps(runes[type], indent=4))
+
+type = "DPSScore"
+# Create histogram
+plt.figure(figsize=(10, 6))
+slow_dps_scores = [item[type] for item in data if type in item]
+# Create histogram with custom styling
+plt.hist(slow_dps_scores, bins='auto', edgecolor='black', alpha=0.7, color='skyblue')
+
+# Add labels and title
+plt.xlabel(f'{type}', fontsize=12)
+plt.ylabel('Frequency', fontsize=12)
+plt.title(f'Distribution of {type} Values', fontsize=14, fontweight='bold')
+
+# Add grid for better readability
+plt.grid(axis='y', alpha=0.3)
+
+# Add statistics text box
+if slow_dps_scores:
+    stats_text = f'Total Items: {len(slow_dps_scores)}\n'
+    stats_text += f'Mean: {np.mean(slow_dps_scores):.2f}\n'
+    stats_text += f'Std Dev: {np.std(slow_dps_scores):.2f}\n'
+    stats_text += f'Min: {np.min(slow_dps_scores):.2f}\n'
+    stats_text += f'Max: {np.max(slow_dps_scores):.2f}'
+    
+    plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes,
+             fontsize=10, verticalalignment='top',
+             bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+
+plt.tight_layout()
+plt.show()

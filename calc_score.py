@@ -1,6 +1,6 @@
 from utils import calc_adjusted_score
 from utils import calc_score
-from eff import calc_eff
+from utils import calc_eff
 
 
 def get_data():
