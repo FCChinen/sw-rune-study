@@ -140,8 +140,10 @@ def best_analysis(slots: list,\
                 bruiser_score = calc_eff(filter_stats(b_stats, stat_list))
                 # Adjusted score adjusted to only filtered stats
                 gem = is_gemmed(row)
+                unique_id = row["unique_id"]
                 filtered_best.append(
                     get_rune(
+                        unique_id=unique_id,
                         row=row,
                         eff=0,
                         boozero_eff=boozero_eff,

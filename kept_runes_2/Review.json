@@ -8,8 +8,8 @@
         "lowest": 92.46
     },
     "Everything_Slot1": {
-        "highest": 104.1742857142857,
-        "lowest": 66.55
+        "highest": 83.14,
+        "lowest": 82.46
     },
     "Gemmed_SlowDPS_Slot2": {
         "highest": 49.73285714285714,
@@ -20,8 +20,8 @@
         "lowest": 32.620000000000005
     },
     "Everything_Slot2": {
-        "highest": 99.47,
-        "lowest": 45.5
+        "highest": 92.5,
+        "lowest": 89.62
     },
     "Gemmed_SlowDPS_Slot3": {
         "highest": 53.16142857142857,
@@ -32,8 +32,8 @@
         "lowest": 73.52571428571429
     },
     "Everything_Slot3": {
-        "highest": 108.39714285714285,
-        "lowest": 54.26
+        "highest": 84.78,
+        "lowest": 75.52571428571429
     },
     "Gemmed_SlowDPS_Slot4": {
         "highest": 63.92,
@@ -44,8 +44,8 @@
         "lowest": 62.519999999999996
     },
     "Everything_Slot4": {
-        "highest": 95.88,
-        "lowest": 55.300000000000004
+        "highest": 79.3,
+        "lowest": 78.52
     },
     "Gemmed_SlowDPS_Slot5": {
         "highest": 78.21000000000001,
@@ -56,8 +56,8 @@
         "lowest": 87.78142857142858
     },
     "Everything_Slot5": {
-        "highest": 104.85,
-        "lowest": 15.85
+        "highest": 84.19428571428571,
+        "lowest": 93.78142857142858
     },
     "Gemmed_SlowDPS_Slot6": {
         "highest": 49.14285714285714,
@@ -68,7 +68,7 @@
         "lowest": 42.52142857142857
     },
     "Everything_Slot6": {
-        "highest": 95.84,
-        "lowest": 42.92
+        "highest": 80.70857142857142,
+        "lowest": 67.52142857142857
     }
 }

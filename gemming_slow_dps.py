@@ -75,29 +75,23 @@ slow = {
 
 fast = {
         "DPS_Slot1.json" : {
-            "filename": "./analysis/FastDPS_Slot1.json",
             "stat_list": ["CDmg", "CRate", "ATK%", "SPD"]
         },
         "DPS_Slot2.json" : {
-            "filename": "./analysis/FastDPS_SPD_Slot2.json",
             "stat_list": ["CDmg", "CRate", "ATK%"],
             "main_stat": "SPD"
         },
         "DPS_Slot3.json" : {
-            "filename": "./analysis/FastDPS_Slot3.json",
             "stat_list": ["CDmg", "CRate", "SPD"]
         },
         "DPS_Slot4.json" : {
-            "filename": "./analysis/FastDPS_Slot4.json",
             "stat_list": ["CRate", "ATK%", "SPD"],
             "main_stat": "CDmg"
         },
         "DPS_Slot5.json" : {
-            "filename": "./analysis/FastDPS_Slot5.json",
             "stat_list": ["CDmg", "CRate", "ATK%", "SPD"],
         },
         "DPS_Slot6.json" : {
-            "filename": "./analysis/FastDPS_Slot6.json",
             "stat_list": ["CDmg", "CRate", "SPD"],
             "main_stat": "ATK%"
         },
@@ -113,7 +107,7 @@ analysis_list = [
 ]
 
 review = {}
-
+review2 = {}
 for analysis in analysis_list:
     slow_obj = slow[analysis] 
     if not(slow_obj):
@@ -126,49 +120,67 @@ for analysis in analysis_list:
     
     if slow_obj.get("main_stat"):
         main_stat = slow_obj["main_stat"]
-        runes = [rune for rune in runes if rune.get("MainStat") == main_stat]
-    new_list = get_gem_list(runes, stat_list, "SlowDPSSCore")
+        new_list = [rune for rune in runes if rune.get("MainStat") == main_stat]
+    else:
+        new_list = runes
+    new_list = get_gem_list(new_list, stat_list, "SlowDPSSCore")
     new_list = sorted(new_list, key=lambda x: x["SlowDPSSCore"],reverse=True)
     filtered_list = new_list[:5]
+    unique_id_list = []
+    for r in filtered_list:
+        unique_id_list.append(r["UniqueId"])
     gemmed_f = f"""Gemmed_Slow{analysis.split(".")[0]}"""
     review[gemmed_f] = {
         "highest": filtered_list[0]["SlowDPSSCore"],
         "lowest": filtered_list[-1]["SlowDPSSCore"]
     }
+    review2[analysis.split(".")[0]] = {
+        "SlowDPSSCore": filtered_list[-1]["SlowDPSSCore"]
+    }
     gemmed_filename = f"./kept_runes/{gemmed_f}.json"
     with open(gemmed_filename, "w") as f:
         f.write(json.dumps(filtered_list, indent = 4))
+    runes = [rune for rune in runes if rune["UniqueId"] not in unique_id_list]
 
     fast_obj = fast[analysis]
     if not(fast_obj):
         print(f"fast_obj: {fast_obj} does not exists {analysis}")
         break
-    filename = fast_obj["filename"]
+    #filename = fast_obj["filename"]
     stat_list = fast_obj["stat_list"]
-    fast_list = new_list[5:]
-
-    new_list = get_gem_list(fast_list, stat_list, "DPSScore")
+    if fast_obj.get("main_stat"):
+        main_stat = slow_obj["main_stat"]
+        new_list = [rune for rune in runes if rune.get("MainStat") == main_stat]
+    else:
+        new_list = runes
+    new_list = get_gem_list(new_list, stat_list, "DPSScore")
     new_list = sorted(new_list, key=lambda x: x["DPSScore"],reverse=True)
     filtered_list = new_list[:25]
-    everything_list = new_list[25:]
+    for r in filtered_list:
+        unique_id_list.append(r["UniqueId"])
     gemmed_f = f"""Gemmed_Fast{analysis.split(".")[0]}"""
     review[gemmed_f] = {
         "highest": filtered_list[0]["DPSScore"],
         "lowest": filtered_list[-1]["DPSScore"]
     }
+    review2[analysis.split(".")[0]]["DPSScore"] = filtered_list[-1]["DPSScore"]
     gemmed_filename = f"./kept_runes/{gemmed_f}.json"
     with open(gemmed_filename, "w") as f:
         f.write(json.dumps(filtered_list, indent = 4))
-
-    everything_list = sorted(everything_list, key=lambda x: x["BEff"],reverse=True)
+    everything_list = sorted(runes, key=lambda x: x["BEff"],reverse=True)
+    print(f"{everything_list[-1]}")
     gemmed_f = f"""Everything_{analysis.split("_")[1].split(".")[0]}"""
     review[gemmed_f] = {
-        "highest": filtered_list[0]["BEff"],
-        "lowest": filtered_list[-1]["BEff"]
+        "highest": everything_list[0]["BEff"],
+        "lowest": everything_list[-1]["BEff"]
     }
+    review2[analysis.split(".")[0]]["BEff"] = everything_list[-1]["BEff"]
     gemmed_filename = f"./kept_runes/{gemmed_f}.json"
     with open(gemmed_filename, "w") as f:
-        f.write(json.dumps(filtered_list, indent = 4))
+        f.write(json.dumps(everything_list, indent = 4))
 
 with open("./kept_runes/Review.json", "w") as f:
     f.write(json.dumps(review, indent = 4)) 
+
+with open("./kept_runes/Review2.json", "w") as f:
+    f.write(json.dumps(review2, indent = 4)) 
