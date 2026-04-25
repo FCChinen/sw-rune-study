@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
-with open('./kept_runes/Gemmed_FastDPS_Slot1.json', 'r') as f:
+with open('./kept_runes/Everything_Slot1.json', 'r') as f:
     data = json.load(f)
 rune_type = "DPSScore"
 data = sorted(data, key=lambda x: x[rune_type], reverse=True)

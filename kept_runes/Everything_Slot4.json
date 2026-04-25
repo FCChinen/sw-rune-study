@@ -218,7 +218,7 @@
         "Set": "Swift",
         "MainStat": "CDmg",
         "SlowDPSSCore": 30.98,
-        "DPSScore": 57.980000000000004,
+        "DPSScore": 30.98,
         "TankScore": 55.0,
         "ControlScore": 0.0,
         "BruiserScore": 77.98,
@@ -226,7 +226,7 @@
         "Score": 140,
         "AdjustedScore": 215,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CDmg": 7,
@@ -709,7 +709,7 @@
         "Set": "Rage",
         "MainStat": "CDmg",
         "SlowDPSSCore": 31.52,
-        "DPSScore": 58.519999999999996,
+        "DPSScore": 31.52,
         "TankScore": 49.0,
         "ControlScore": 0.0,
         "BruiserScore": 80.52000000000001,
@@ -717,7 +717,7 @@
         "Score": 120,
         "AdjustedScore": 195,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "ATK%": 8,
@@ -973,7 +973,7 @@
         "Set": "Swift",
         "MainStat": "CDmg",
         "SlowDPSSCore": 46.0,
-        "DPSScore": 49.0,
+        "DPSScore": 46.0,
         "TankScore": 56.0,
         "ControlScore": 0.0,
         "BruiserScore": 59.0,
@@ -981,7 +981,7 @@
         "Score": 120,
         "AdjustedScore": 195,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "CRate"
     },
     {
         "CDmg": 13,
@@ -1086,7 +1086,7 @@
         "Set": "Destroy",
         "MainStat": "CDmg",
         "SlowDPSSCore": 46.61,
-        "DPSScore": 73.61,
+        "DPSScore": 46.61,
         "TankScore": 24.0,
         "ControlScore": 6.0,
         "BruiserScore": 70.61,
@@ -1094,7 +1094,7 @@
         "Score": 142,
         "AdjustedScore": 211,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CRateI": 6,
@@ -1393,7 +1393,7 @@
         "Set": "Despair",
         "MainStat": "CDmg",
         "SlowDPSSCore": 40.32,
-        "DPSScore": 67.32,
+        "DPSScore": 40.32,
         "TankScore": 33.46,
         "ControlScore": 0.0,
         "BruiserScore": 66.78,
@@ -1401,7 +1401,7 @@
         "Score": 120,
         "AdjustedScore": 189,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "ATK%": 22,
@@ -1564,7 +1564,7 @@
         "Set": "Swift",
         "MainStat": "CDmg",
         "SlowDPSSCore": 37.61,
-        "DPSScore": 64.61,
+        "DPSScore": 37.61,
         "TankScore": 18.43,
         "ControlScore": 16.0,
         "BruiserScore": 56.04,
@@ -1572,7 +1572,7 @@
         "Score": 129,
         "AdjustedScore": 199,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CDmg": 9,
@@ -1814,7 +1814,7 @@
         "Set": "Violent",
         "MainStat": "CDmg",
         "SlowDPSSCore": 44.980000000000004,
-        "DPSScore": 71.98,
+        "DPSScore": 44.980000000000004,
         "TankScore": 15.0,
         "ControlScore": 7.0,
         "BruiserScore": 59.980000000000004,
@@ -1822,25 +1822,7 @@
         "Score": 112,
         "AdjustedScore": 182,
         "IsGemmed": false,
-        "Gemmed": "SPD"
-    },
-    {
-        "ATK%": 18,
-        "SPD": 12,
-        "DEF flat": 34,
-        "ACC": 4,
-        "UniqueId": "73678104070",
-        "Set": "Fight",
-        "MainStat": "HP%",
-        "SlowDPSSCore": 28.0,
-        "DPSScore": 56.22,
-        "TankScore": 34.62,
-        "ControlScore": 32.22,
-        "BruiserScore": 62.62,
-        "BEff": 66.62,
-        "Score": 103,
-        "AdjustedScore": 165,
-        "IsGemmed": false
+        "Gemmed": "None"
     },
     {
         "CRate": 5,
@@ -1889,7 +1871,7 @@
         "Set": "Violent",
         "MainStat": "CDmg",
         "SlowDPSSCore": 42.95,
-        "DPSScore": 69.95,
+        "DPSScore": 42.95,
         "TankScore": 22.3,
         "ControlScore": 0.0,
         "BruiserScore": 60.25,
@@ -1897,7 +1879,7 @@
         "Score": 113,
         "AdjustedScore": 182,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CRate": 15,
@@ -1948,7 +1930,7 @@
         "Set": "Will",
         "MainStat": "CDmg",
         "SlowDPSSCore": 43.28,
-        "DPSScore": 70.28,
+        "DPSScore": 43.28,
         "TankScore": 21.299999999999997,
         "ControlScore": 0.0,
         "BruiserScore": 57.58,
@@ -1956,7 +1938,7 @@
         "Score": 112,
         "AdjustedScore": 137,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CRate": 20,
@@ -1986,7 +1968,7 @@
         "Set": "Energy",
         "MainStat": "CDmg",
         "SlowDPSSCore": 41.3,
-        "DPSScore": 68.3,
+        "DPSScore": 41.3,
         "TankScore": 20.8,
         "ControlScore": 0.0,
         "BruiserScore": 62.099999999999994,
@@ -1994,7 +1976,7 @@
         "Score": 97,
         "AdjustedScore": 167,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     },
     {
         "CRate": 9,
@@ -2016,25 +1998,6 @@
         "Gemmed": "ATK%"
     },
     {
-        "SPD": 4,
-        "HP%": 13,
-        "DEF flat": 16,
-        "ACC": 14,
-        "UniqueId": "73184731986",
-        "Set": "Fight",
-        "MainStat": "CDmg",
-        "SlowDPSSCore": 28.0,
-        "DPSScore": 42.94,
-        "TankScore": 42.54,
-        "ControlScore": 28.939999999999998,
-        "BruiserScore": 42.54,
-        "BEff": 56.54,
-        "Score": 85,
-        "AdjustedScore": 146,
-        "IsGemmed": false,
-        "Gemmed": "ATK%"
-    },
-    {
         "CRate": 20,
         "ATK%": 5,
         "DEF flat": 17,
@@ -2043,7 +2006,7 @@
         "Set": "Blade",
         "MainStat": "CDmg",
         "SlowDPSSCore": 41.6,
-        "DPSScore": 68.6,
+        "DPSScore": 41.6,
         "TankScore": 13.7,
         "ControlScore": 0.0,
         "BruiserScore": 46.3,
@@ -2051,6 +2014,6 @@
         "Score": 105,
         "AdjustedScore": 129,
         "IsGemmed": false,
-        "Gemmed": "SPD"
+        "Gemmed": "None"
     }
 ]

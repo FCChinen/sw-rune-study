@@ -43,6 +43,16 @@ def get_gem_list(runes: list, stat_list: list, rune_type: str) -> list:
         new_list.append(rune)
     return new_list
 
+def remove_fight_runes(runes: list) -> list:
+    return [rune for rune in runes if rune.get("Set") != "Fight"]
+
+def filtering_main_stat(ms: dict, runes: list) -> list:
+    print(ms)
+    main_stat = ms.get("main_stat")
+    if main_stat:
+        return [rune for rune in runes if rune.get("MainStat") == main_stat]
+    else:
+        return runes
 slow = {
     "DPS_Slot1.json": {
         "filename": "./analysis/Everything_Slot1.json",
@@ -117,13 +127,14 @@ for analysis in analysis_list:
     stat_list = slow_obj["stat_list"]
     with open(filename, 'r') as f:
         runes = json.loads(f.read())
-    
-    if slow_obj.get("main_stat"):
-        main_stat = slow_obj["main_stat"]
-        new_list = [rune for rune in runes if rune.get("MainStat") == main_stat]
-    else:
-        new_list = runes
+    # Removing fight runes
+    runes = remove_fight_runes(runes)
+
+    # Getting the correct main stat
+    new_list = filtering_main_stat(slow_obj, runes)
+    # Getting the new list with proper gemming
     new_list = get_gem_list(new_list, stat_list, "SlowDPSSCore")
+    # Ordering SlowDPSScore
     new_list = sorted(new_list, key=lambda x: x["SlowDPSSCore"],reverse=True)
     filtered_list = new_list[:5]
     unique_id_list = []
@@ -140,19 +151,17 @@ for analysis in analysis_list:
     gemmed_filename = f"./kept_runes/{gemmed_f}.json"
     with open(gemmed_filename, "w") as f:
         f.write(json.dumps(filtered_list, indent = 4))
+
+    # Removing runes that are already in the gemmed list for the same analysis
     runes = [rune for rune in runes if rune["UniqueId"] not in unique_id_list]
 
     fast_obj = fast[analysis]
     if not(fast_obj):
         print(f"fast_obj: {fast_obj} does not exists {analysis}")
         break
-    #filename = fast_obj["filename"]
-    stat_list = fast_obj["stat_list"]
-    if fast_obj.get("main_stat"):
-        main_stat = slow_obj["main_stat"]
-        new_list = [rune for rune in runes if rune.get("MainStat") == main_stat]
-    else:
-        new_list = runes
+
+    # Getting the correct main stat
+    new_list = filtering_main_stat(fast_obj, runes)
     new_list = get_gem_list(new_list, stat_list, "DPSScore")
     new_list = sorted(new_list, key=lambda x: x["DPSScore"],reverse=True)
     filtered_list = new_list[:25]

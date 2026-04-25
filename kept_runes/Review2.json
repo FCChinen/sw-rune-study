@@ -1,32 +1,32 @@
 {
     "DPS_Slot1": {
         "SlowDPSSCore": 72.12285714285714,
-        "DPSScore": 92.46,
+        "DPSScore": 92.33714285714285,
         "BEff": 66.55
     },
     "DPS_Slot2": {
         "SlowDPSSCore": 46.55142857142857,
-        "DPSScore": 32.620000000000005,
-        "BEff": 45.5
+        "DPSScore": 59.0,
+        "BEff": 53.82
     },
     "DPS_Slot3": {
         "SlowDPSSCore": 51.10285714285715,
-        "DPSScore": 73.52571428571429,
-        "BEff": 54.26
+        "DPSScore": 73.17,
+        "BEff": 64.25
     },
     "DPS_Slot4": {
         "SlowDPSSCore": 49.0,
-        "DPSScore": 62.519999999999996,
+        "DPSScore": 51.89,
         "BEff": 55.300000000000004
     },
     "DPS_Slot5": {
         "SlowDPSSCore": 72.78714285714285,
-        "DPSScore": 87.78142857142858,
-        "BEff": 15.85
+        "DPSScore": 80.54,
+        "BEff": 51.81
     },
     "DPS_Slot6": {
         "SlowDPSSCore": 44.2,
-        "DPSScore": 42.52142857142857,
+        "DPSScore": 34.72857142857143,
         "BEff": 42.92
     }
 }
