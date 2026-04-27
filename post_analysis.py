@@ -53,6 +53,7 @@ def filtering_main_stat(ms: dict, runes: list) -> list:
         return [rune for rune in runes if rune.get("MainStat") == main_stat]
     else:
         return runes
+    
 slow = {
     "DPS_Slot1.json": {
         "filename": "./analysis/Everything_Slot1.json",
@@ -176,6 +177,46 @@ for analysis in analysis_list:
     gemmed_filename = f"./kept_runes/{gemmed_f}.json"
     with open(gemmed_filename, "w") as f:
         f.write(json.dumps(filtered_list, indent = 4))
+    # Removing DPS Runes
+    runes = [rune for rune in runes if rune["UniqueId"] not in unique_id_list]
+
+    # BEST SPD SWIFT RUNES
+    if analysis != "DPS_Slot2.json":
+        new_list = [a for a in runes if "SPD" in a.keys() and "Swift" == a.get("Set")]
+        new_list = sorted(new_list, key=lambda x: x["SPD"],reverse=True)
+        filtered_list = new_list[:3]
+        for r in filtered_list:
+            unique_id_list.append(r["UniqueId"])
+        gemmed_f = f"""Gemmed_Swift{analysis.split(".")[0]}"""
+        review[gemmed_f] = {
+            "highest": filtered_list[0]["SPD"],
+            "lowest": filtered_list[-1]["SPD"]
+        }
+        review2[analysis.split(".")[0]]["SwiftSPD"] = filtered_list[-1]["SPD"]
+        gemmed_filename = f"./kept_runes/{gemmed_f}.json"
+        with open(gemmed_filename, "w") as f:
+            f.write(json.dumps(filtered_list, indent = 4))
+        runes = [rune for rune in runes if rune["UniqueId"] not in unique_id_list]
+
+    # BEST SPD DESPAIR RUNES
+    if analysis != "DPS_Slot2.json":
+        new_list = [a for a in runes if "SPD" in a.keys() and "Despair" == a.get("Set")]
+        new_list = sorted(new_list, key=lambda x: x["SPD"],reverse=True)
+        filtered_list = new_list[:3]
+        for r in filtered_list:
+            unique_id_list.append(r["UniqueId"])
+        gemmed_f = f"""Gemmed_Despair{analysis.split(".")[0]}"""
+        review[gemmed_f] = {
+            "highest": filtered_list[0]["SPD"],
+            "lowest": filtered_list[-1]["SPD"]
+        }
+        review2[analysis.split(".")[0]]["DespairSPD"] = filtered_list[-1]["SPD"]
+        gemmed_filename = f"./kept_runes/{gemmed_f}.json"
+        with open(gemmed_filename, "w") as f:
+            f.write(json.dumps(filtered_list, indent = 4))
+        runes = [rune for rune in runes if rune["UniqueId"] not in unique_id_list]
+
+    #Everything runes
     everything_list = sorted(runes, key=lambda x: x["BEff"],reverse=True)
     print(f"{everything_list[-1]}")
     gemmed_f = f"""Everything_{analysis.split("_")[1].split(".")[0]}"""

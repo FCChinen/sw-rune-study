@@ -1,3 +1,4 @@
-cd 12
-cr 8
-atk 15
+cr 5
+spd 20
+hp 5
+acc 6
